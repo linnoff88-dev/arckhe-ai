@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR" class="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M4 — Execução de longa duração — Prompt Engineering Avançado — ArckhÉ.AI Academy</title>
+<meta name="description" content="Domine a arte da conversa com modelos de linguagem — do prompt robusto ao agente de longa duração.">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { darkMode: 'class', theme: { extend: { colors: {
+  primary: '#818cf8',
+  dark: { 900: '#111827', 800: '#1f2937', 700: '#374151', 600: '#4b5563' }
+} } } };
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+body{font-family:'Inter',sans-serif}
+.dark body{background-color:#0a0e1a;color:#e8ecf7}
+.lesson{scroll-margin-top:80px}
+details summary{cursor:pointer;list-style:none}
+</style>
+</head>
+<body class="dark bg-dark-900 min-h-screen text-slate-200">
+<header class="sticky top-0 z-30 border-b border-white/10 bg-dark-900/95 backdrop-blur">
+<div class="max-w-4xl mx-auto px-5 py-3 flex items-center justify-between">
+<a href="../../index.html" class="text-xs font-bold tracking-widest text-slate-400 hover:text-white">&larr; ARCKHÉ.AI ACADEMY</a>
+<span class="text-xs font-semibold" style="color:#818cf8">Prompt Engineering Avançado</span>
+</div>
+</header>
+<main class="max-w-4xl mx-auto px-5 py-10">
+<div class="text-xs font-bold tracking-widest mb-1" style="color:#818cf8">Prompt Engineering Avançado</div>
+<h1 class="text-3xl md:text-4xl font-extrabold text-white mb-2">M4 — Execução de longa duração</h1>
+<p class="text-slate-400 mb-8">Domine a arte da conversa com modelos de linguagem — do prompt robusto ao agente de longa duração.</p>
+
+<section class="lesson mb-12" id="a1">
+<h2 class="text-2xl font-bold text-white mb-3">4.1 · Objetivo verificável</h2>
+<p class="text-slate-300 leading-relaxed mb-4">Agente de horas/dias só funciona se o objetivo é verificável: 'o relatório X existe, tem as 7 seções, e cada número confere com a fonte'. 'Deixe o site melhor' não é objetivo — é humoresmo. Fórmula: ENTREGÁVEL + ESTADO FINAL + COMO CONFERO. Sem o 'como confiro', o agente otimiza o que ele acha que é.</p>
+<div class="rounded-xl border border-white/10 bg-dark-800 p-4"><div class="text-xs font-bold tracking-widest mb-1" style="color:#818cf8">PRÇTICA / ENTREGÇVEL</div><p class="text-sm text-slate-300">Reescreva o objetivo do seu agente com a fórmula. Se não der para conferir em 5 minutos, reformule.</p></div>
+</section>
+<section class="lesson mb-12" id="a2">
+<h2 class="text-2xl font-bold text-white mb-3">4.2 · Estado em arquivo</h2>
+<p class="text-slate-300 leading-relaxed mb-4">A IA esquece; o arquivo não. Padrão: o agente mantém um STATE.md (o que fez, o que falta, decisões tomadas, erros e tentativas). Cada 'acordar' ele lê o arquivo antes de agir. É o que transforma 'execução de 2h' em 'execução de 2 dias' sem perder o rumo.</p>
+<div class="rounded-xl border border-white/10 bg-dark-800 p-4"><div class="text-xs font-bold tracking-widest mb-1" style="color:#818cf8">PRÇTICA / ENTREGÇVEL</div><p class="text-sm text-slate-300">Crie o STATE.md do seu caso: 4 seções (feito/faltando/decisoes/erros). Teste: descreva o estado para um colega cego ao projeto — ele entende?</p></div>
+</section>
+<section class="lesson mb-12" id="a3">
+<h2 class="text-2xl font-bold text-white mb-3">4.3 · Check-in humano</h2>
+<p class="text-slate-300 leading-relaxed mb-4">Delegar não é abandonar. Defina os pontos de checadao: após cada marco, antes de gastar dinheiro, antes de falar com cliente, e no fim. Entre os check-ins, o agente roda sozinho; neles, 5 minutos seus. O erro caro é o que acontece entre dois check-ins longos demais.</p>
+<div class="rounded-xl border border-white/10 bg-dark-800 p-4"><div class="text-xs font-bold tracking-widest mb-1" style="color:#818cf8">PRÇTICA / ENTREGÇVEL</div><p class="text-sm text-slate-300">Desenhe o cronograma de check-ins de um projeto de 1 semana do seu agente.</p></div>
+</section>
+<section class="lesson mb-12" id="a4">
+<h2 class="text-2xl font-bold text-white mb-3">4.4 · Capstone: agente de relatório semanal</h2>
+<p class="text-slate-300 leading-relaxed mb-4">Monte (no papel, primeiro): objetivo verificável (5 métricas, tabela + 3 conclusões), STATE.md, check-in (sexta, 15 min), freios (não publica sem OK, teto de 1h de execução). Depois, implemente na ferramenta que tiver (n8n, Make, ChatGPT Projects, terminal). O capstone vale pelo processo: é o mini-sistema que a Arckhé chama de 'IA como equipe'.</p>
+<div class="rounded-xl border border-white/10 bg-dark-800 p-4"><div class="text-xs font-bold tracking-widest mb-1" style="color:#818cf8">PRÇTICA / ENTREGÇVEL</div><p class="text-sm text-slate-300">Entregável: 1 página com objetivo/estado/check-in/freios + a primeira execução real documentada no STATE.</p></div>
+</section>
+</main><footer class="max-w-4xl mx-auto px-5 py-10 flex flex-wrap gap-3 items-center justify-between border-t border-white/10 text-sm">
+<a href="modulo-2-1.html" class="px-4 py-2 rounded-lg bg-dark-700 hover:bg-dark-600">&larr; Anterior</a>
+<a href="index.html" class="px-4 py-2 rounded-lg bg-primary/20 text-primary">Conclusão &rarr;</a>
+</footer>
+</body></html>

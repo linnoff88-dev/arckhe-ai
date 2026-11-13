@@ -81,4 +81,4 @@ Nada sai do navegador. Os números do cliente ficam no rascunho local e no `.jso
 
 ---
 
-Projeto aberto do [ARCKHÉ.CLUB](https://linnoff88-dev.github.io/arckhe-ai) · licença [MIT](LICENSE) · versão 0.8.1
+Projeto aberto do [ARCKHÉ.AI](https://linnoff88-dev.github.io/arckhe-ai) · licença [MIT](LICENSE) · versão 0.8.1

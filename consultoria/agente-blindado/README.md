@@ -82,4 +82,4 @@ Python 3.10+, [Claude Code](https://docs.claude.com/claude-code) (para as travas
 
 ## Licença
 
-MIT. Material educativo do [ARCKHÉ.CLUB](https://linnoff88-dev.github.io/arckhe-ai).
+MIT. Material educativo do [ARCKHÉ.AI](https://linnoff88-dev.github.io/arckhe-ai).

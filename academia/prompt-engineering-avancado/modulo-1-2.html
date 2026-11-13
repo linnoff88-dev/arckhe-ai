@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR" class="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M2 — Iteração e Verificação — Prompt Engineering Avançado — ArckhÉ.AI Academy</title>
+<meta name="description" content="Domine a arte da conversa com modelos de linguagem — do prompt robusto ao agente de longa duração.">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { darkMode: 'class', theme: { extend: { colors: {
+  primary: '#818cf8',
+  dark: { 900: '#111827', 800: '#1f2937', 700: '#374151', 600: '#4b5563' }
+} } } };
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+body{font-family:'Inter',sans-serif}
+.dark body{background-color:#0a0e1a;color:#e8ecf7}
+.lesson{scroll-margin-top:80px}
+details summary{cursor:pointer;list-style:none}
+</style>
+</head>
+<body class="dark bg-dark-900 min-h-screen text-slate-200">
+<header class="sticky top-0 z-30 border-b border-white/10 bg-dark-900/95 backdrop-blur">
+<div class="max-w-4xl mx-auto px-5 py-3 flex items-center justify-between">
+<a href="../../index.html" class="text-xs font-bold tracking-widest text-slate-400 hover:text-white">&larr; ARCKHÉ.AI ACADEMY</a>
+<span class="text-xs font-semibold" style="color:#818cf8">Prompt Engineering Avançado</span>
+</div>
+</header>
+<main class="max-w-4xl mx-auto px-5 py-10">
+<div class="text-xs font-bold tracking-widest mb-1" style="color:#818cf8">Prompt Engineering Avançado</div>
+<h1 class="text-3xl md:text-4xl font-extrabold text-white mb-2">M2 — Iteração e Verificação</h1>
+<p class="text-slate-400 mb-8">Domine a arte da conversa com modelos de linguagem — do prompt robusto ao agente de longa duração.</p>
+
+<section class="lesson mb-12" id="a1">
+<h2 class="text-2xl font-bold text-white mb-3">2.1 · Retro do prompt</h2>
+<p class="text-slate-300 leading-relaxed mb-4">Quando a resposta falha, não é 'sorte': é causa. O protocolo: (1) qual era a expectativa concreta? (2) o que a resposta fez que não devia / não fez que devia? (3) qual bloco do CTRFC causou? (4) ajuste UM bloco por vez. Retro de prompt é o 'bug report' da IA: reprodutível e com causa.</p>
+<div class="rounded-xl border border-white/10 bg-dark-800 p-4"><div class="text-xs font-bold tracking-widest mb-1" style="color:#818cf8">PRÇTICA / ENTREGÇVEL</div><p class="text-sm text-slate-300">Monte sua primeira retro: 4 linhas, arquivo de texto. Todo prompt que falhar, passa por ela.</p></div>
+</section>
+<section class="lesson mb-12" id="a2">
+<h2 class="text-2xl font-bold text-white mb-3">2.2 · Auto-crítica em duas passadas</h2>
+<p class="text-slate-300 leading-relaxed mb-4">Padrão 'gerar e auditar': a mesma conversa, duas fases. Fase 1: 'gere X'. Fase 2: 'agora critique X com 3 perguntas incômodas e refaça incorporando as críticas'. Ganhos grandes em código, texto formal e análise. Custo: dobro de token — reserve para o que importa.</p>
+<div class="rounded-xl border border-white/10 bg-dark-800 p-4"><div class="text-xs font-bold tracking-widest mb-1" style="color:#818cf8">PRÇTICA / ENTREGÇVEL</div><p class="text-sm text-slate-300">Use hoje em sua entrega mais importante da semana. Anote onde a auto-crítica pegou o que você não veria.</p></div>
+</section>
+<section class="lesson mb-12" id="a3">
+<h2 class="text-2xl font-bold text-white mb-3">2.3 · Avaliação sem gabarito</h2>
+<p class="text-slate-300 leading-relaxed mb-4">Nem toda saída tem resposta certa. Solução: checklist de aceite escrito ANTES de gerar (fato confere? tom certo? tamanho? o cliente aceita?). Saída boa = passa no checklist, não na sua sensação. Para processos recorrentes, o checklist vira seu 'benchmark' pessoal.</p>
+<div class="rounded-xl border border-white/10 bg-dark-800 p-4"><div class="text-xs font-bold tracking-widest mb-1" style="color:#818cf8">PRÇTICA / ENTREGÇVEL</div><p class="text-sm text-slate-300">Escreva o checklist de aceite da sua tarefa mais repetida. Rode 3 gerações e pontue cada uma.</p></div>
+</section>
+<section class="lesson mb-12" id="a4">
+<h2 class="text-2xl font-bold text-white mb-3">2.4 · Sua biblioteca de prompts</h2>
+<p class="text-slate-300 leading-relaxed mb-4">Prompt sem versionamento morre. Estrutura mínima: nome, propósito, prompt, exemplo de boa saída, o que falhou antes (1 linha). Comece com 10 e discipline-se: prompt novo só entra se substituir um existente. Biblioteca viva de 20 prompts vale mais que 200 rascunhos.</p>
+<div class="rounded-xl border border-white/10 bg-dark-800 p-4"><div class="text-xs font-bold tracking-widest mb-1" style="color:#818cf8">PRÇTICA / ENTREGÇVEL</div><p class="text-sm text-slate-300">Crie a pasta 'banco-de-prompts'. Meta da semana: 5 entradas com os 4 campos.</p></div>
+</section>
+</main><footer class="max-w-4xl mx-auto px-5 py-10 flex flex-wrap gap-3 items-center justify-between border-t border-white/10 text-sm">
+<a href="modulo-1-1.html" class="px-4 py-2 rounded-lg bg-dark-700 hover:bg-dark-600">&larr; Anterior</a>
+<a href="modulo-2-1.html" class="px-4 py-2 rounded-lg bg-primary/20 hover:bg-primary/30 text-primary">Próximo &rarr;</a>
+</footer>
+</body></html>

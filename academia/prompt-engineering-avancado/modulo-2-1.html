@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR" class="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M3 — System prompts e agentes — Prompt Engineering Avançado — ArckhÉ.AI Academy</title>
+<meta name="description" content="Domine a arte da conversa com modelos de linguagem — do prompt robusto ao agente de longa duração.">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { darkMode: 'class', theme: { extend: { colors: {
+  primary: '#818cf8',
+  dark: { 900: '#111827', 800: '#1f2937', 700: '#374151', 600: '#4b5563' }
+} } } };
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+body{font-family:'Inter',sans-serif}
+.dark body{background-color:#0a0e1a;color:#e8ecf7}
+.lesson{scroll-margin-top:80px}
+details summary{cursor:pointer;list-style:none}
+</style>
+</head>
+<body class="dark bg-dark-900 min-h-screen text-slate-200">
+<header class="sticky top-0 z-30 border-b border-white/10 bg-dark-900/95 backdrop-blur">
+<div class="max-w-4xl mx-auto px-5 py-3 flex items-center justify-between">
+<a href="../../index.html" class="text-xs font-bold tracking-widest text-slate-400 hover:text-white">&larr; ARCKHÉ.AI ACADEMY</a>
+<span class="text-xs font-semibold" style="color:#818cf8">Prompt Engineering Avançado</span>
+</div>
+</header>
+<main class="max-w-4xl mx-auto px-5 py-10">
+<div class="text-xs font-bold tracking-widest mb-1" style="color:#818cf8">Prompt Engineering Avançado</div>
+<h1 class="text-3xl md:text-4xl font-extrabold text-white mb-2">M3 — System prompts e agentes</h1>
+<p class="text-slate-400 mb-8">Domine a arte da conversa com modelos de linguagem — do prompt robusto ao agente de longa duração.</p>
+
+<section class="lesson mb-12" id="a1">
+<h2 class="text-2xl font-bold text-white mb-3">3.1 · Chat × Agente</h2>
+<p class="text-slate-300 leading-relaxed mb-4">Chat: você dirige cada resposta. Agente: você define objetivo + ferramentas + limites, e ele executa em loop até o critério de parada. A mudança de mentalidade: de 'falar com' para 'comandar'. Agente bem definido é contrato; mal definido é loteria cara.</p>
+<div class="rounded-xl border border-white/10 bg-dark-800 p-4"><div class="text-xs font-bold tracking-widest mb-1" style="color:#818cf8">PRÇTICA / ENTREGÇVEL</div><p class="text-sm text-slate-300">Identifique 1 tarefa sua que é repetida semanalmente — candidata natural a agente.</p></div>
+</section>
+<section class="lesson mb-12" id="a2">
+<h2 class="text-2xl font-bold text-white mb-3">3.2 · Instruções de sistema</h2>
+<p class="text-slate-300 leading-relaxed mb-4">O esqueleto do system prompt: FUNÇÃO (uma frase), CONTEXTO PERMANENTE (quem atende, o que pode/mexer), FERRAMENTAS (o que ele pode usar), REGRAS (o que NUNCA fazer), EXEMPLOS (2 diálogos-modelo), SAÍDA (formato das respostas). Escreva como manual de onboarding, não como torcedor.</p>
+<div class="rounded-xl border border-white/10 bg-dark-800 p-4"><div class="text-xs font-bold tracking-widest mb-1" style="color:#818cf8">PRÇTICA / ENTREGÇVEL</div><p class="text-sm text-slate-300">Escreva o system prompt de um 'atendente' do seu negócio seguindo os 6 blocos. Teste com 5 perguntas difíceis.</p></div>
+</section>
+<section class="lesson mb-12" id="a3">
+<h2 class="text-2xl font-bold text-white mb-3">3.3 · Memória: guardar e esquecer</h2>
+<p class="text-slate-300 leading-relaxed mb-4">Memória = o que fica entre conversas/execuções. Regra: guarde fato estável e decisão (nome, preferência, 'cliente X não usa Pix'); apague estado volátil. Menos memória = menos custo e menos alucinação cruzada. Comece com um arquivo de notas de 10 linhas — memória é luxo, não prioridade.</p>
+<div class="rounded-xl border border-white/10 bg-dark-800 p-4"><div class="text-xs font-bold tracking-widest mb-1" style="color:#818cf8">PRÇTICA / ENTREGÇVEL</div><p class="text-sm text-slate-300">Liste as 5 informações que um atendente seu precisaria lembrar de cada cliente. Isso é sua spec de memória.</p></div>
+</section>
+<section class="lesson mb-12" id="a4">
+<h2 class="text-2xl font-bold text-white mb-3">3.4 · Guard-rails: custo, permissão, parada</h2>
+<p class="text-slate-300 leading-relaxed mb-4">Três freios obrigatórios: (1) CUSTO — teto de execuções/tokens por tarefa; (2) PERMISSÃO — o que ele pode SEM perguntar (ler, rascunhar) × o que só com OK seu (pagar, publicar, escrever para cliente); (3) PARADA — critério objetivo de 'cheguei' e critério de 'desisti e escalono'. Agente sem freio é acidente caro.</p>
+<div class="rounded-xl border border-white/10 bg-dark-800 p-4"><div class="text-xs font-bold tracking-widest mb-1" style="color:#818cf8">PRÇTICA / ENTREGÇVEL</div><p class="text-sm text-slate-300">Escreva os 3 freios do agente da aula 3.1. Cole no topo do system prompt.</p></div>
+</section>
+</main><footer class="max-w-4xl mx-auto px-5 py-10 flex flex-wrap gap-3 items-center justify-between border-t border-white/10 text-sm">
+<a href="modulo-1-2.html" class="px-4 py-2 rounded-lg bg-dark-700 hover:bg-dark-600">&larr; Anterior</a>
+<a href="modulo-2-2.html" class="px-4 py-2 rounded-lg bg-primary/20 hover:bg-primary/30 text-primary">Próximo &rarr;</a>
+</footer>
+</body></html>

@@ -81,4 +81,4 @@ python3 scripts/junta_sites.py
 
 ## Licença
 
-MIT. Feito pelo [ARCKHÉ.CLUB](https://linnoff88-dev.github.io/arckhe-ai).
+MIT. Feito pelo [ARCKHÉ.AI](https://linnoff88-dev.github.io/arckhe-ai).

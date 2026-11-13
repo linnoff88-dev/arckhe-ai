@@ -41,7 +41,7 @@ O schema v2 inclui:
 - nota geral e quatro notas independentes;
 - evidências aprovadas, alertas e bloqueadores;
 - até 12 correções priorizadas;
-- cursos recomendados no ARCKHÉ.CLUB e ARCKHÉ PRO;
+- cursos recomendados no ARCKHÉ.AI e ARCKHÉ PRO;
 - próximos scanners avançados, identificados como planejados nas fases Builder, Integrator, Agent Developer e Expert;
 - exportação integral em JSON.
 

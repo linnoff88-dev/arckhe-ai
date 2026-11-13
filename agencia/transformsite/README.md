@@ -123,7 +123,7 @@ curl -fsSL https://raw.githubusercontent.com/inematds/transformsite/main/deploy/
 Sobe com Docker Compose: **app + Ollama + Evolution API (WhatsApp) + Caddy (HTTPS automático)**. Detalhes em
 [`deploy/vps/README.md`](deploy/vps/README.md).
 
-## Piloto: ARCKHÉ.CLUB
+## Piloto: ARCKHÉ.AI
 
 A pasta [`pilot/`](pilot/) é o projeto real usado para validar o framework com o site
 [linnoff88-dev.github.io/arckhe-ai](https://www.linnoff88-dev.github.io/arckhe-ai): 386 páginas → 1.512 trechos; com 73 perguntas de teste e LLM local,

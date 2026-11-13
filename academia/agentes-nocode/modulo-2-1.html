@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR" class="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M3 — Memória, Erros e Monitoramento — Crie Agentes de IA com n8n, Make e ChatGPT — ArckhÉ.AI Academy</title>
+<meta name="description" content="Aplicações práticas com ferramentas no-code — do primeiro workflow à orquestração de uma 'equipe' de agentes.">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { darkMode: 'class', theme: { extend: { colors: {
+  primary: '#f472b6',
+  dark: { 900: '#111827', 800: '#1f2937', 700: '#374151', 600: '#4b5563' }
+} } } };
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+body{font-family:'Inter',sans-serif}
+.dark body{background-color:#0a0e1a;color:#e8ecf7}
+.lesson{scroll-margin-top:80px}
+details summary{cursor:pointer;list-style:none}
+</style>
+</head>
+<body class="dark bg-dark-900 min-h-screen text-slate-200">
+<header class="sticky top-0 z-30 border-b border-white/10 bg-dark-900/95 backdrop-blur">
+<div class="max-w-4xl mx-auto px-5 py-3 flex items-center justify-between">
+<a href="../../index.html" class="text-xs font-bold tracking-widest text-slate-400 hover:text-white">&larr; ARCKHÉ.AI ACADEMY</a>
+<span class="text-xs font-semibold" style="color:#f472b6">Crie Agentes de IA com n8n, Make e ChatGPT</span>
+</div>
+</header>
+<main class="max-w-4xl mx-auto px-5 py-10">
+<div class="text-xs font-bold tracking-widest mb-1" style="color:#f472b6">Crie Agentes de IA com n8n, Make e ChatGPT</div>
+<h1 class="text-3xl md:text-4xl font-extrabold text-white mb-2">M3 — Memória, Erros e Monitoramento</h1>
+<p class="text-slate-400 mb-8">Aplicações práticas com ferramentas no-code — do primeiro workflow à orquestração de uma 'equipe' de agentes.</p>
+
+<section class="lesson mb-12" id="a1">
+<h2 class="text-2xl font-bold text-white mb-3">3.1 · Guardando contexto entre execuções</h2>
+<p class="text-slate-300 leading-relaxed mb-4">O agente 'esquecido' repete erro. Padrão: uma planilha/base simples de MEMÓRIA: (contexto do assunto, última ação, resultado, aprendizado). Cada execução: lê → age → atualiza. Para atende-leads: 'cliente X já respondeu 2x sobre preço, próximo toque em 5 dias'. É o que transforma script em relacionamento.</p>
+<div class="rounded-xl border border-white/10 bg-dark-800 p-4"><div class="text-xs font-bold tracking-widest mb-1" style="color:#f472b6">PRÇTICA / ENTREGÇVEL</div><p class="text-sm text-slate-300">Crie a memória mínima (mesmo 4 colunas) do seu agente principal.</p></div>
+</section>
+<section class="lesson mb-12" id="a2">
+<h2 class="text-2xl font-bold text-white mb-3">3.2 · Tratando erro sem quebrar a fila</h2>
+<p class="text-slate-300 leading-relaxed mb-4">3 regras: (1) RETRY com espera (erro de API: tente 3× em 1 min); (2) MORTA QUEUE (3 falhas → para ali, alerta, não trava o resto); (3) TODO SEMPRE LOGADO (o que entrou, o que saiu, o que falhou e por quê). Agente que falha em silêncio é o pior tipo: você descobre com o cliente bravo.</p>
+<div class="rounded-xl border border-white/10 bg-dark-800 p-4"><div class="text-xs font-bold tracking-widest mb-1" style="color:#f472b6">PRÇTICA / ENTREGÇVEL</div><p class="text-sm text-slate-300">Adicione log (1 linha por execução) + alerta de 3 falhas ao seu workflow.</p></div>
+</section>
+<section class="lesson mb-12" id="a3">
+<h2 class="text-2xl font-bold text-white mb-3">3.3 · Saber quando está falhando</h2>
+<p class="text-slate-300 leading-relaxed mb-4">Monitoramento no-code = 3 perguntas semanais: (1) quantas execuções? (esperado vs. real — silêncio pode ser a falha); (2) quantas caíram na dead queue?; (3) a qualidade saiu? (amostra 5 saídas, confere). 10 min/sesta no seu dashboard de automação. A 'retro semanal do agente' é o pilar de orquestração da Arckhé em microescala.</p>
+<div class="rounded-xl border border-white/10 bg-dark-800 p-4"><div class="text-xs font-bold tracking-widest mb-1" style="color:#f472b6">PRÇTICA / ENTREGÇVEL</div><p class="text-sm text-slate-300">Agende o ritual: sexta 10 min, 3 perguntas, 1 ajuste.</p></div>
+</section>
+</main><footer class="max-w-4xl mx-auto px-5 py-10 flex flex-wrap gap-3 items-center justify-between border-t border-white/10 text-sm">
+<a href="modulo-1-2.html" class="px-4 py-2 rounded-lg bg-dark-700 hover:bg-dark-600">&larr; Anterior</a>
+<a href="modulo-2-2.html" class="px-4 py-2 rounded-lg bg-primary/20 hover:bg-primary/30 text-primary">Próximo &rarr;</a>
+</footer>
+</body></html>

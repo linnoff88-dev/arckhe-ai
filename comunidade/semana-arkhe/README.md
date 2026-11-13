@@ -120,4 +120,4 @@ python3 semana.py gerar    --de 2026-11-01 --ate 2026-11-08 --saida exemplos
 
 ## Licença
 
-MIT. Feito pelo [ARCKHÉ.CLUB](https://linnoff88-dev.github.io/arckhe-ai).
+MIT. Feito pelo [ARCKHÉ.AI](https://linnoff88-dev.github.io/arckhe-ai).

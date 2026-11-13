@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR" class="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M2 — Seu primeiro workflow — Crie Agentes de IA com n8n, Make e ChatGPT — ArckhÉ.AI Academy</title>
+<meta name="description" content="Aplicações práticas com ferramentas no-code — do primeiro workflow à orquestração de uma 'equipe' de agentes.">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { darkMode: 'class', theme: { extend: { colors: {
+  primary: '#f472b6',
+  dark: { 900: '#111827', 800: '#1f2937', 700: '#374151', 600: '#4b5563' }
+} } } };
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+body{font-family:'Inter',sans-serif}
+.dark body{background-color:#0a0e1a;color:#e8ecf7}
+.lesson{scroll-margin-top:80px}
+details summary{cursor:pointer;list-style:none}
+</style>
+</head>
+<body class="dark bg-dark-900 min-h-screen text-slate-200">
+<header class="sticky top-0 z-30 border-b border-white/10 bg-dark-900/95 backdrop-blur">
+<div class="max-w-4xl mx-auto px-5 py-3 flex items-center justify-between">
+<a href="../../index.html" class="text-xs font-bold tracking-widest text-slate-400 hover:text-white">&larr; ARCKHÉ.AI ACADEMY</a>
+<span class="text-xs font-semibold" style="color:#f472b6">Crie Agentes de IA com n8n, Make e ChatGPT</span>
+</div>
+</header>
+<main class="max-w-4xl mx-auto px-5 py-10">
+<div class="text-xs font-bold tracking-widest mb-1" style="color:#f472b6">Crie Agentes de IA com n8n, Make e ChatGPT</div>
+<h1 class="text-3xl md:text-4xl font-extrabold text-white mb-2">M2 — Seu primeiro workflow</h1>
+<p class="text-slate-400 mb-8">Aplicações práticas com ferramentas no-code — do primeiro workflow à orquestração de uma 'equipe' de agentes.</p>
+
+<section class="lesson mb-12" id="a1">
+<h2 class="text-2xl font-bold text-white mb-3">2.1 · Gatilho, ação e nó de IA</h2>
+<p class="text-slate-300 leading-relaxed mb-4">Todo bloco tem 3 peças: GATILHO (o que dispara: cron, webhook, formulário), AÇÃO (o que sai: e-mail, mensagem, linha na planilha) e entre eles, o nó de IA (transforma, decide, escreve). Desenhe sempre na ordem gatilho → IA → ação. O erro iniciante é começar pela ação ('e-mail bonito') sem gatilho claro ('quando?').</p>
+<div class="rounded-xl border border-white/10 bg-dark-800 p-4"><div class="text-xs font-bold tracking-widest mb-1" style="color:#f472b6">PRÇTICA / ENTREGÇVEL</div><p class="text-sm text-slate-300">Esboce no papel: gatilho, IA (o que ela decide/escreve), ação, para a automação da aula anterior.</p></div>
+</section>
+<section class="lesson mb-12" id="a2">
+<h2 class="text-2xl font-bold text-white mb-3">2.2 · Caso real: e-mail → resumo no Telegram</h2>
+<p class="text-slate-300 leading-relaxed mb-4">Gatilho: a cada 2h checa a caixa. IA: resume os N e-mails não-lidos em 5 linhas, classifica (urgente/informal). Ação: mensagem no Telegram no fim do dia. Detalhe que faz o sistema: e-mail urgente → mensagem imediata; resto → digest das 19h. Construa em 45 min no n8n (ou Make).</p>
+<div class="rounded-xl border border-white/10 bg-dark-800 p-4"><div class="text-xs font-bold tracking-widest mb-1" style="color:#f472b6">PRÇTICA / ENTREGÇVEL</div><p class="text-sm text-slate-300">Entregável: o digest funcionando. Teste com 3 dias de caixa real.</p></div>
+</section>
+<section class="lesson mb-12" id="a3">
+<h2 class="text-2xl font-bold text-white mb-3">2.3 · Caso real: lead → qualificação automática</h2>
+<p class="text-slate-300 leading-relaxed mb-4">Gatilho: formulário preenchido. IA recebe (nome, empresa, mensagem) e responde JSON: {temperatura: quente|morno|frio, motivo: 1 linha, pergunta-seguinte: '...'}. Ação: quente → notifica você na hora + e-mail de agendamento automático; morno → entra em sequência de nutrição; frio → agradecimento + lista de conteúdo. O lead nunca espera; você só lida com o quente.</p>
+<div class="rounded-xl border border-white/10 bg-dark-800 p-4"><div class="text-xs font-bold tracking-widest mb-1" style="color:#f472b6">PRÇTICA / ENTREGÇVEL</div><p class="text-sm text-slate-300">Entregável: o JSON de qualificação + as 3 ações. Simule com 3 leads fictícios.</p></div>
+</section>
+<section class="lesson mb-12" id="a4">
+<h2 class="text-2xl font-bold text-white mb-3">2.4 · Testar sem disparar</h2>
+<p class="text-slate-300 leading-relaxed mb-4">O 'sandbox' do no-code: (1) rode com dados fictícios antes de ligar o gatilho real; (2) aponte a ação para SI (o e-mail/Telegram de teste é o seu); (3) desative a etapa que não dá para desfazer (pagamento, publicação) até o teste final; (4) rode 10 casos: 3 normais, 3 vazios, 2 quebrados, 2 bobos. Sistema que passa nos 4 últimos, passa em produção.</p>
+<div class="rounded-xl border border-white/10 bg-dark-800 p-4"><div class="text-xs font-bold tracking-widest mb-1" style="color:#f472b6">PRÇTICA / ENTREGÇVEL</div><p class="text-sm text-slate-300">Checklist dos 10 casos aplicado ao seu workflow. Só aí liga o gatilho.</p></div>
+</section>
+</main><footer class="max-w-4xl mx-auto px-5 py-10 flex flex-wrap gap-3 items-center justify-between border-t border-white/10 text-sm">
+<a href="modulo-1-1.html" class="px-4 py-2 rounded-lg bg-dark-700 hover:bg-dark-600">&larr; Anterior</a>
+<a href="modulo-2-1.html" class="px-4 py-2 rounded-lg bg-primary/20 hover:bg-primary/30 text-primary">Próximo &rarr;</a>
+</footer>
+</body></html>

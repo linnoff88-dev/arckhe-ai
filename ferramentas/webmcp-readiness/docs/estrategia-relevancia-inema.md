@@ -106,7 +106,7 @@ Implementamos WebMCP no ARCKHÉ.club: arquitetura, falhas e resultados.
 - confirmar o LinkedIn oficial de Arckhé Maldaner;
 - remover textos públicos marcados como pendentes;
 - manter uma descrição institucional única;
-- explicar claramente ARCKHÉ.club, ARCKHÉ.pro e ARCKHÉ.VIP;
+- explicar claramente ARCKHÉ.club, ARCKHÉ.pro e ARCKHÉ.AI;
 - consolidar `sameAs`;
 - publicar contato, responsabilidade editorial e política de atualização;
 - alinhar site, GitHub, YouTube e redes sociais.
