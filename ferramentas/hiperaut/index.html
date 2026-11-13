@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="pt-BR" class="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculadora de Hiperautomação — Arckhé AI Tools</title>
+<meta name="description" content="Descubra quanto o seu negócio deixa na mesa: calcule o potencial de hiperautomação (R$/mês), o ROI de 90 dias e os agentes recomendados. Arckhé AI Tools.">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { darkMode: 'class', theme: { extend: { colors: {
+  primary: '#34d399',
+  dark: { 900: '#0a0e1a', 800: '#0f1526', 700: '#1e293b', 600: '#334155' }
+} } } };
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>body{font-family:'Inter',sans-serif}.dark body{background-color:#0a0e1a;color:#e8ecf7}</style>
+</head>
+<body class="dark bg-dark-900 min-h-screen">
+<header class="sticky top-0 z-30 border-b border-white/10 bg-dark-900/95 backdrop-blur">
+<div class="max-w-5xl mx-auto px-5 py-3 flex items-center justify-between">
+<a href="../../index.html" class="text-xs font-bold tracking-widest text-slate-400 hover:text-white">&larr; ARCKHÉ.AI</a>
+<span class="text-xs font-semibold text-primary">ARCKHÉ AI TOOLS — CALCULADORA DE HIPERAUTOMAÇÃO</span>
+</div>
+</header>
+
+<main class="max-w-5xl mx-auto px-5 py-12">
+<h1 class="text-4xl md:text-5xl font-extrabold text-white mb-3">Quanto seu negócio deixa na mesa?</h1>
+<p class="text-slate-400 text-lg max-w-2xl mb-10">Calcule o potencial de hiperautomação da sua operação: R$/mês recuperáveis, ROI em 90 dias e os agentes recomendados. 100% no seu navegador — nada sai da página.</p>
+
+<div class="grid md:grid-cols-5 gap-6">
+<section class="md:col-span-2 rounded-xl border border-white/10 bg-dark-800 p-5 h-fit">
+  <div class="text-xs font-bold tracking-widest text-primary mb-3">1 · SUA OPERAÇÃO</div>
+  <div class="space-y-3 text-sm">
+    <div><label class="text-xs font-bold tracking-widest text-slate-400">FATURAMENTO MENSAL (R$)</label><input id="i-fat" type="number" value="80000" class="mt-1 w-full rounded-lg bg-dark-700 border border-white/10 px-3 py-2"></div>
+    <div><label class="text-xs font-bold tracking-widest text-slate-400">PESSOAS NA EQUIPE</label><input id="i-pessoas" type="number" value="4" class="mt-1 w-full rounded-lg bg-dark-700 border border-white/10 px-3 py-2"></div>
+    <div><label class="text-xs font-bold tracking-widest text-slate-400">CUSTO MENSAL POR PESSOA (R$, c/ encargos)</label><input id="i-custo" type="number" value="6000" class="mt-1 w-full rounded-lg bg-dark-700 border border-white/10 px-3 py-2"></div>
+  </div>
+  <div class="text-xs font-bold tracking-widest text-primary mt-6 mb-3">2 · TAREFAS REPETIDAS</div>
+  <div id="tasks" class="space-y-3"></div>
+  <button onclick="addTask()" class="mt-3 w-full rounded-lg border border-dashed border-white/20 py-2 text-xs text-slate-400 hover:border-primary/60 hover:text-primary">+ Adicionar tarefa</button>
+</section>
+
+<section class="md:col-span-3 space-y-5">
+  <button onclick="calc()" class="w-full rounded-xl bg-primary text-dark-900 font-extrabold py-4 text-lg hover:opacity-90">CALCULAR POTENCIAL &rarr;</button>
+  <div id="out" class="rounded-xl border border-white/10 bg-dark-800 p-6 text-sm text-slate-400">Preencha os dados e clique em calcular. O resultado aparece aqui: economia mensal, ROI e agentes recomendados.</div>
+</section>
+</div>
+
+<section class="mt-14">
+<h2 class="text-2xl font-bold text-white mb-2">Por que 'hiperautomação'?</h2>
+<p class="text-slate-400 text-sm max-w-3xl">Hiperautomação (o termo do ecossistema Arckhé) é automatizar o máximo de processos com IA + agentes, mantendo o humano no 20% de decisão. A calculadora usa a régua conservadora do <a class="text-primary" href="../consultoria/kit-empresa-ia/">Kit Empresa de IA</a>: cada tarefa libera apenas o percentual que um agente realista assume (70–90%), descontado o custo da plataforma. O número que sai é o <em>piso</em> da sua economia — não o teto.</p>
+</section>
+
+<footer class="mt-14 pt-6 border-t border-white/10 text-sm text-slate-500">
+Arckhé AI Tools — O Ecossistema de IA para o Futuro Inteligente ·
+A versão completa (dashboard, relatórios recorrentes e agentes prontos) estará nos planos pagos da Arckhé AI.
+</footer>
+</main>
+
+<script>
+const CATS = {
+  conteudo: "Agente de Conteúdo (radar + fábrica de peças)",
+  atendimento: "Agente de Atendimento (canal + escala humana)",
+  vendas: "Agente de Vendas (qualificação + follow-up)",
+  financeiro: "Agente Financeiro (faturas + conciliação)",
+  dados: "Agente de Relatórios (dashboard + alertas)",
+  rh: "Agente de RH (triagem + screening)",
+  outro: "Automação sob medida (n8n/Make)"
+};
+let tid = 0;
+function addTask(t) {
+  t = t || { nome: "", min: 60, dias: 5, pct: 80, cat: "conteudo" };
+  const el = document.createElement("div");
+  el.className = "task rounded-lg border border-white/10 bg-dark-700 p-3";
+  el.innerHTML = `
+  <div class="grid grid-cols-2 gap-2 text-xs">
+    <input class="t-nome rounded bg-dark-800 border border-white/10 px-2 py-1.5 col-span-2" placeholder="Tarefa (ex.: responder e-mail)" value="${t.nome}">
+    <input class="t-min rounded bg-dark-800 border border-white/10 px-2 py-1.5" type="number" placeholder="Minutos/dia" value="${t.min}">
+    <input class="t-dias rounded bg-dark-800 border border-white/10 px-2 py-1.5" type="number" placeholder="Dias/semana" value="${t.dias}">
+    <input class="t-pct rounded bg-dark-800 border border-white/10 px-2 py-1.5" type="number" min="0" max="100" placeholder="% que agente faz" value="${t.pct}">
+    <select class="t-cat rounded bg-dark-800 border border-white/10 px-2 py-1.5">${Object.keys(CATS).map(c => `<option value="${c}" ${c===t.cat?"selected":""}>${c}</option>`).join("")}</select>
+  </div>
+  <button class="t-del text-[10px] text-slate-500 hover:text-red-400 mt-1" type="button">remover</button>`;
+  el.querySelector(".t-del").onclick = () => el.remove();
+  document.getElementById("tasks").appendChild(el);
+}
+addTask({ nome: "Responder e-mail/whatsapp", min: 90, dias: 5, pct: 80, cat: "atendimento" });
+addTask({ nome: "Postar conteúdo", min: 60, dias: 5, pct: 80, cat: "conteudo" });
+addTask({ nome: "Atualizar planilhas/relatórios", min: 45, dias: 5, pct: 75, cat: "dados" });
+
+function calc() {
+  const g = id => parseFloat(document.getElementById(id).value) || 0;
+  const pessoas = g("i-pessoas"), custo = g("i-custo");
+  const custoHora = (pessoas * custo) / 160;
+  let liberado = 0; const catScore = {};
+  document.querySelectorAll(".task").forEach(el => {
+    const min = parseFloat(el.querySelector(".t-min").value) || 0;
+    const dias = parseFloat(el.querySelector(".t-dias").value) || 0;
+    const pct = Math.min(100, Math.max(0, parseFloat(el.querySelector(".t-pct").value) || 0)) / 100;
+    const cat = el.querySelector(".t-cat").value;
+    const horasMes = (min/60) * dias * 4.33;
+    liberado += horasMes * pct;
+    catScore[cat] = (catScore[cat] || 0) + horasMes * pct;
+  });
+  const plat = 200 + 50 * Math.max(1, Object.keys(catScore).length);
+  const economia = Math.max(0, liberado * custoHora - plat);
+  const invest90 = plat * 3 + 6 * custoHora;
+  const roi90 = invest90 > 0 ? Math.round((economia * 3 / invest90) * 100) : 0;
+  const top = Object.entries(catScore).sort((a,b) => b[1]-a[1]).slice(0,3)
+    .map(([c, h]) => `<li><strong class="text-white">${CATS[c]}</strong> — libera ~${Math.round(h)}h/mês</li>`).join("");
+  const out = document.getElementById("out");
+  const resumo = `CALCULO ARCKHÉ — Hiper-automação\nEconomia: R$ ${Math.round(economia).toLocaleString('pt-BR')}/mês (R$ ${Math.round(economia*12).toLocaleString('pt-BR')}/ano)\nROI 90 dias: ${roi90}%\nAgentes: ${Object.keys(catScore).map(c=>CATS[c]).join("; ")}`;
+  out.innerHTML = `
+  <div class="text-xs font-bold tracking-widest text-primary mb-3">RESULTADO</div>
+  <div class="grid grid-cols-3 gap-3 text-center mb-5">
+    <div class="rounded-lg bg-dark-700 p-4"><div class="text-2xl font-extrabold text-white">${liberado.toFixed(1)}h</div><div class="text-[11px] text-slate-500">liberadas/mês</div></div>
+    <div class="rounded-lg bg-primary/20 p-4"><div class="text-2xl font-extrabold text-primary">R$ ${Math.round(economia).toLocaleString('pt-BR')}</div><div class="text-[11px] text-primary/70">economia/mês (piso)</div></div>
+    <div class="rounded-lg bg-dark-700 p-4"><div class="text-2xl font-extrabold text-white">${roi90}%</div><div class="text-[11px] text-slate-500">ROI em 90 dias</div></div>
+  </div>
+  <div class="mb-4"><div class="text-xs font-bold tracking-widest text-slate-400 mb-2">AGENTES RECOMENDADOS</div><ul class="space-y-1.5 text-sm text-slate-300 list-disc pl-5">${top || "<li>Adicione tarefas para ver a recomendação</li>"}</ul></div>
+  <div class="text-xs text-slate-500 mb-4">Premissas: custo/hora = ${(custoHora).toFixed(2)} R$ (equipe total ÷ 160h) · plataforma estimada R$ ${plat}/mês · porcentagem de absorção por tarefa informada por você.</div>
+  <button onclick="navigator.clipboard.writeText('${resumo.replace(/'/g, "\\'")}').then(()=>alert('Resumo copiado! Cole na proposta.'))" class="rounded-lg bg-primary/20 text-primary text-xs font-bold px-4 py-2 hover:bg-primary/30">COPIAR RESUMO PARA A PROPOSTA</button>`;
+}
+</script>
+</body>
+</html>
