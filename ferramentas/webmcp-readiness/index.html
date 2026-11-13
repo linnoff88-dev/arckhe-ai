@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Analise passivamente a prontidão WebMCP de um site e obtenha evidências e recomendações.">
+  <meta name="arckhe-course" content="webmcp-zero-expert">
+  <link rel="describedby" href="/llms.txt" type="text/plain">
+  <link rel="alternate" href="/arckhe.json" type="application/json" title="Arckhé discovery">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <script>
+    (function () {
+      try {
+        var p = JSON.parse(localStorage.getItem('arckhe.prefs') || '{}');
+        var d = document.documentElement;
+        var dark = p.theme ? p.theme !== 'claro' : (localStorage.getItem('theme') !== 'light');
+        if (dark) d.classList.add('dark'); else d.classList.remove('dark');
+        if (p.theme && p.theme !== 'arckhe-dark' && p.theme !== 'claro') d.setAttribute('data-theme', p.theme);
+        if (p.fontScale) d.style.setProperty('--fs-root', p.fontScale + '%');
+      } catch (e) { document.documentElement.classList.add('dark'); }
+    })();
+  </script>
+  <link rel="canonical" href="https://linnoff88-dev.github.io/arckhe-ai/ferramentas/webmcp-readiness/">
+  <meta name="author" content="ARCKHÉ.AI">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="WebMCP Readiness | Diagnóstico de sites">
+  <meta property="og:description" content="Analise passivamente a prontidão WebMCP, SEO, GEO e AEO de um site e obtenha evidências e recomendações.">
+  <meta property="og:url" content="https://linnoff88-dev.github.io/arckhe-ai/ferramentas/webmcp-readiness/">
+  <meta property="og:image" content="https://linnoff88-dev.github.io/arckhe-ai/ferramentas/webmcp-readiness/favicon.svg">
+  <meta property="og:locale" content="pt_BR">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[
+    {"@type":"WebSite","@id":"https://linnoff88-dev.github.io/arckhe-ai/ferramentas/webmcp-readiness/#website","url":"https://linnoff88-dev.github.io/arckhe-ai/ferramentas/webmcp-readiness/","name":"WebMCP Readiness","inLanguage":"pt-BR","publisher":{"@id":"https://www.linnoff88-dev.github.io/arckhe-ai/#organization"}},
+    {"@type":"Organization","@id":"https://www.linnoff88-dev.github.io/arckhe-ai/#organization","name":"ARCKHÉ.AI","url":"https://www.linnoff88-dev.github.io/arckhe-ai/"},
+    {"@type":"SoftwareApplication","name":"WebMCP Readiness","applicationCategory":"DeveloperApplication","operatingSystem":"Web","url":"https://linnoff88-dev.github.io/arckhe-ai/ferramentas/webmcp-readiness/","description":"Scanner passivo de prontidão WebMCP, SEO, GEO e AEO para sites públicos.","author":{"@id":"https://www.linnoff88-dev.github.io/arckhe-ai/#organization"},"dateModified":"2026-09-19"}
+  ]}
+  </script>
+  <title>WebMCP Readiness | Diagnóstico de sites</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: { colors: { primary: '#FACC15', dark: { 900: '#111827', 800: '#1f2937', 700: '#374151', 600: '#4b5563' } } } }
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/site.css">
+  <link rel="stylesheet" href="./assets/learn.css">
+  <script type="application/json" data-arckhe-manifest>
+  {
+    "course": "webmcp-zero-expert",
+    "tracks": [
+      { "n": "1", "title": "WebMCP Builder", "modules": [
+        { "id": "1-1", "title": "WebMCP, MCP e Web agêntica", "topics": 6, "href": "https://https://github.com/arckhetds/webmcp-2-builder/" },
+        { "id": "1-2", "title": "Ambiente de desenvolvimento", "topics": 6, "href": "https://https://github.com/arckhetds/webmcp-2-builder/" },
+        { "id": "1-3", "title": "API declarativa", "topics": 6, "href": "https://https://github.com/arckhetds/webmcp-2-builder/" },
+        { "id": "1-4", "title": "API imperativa", "topics": 6, "href": "https://https://github.com/arckhetds/webmcp-2-builder/" }
+      ]},
+      { "n": "2", "title": "WebMCP Integrator", "modules": [
+        { "id": "2-5", "title": "Boas ferramentas", "topics": 6, "href": "https://https://github.com/arckhetds/webmcp-3-integrator/" },
+        { "id": "2-6", "title": "Estado, erros e recuperação", "topics": 6, "href": "https://https://github.com/arckhetds/webmcp-3-integrator/" },
+        { "id": "2-7", "title": "Sites existentes", "topics": 6, "href": "https://https://github.com/arckhetds/webmcp-3-integrator/" },
+        { "id": "2-8", "title": "Frameworks modernos", "topics": 6, "href": "https://https://github.com/arckhetds/webmcp-3-integrator/" }
+      ]},
+      { "n": "3", "title": "WebMCP Agent Developer", "modules": [
+        { "id": "3-9", "title": "Descoberta de ferramentas", "topics": 6, "href": "https://https://github.com/arckhetds/webmcp-4-agent-developer/" },
+        { "id": "3-10", "title": "Execução de ferramentas", "topics": 6, "href": "https://https://github.com/arckhetds/webmcp-4-agent-developer/" },
+        { "id": "3-11", "title": "Cross-origin e permissões", "topics": 6, "href": "https://https://github.com/arckhetds/webmcp-4-agent-developer/" },
+        { "id": "3-12", "title": "Loop conversacional", "topics": 6, "href": "https://https://github.com/arckhetds/webmcp-4-agent-developer/" }
+      ]},
+      { "n": "4", "title": "WebMCP Expert", "modules": [
+        { "id": "4-13", "title": "Segurança", "topics": 6, "href": "https://https://github.com/arckhetds/webmcp-5-expert/" },
+        { "id": "4-14", "title": "WebMCP, backend e MCP", "topics": 6, "href": "https://https://github.com/arckhetds/webmcp-5-expert/" },
+        { "id": "4-15", "title": "Evals e observabilidade", "topics": 6, "href": "https://https://github.com/arckhetds/webmcp-5-expert/" },
+        { "id": "4-16", "title": "Produção e governança", "topics": 6, "href": "https://https://github.com/arckhetds/webmcp-5-expert/" }
+      ]}
+    ]
+  }
+  </script>
+</head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen">
+  <!--
+  THESIS: O diagnóstico é uma bancada de evidências, não um formulário promocional nem um placar decorativo.
+  OWN-WORLD: Dark Arckhé com superfícies técnicas, âmbar para decisões e ciano para leitura operacional.
+  STORY: O usuário informa a URL, acompanha a análise passiva, entende bloqueadores e exporta o relatório.
+  FIRST VIEWPORT: Contexto e formulário à esquerda; estado do diagnóstico à direita, visível antes do scroll.
+  FORM: Ferramenta operacional dentro do mundo vinculante formato-curso-v2; seed key: pinned-arckhe-v2.
+  FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+  -->
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+  <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600" aria-label="Navegação principal">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center min-h-16 gap-4">
+        <div class="flex items-center gap-4 min-w-0">
+          <a href="./" aria-label="WebMCP Readiness — início" class="flex items-center gap-2 text-yellow-400 hover:text-yellow-300 flex-shrink-0">
+            <svg class="w-7 h-7" viewBox="0 0 28 28" fill="none" aria-hidden="true"><path d="M5 7.5h8l3 3h7v10H5z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="9" cy="15.5" r="1.5" fill="currentColor"/><circle cx="19" cy="15.5" r="1.5" fill="#38bdf8"/><path d="M10.5 15.5h7" stroke="currentColor" stroke-width="1.5"/></svg>
+            <span class="font-bold sm:hidden">WM</span>
+            <span class="font-bold hidden sm:inline lg:inline">WebMCP Readiness</span>
+          </a>
+          <span class="text-neutral-600 hidden sm:inline">|</span>
+          <a href="https://linnoff88-dev.github.io/arckhe-ai" target="_blank" rel="noreferrer" class="text-sky-400 hover:text-sky-300 text-sm font-medium hidden sm:inline">ARCKHÉ.AI</a>
+        </div>
+        <div class="flex items-center gap-1 sm:gap-2">
+          <div class="hidden lg:flex items-center gap-1">
+            <a href="https://https://github.com/arckhetds/webmcp-1-formacao/#builder" class="px-3 py-2 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400">Builder</a>
+            <a href="https://https://github.com/arckhetds/webmcp-1-formacao/#integrator" class="px-3 py-2 rounded-lg text-sm font-semibold text-neutral-400 hover:text-blue-400">Integrator</a>
+            <a href="https://https://github.com/arckhetds/webmcp-1-formacao/#agent-developer" class="px-3 py-2 rounded-lg text-sm font-semibold text-neutral-400 hover:text-purple-400">Agent</a>
+            <a href="https://https://github.com/arckhetds/webmcp-1-formacao/#expert" class="px-3 py-2 rounded-lg text-sm font-semibold text-neutral-400 hover:text-amber-400">Expert</a>
+          </div>
+          <a href="index.html" class="hidden md:inline-flex px-3 py-2 rounded-lg text-sm font-semibold text-sky-400 bg-sky-500/10">Readiness</a>
+          <button type="button" data-arckhe-journey-open class="p-2 rounded-lg text-neutral-300 hover:text-neutral-100" aria-label="Abrir minha jornada">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 19V8m6 11V4m6 15v-7m4 7H2"/></svg>
+            <span data-arckhe-journey-badge class="arckhe-journey-badge" data-count="0"></span>
+          </button>
+          <div class="relative">
+            <button type="button" data-arckhe-appearance-toggle="[data-arckhe-appearance]" aria-expanded="false" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600" aria-label="Ajustar aparência"><svg class="w-5 h-5 text-neutral-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z"/></svg></button>
+            <div data-arckhe-appearance class="arckhe-appearance-pop right-0 mt-3"><p class="text-sm font-semibold mb-2">Tema</p><div class="arckhe-segment"><button data-arckhe-set-theme="arckhe-dark">Escuro</button><button data-arckhe-set-theme="claro">Claro</button><button data-arckhe-set-theme="sepia">Sépia</button><button data-arckhe-set-theme="foco">Foco</button><button data-arckhe-set-theme="contraste">Contraste</button></div><p class="text-sm font-semibold mt-4 mb-2">Tamanho</p><div class="arckhe-segment"><button data-arckhe-set-fontscale="100">A</button><button data-arckhe-set-fontscale="112">A+</button><button data-arckhe-set-fontscale="125">A++</button></div></div>
+          </div>
+          <button id="theme-toggle" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600" aria-label="Alternar tema claro e escuro"><svg id="theme-toggle-dark-icon" class="hidden w-5 h-5 text-neutral-300" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg><svg id="theme-toggle-light-icon" class="hidden w-5 h-5 text-neutral-300" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm3 1h-1a1 1 0 110-2h1a1 1 0 110 2z"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main id="conteudo" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
+    <nav aria-label="Breadcrumb" class="text-sm text-neutral-400 mb-8"><a href="https://https://github.com/arckhetds/webmcp-1-formacao/" class="hover:text-sky-400">Formação WebMCP</a><span class="mx-2">/</span><span class="text-sky-400">Diagnóstico independente</span></nav>
+
+    <section id="scanner-layout" class="grid lg:grid-cols-[0.82fr_1.18fr] gap-10 lg:gap-14 items-start">
+      <div class="lg:col-start-1 lg:row-start-1">
+        <h1 class="text-4xl sm:text-5xl font-extrabold tracking-[-0.035em] leading-[1.04]">Descubra se seu site está pronto para buscas e agentes.</h1>
+        <p class="text-lg text-neutral-300 mt-6 leading-relaxed">Um scan rápido reúne evidências de WebMCP, SEO, GEO e AEO, prioriza correções e indica como aprofundar o diagnóstico. Nenhuma ferramenta do site é executada.</p>
+
+        <form id="readiness-form" class="mt-9" toolname="analisar_prontidao_webmcp" tooldescription="Analisa passivamente uma URL e gera um relatório de prontidão WebMCP sem executar ferramentas do site." toolautosubmit>
+          <label for="site-url" class="block text-sm font-semibold mb-2">URL do site</label>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <input id="site-url" name="url" type="url" inputmode="url" required placeholder="https://seu-site.com" toolparamdescription="URL HTTP ou HTTPS do site que será analisado passivamente." class="min-w-0 flex-1 px-4 py-3.5 rounded-xl bg-dark-800 border border-dark-600 text-neutral-100 placeholder:text-neutral-400 focus:border-sky-500 focus:outline-none">
+            <button id="readiness-submit" type="submit" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-primary text-gray-950 font-bold hover:bg-yellow-300 disabled:opacity-60 disabled:cursor-not-allowed">
+              Analisar site
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+          </div>
+          <p class="text-sm text-neutral-400 mt-3">Analisa a página informada e consulta robots.txt, sitemap.xml e llms.txt. Redes privadas ficam bloqueadas.</p>
+
+          <fieldset class="mt-8">
+            <legend class="text-sm font-semibold">Prefere começar com um exemplo?</legend>
+            <p class="text-sm text-neutral-400 mt-1">Compare sinais diferentes em sites públicos. O resultado é calculado ao vivo e pode mudar conforme cada site evolui.</p>
+            <div class="example-list mt-4" data-example-list>
+              <button type="button" class="example-site" data-example-url="https://scan.okxo.de/" aria-label="Analisar o exemplo OpenCloud Security Scanner">
+                <span class="example-site-copy">
+                  <strong>OpenCloud Security Scanner</strong>
+                  <span>Tools declarativas e estrutura forte de SEO e GEO.</span>
+                </span>
+                <span class="example-site-action"><span>Referência forte</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></span>
+              </button>
+              <button type="button" class="example-site" data-example-url="https://upgradedev.github.io/claimready/" aria-label="Analisar o exemplo ClaimReady">
+                <span class="example-site-copy">
+                  <strong>ClaimReady</strong>
+                  <span>Formulário que expõe uma tool WebMCP declarativa.</span>
+                </span>
+                <span class="example-site-action"><span>WebMCP visível</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></span>
+              </button>
+              <button type="button" class="example-site" data-example-url="https://openai.com/" aria-label="Analisar o exemplo OpenAI">
+                <span class="example-site-copy">
+                  <strong>OpenAI</strong>
+                  <span>Compare um site conhecido sem tools observáveis no scan.</span>
+                </span>
+                <span class="example-site-action"><span>Contraste</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></span>
+              </button>
+            </div>
+          </fieldset>
+        </form>
+
+      </div>
+
+      <div id="readiness-shell" class="lg:col-start-2 lg:row-span-2 min-h-[520px] rounded-2xl border border-dark-600 bg-dark-800 overflow-hidden">
+        <div class="flex items-center justify-between px-5 py-4 border-b border-dark-600"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-sky-400"></span><span class="font-semibold">Relatório de prontidão</span></div><span class="text-xs text-neutral-400">modo passivo</span></div>
+
+        <div id="readiness-empty" class="p-8 sm:p-12 min-h-[450px] flex flex-col justify-center">
+          <div class="rounded-2xl border border-sky-500/30 bg-dark-900/40 p-3 sm:p-4 overflow-hidden mb-8">
+            <svg viewBox="0 0 760 270" class="w-full h-auto" role="img" aria-label="O scanner recebe uma URL, avalia WebMCP, SEO, GEO e AEO e produz um relatório com correções">
+              <defs><marker id="ready-arrow" markerWidth="8" markerHeight="8" refX="6.5" refY="4" orient="auto"><path d="M0 0 8 4 0 8 2 4Z" fill="#38bdf8"/></marker></defs>
+              <path d="M195 135h95M470 135h95" stroke="#38bdf8" stroke-width="1.8" opacity=".55" marker-end="url(#ready-arrow)"/>
+              <rect x="25" y="88" width="170" height="94" rx="15" fill="#1f1604" stroke="#facc15" stroke-width="2"/><text x="110" y="126" text-anchor="middle" fill="#facc15" font-family="Inter,sans-serif" font-weight="600" font-size="17">URL</text><text x="110" y="151" text-anchor="middle" fill="#d1d5db" font-family="Inter,sans-serif" font-size="12">site observado</text>
+              <rect x="290" y="70" width="180" height="130" rx="15" fill="#0e1b26" stroke="#38bdf8" stroke-width="2"/><text x="380" y="115" text-anchor="middle" fill="#38bdf8" font-family="Inter,sans-serif" font-weight="600" font-size="17">Scanner</text><text x="380" y="143" text-anchor="middle" fill="#bfe6ff" font-family="Inter,sans-serif" font-size="12">WebMCP · SEO · GEO · AEO</text><rect x="330" y="168" width="100" height="5" rx="2.5" fill="#263244"/><rect x="330" y="168" width="68" height="5" rx="2.5" fill="#38bdf8"/>
+              <rect x="565" y="88" width="170" height="94" rx="15" fill="#0e2018" stroke="#34d399" stroke-width="2"/><text x="650" y="126" text-anchor="middle" fill="#34d399" font-family="Inter,sans-serif" font-weight="600" font-size="17">Relatório</text><text x="650" y="151" text-anchor="middle" fill="#d1d5db" font-family="Inter,sans-serif" font-size="12">nota + evidências</text>
+            </svg>
+          </div>
+          <h2 class="text-2xl font-bold">O relatório aparecerá aqui.</h2>
+          <p class="text-neutral-400 mt-3 max-w-xl">Você verá quatro notas, bloqueadores, evidências técnicas, correções priorizadas e os próximos scanners da Formação WebMCP.</p>
+        </div>
+
+        <div id="readiness-loading" class="hidden p-8 sm:p-12 min-h-[450px] flex flex-col justify-center" aria-live="polite">
+          <div class="relative h-2 bg-dark-700 rounded-full overflow-hidden"><div class="absolute inset-y-0 left-0 w-1/3 bg-sky-400 rounded-full animate-pulse"></div></div>
+          <h2 class="text-2xl font-bold mt-8">Reunindo evidências.</h2>
+          <p class="text-neutral-400 mt-3">Abrindo a página e reunindo sinais técnicos e editoriais. Nenhuma ferramenta WebMCP será executada.</p>
+          <div class="mt-8 space-y-3 text-sm text-neutral-300"><p>1. Validando a URL e a rede</p><p>2. Inspecionando WebMCP, HTML e headers</p><p>3. Consultando robots, sitemap e llms.txt</p><p>4. Calculando SEO, GEO, AEO e o plano de correção</p></div>
+        </div>
+
+        <div id="readiness-error" class="hidden p-8 sm:p-12 min-h-[450px] flex flex-col justify-center" role="alert">
+          <div class="w-12 h-12 rounded-full bg-red-500/15 text-red-400 flex items-center justify-center mb-6"><svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 9v4m0 4h.01M10 3h4l8 15-2 3H4l-2-3z"/></svg></div>
+          <h2 class="text-2xl font-bold">A análise não foi concluída.</h2>
+          <p id="error-message" class="text-neutral-300 mt-3"></p>
+          <p class="text-neutral-400 mt-3">Confirme se a URL é pública, usa HTTP/HTTPS e pode ser aberta sem autenticação.</p>
+        </div>
+
+        <div id="readiness-result" class="hidden outline-none" tabindex="-1">
+          <div class="p-6 sm:p-8 border-b border-dark-600">
+	            <div class="grid sm:grid-cols-[7rem_1fr] gap-6 items-start">
+	              <div class="border-r border-dark-600 pr-5"><span class="text-xs text-neutral-300 uppercase tracking-wide">Nota geral</span><p class="mt-2"><strong id="score-value" class="text-4xl">0</strong><span class="text-sm text-neutral-300">/100</span></p></div>
+	              <div><p id="score-grade" class="text-2xl font-bold"></p><p id="report-url" class="text-sm text-sky-400 mt-2 break-all"></p><p id="report-meta" class="text-sm text-neutral-300 mt-2"></p></div>
+	            </div>
+	            <dl class="grid grid-cols-2 sm:grid-cols-4 border-y border-dark-600 mt-7 divide-x divide-dark-600"><div class="py-3 pr-3"><dt class="text-xs text-neutral-300">Bloqueadores</dt><dd id="stat-blockers" class="text-xl font-semibold mt-1">0</dd></div><div class="py-3 px-3"><dt class="text-xs text-neutral-300">Alertas</dt><dd id="stat-warnings" class="text-xl font-semibold mt-1">0</dd></div><div class="py-3 px-3"><dt class="text-xs text-neutral-300">Aprovados</dt><dd id="stat-passed" class="text-xl font-semibold mt-1">0</dd></div><div class="py-3 pl-3"><dt class="text-xs text-neutral-300">Ferramentas</dt><dd id="stat-tools" class="text-xl font-semibold mt-1">0</dd></div></dl>
+	          </div>
+	          <section class="p-6 sm:p-8 border-b border-dark-600"><h2 class="text-xl font-bold">As quatro notas</h2><p class="text-sm text-neutral-400 mt-2">Cada dimensão é calculada apenas com sinais observáveis neste scan.</p><div id="category-score-list" class="mt-5"></div></section>
+	          <section class="p-6 sm:p-8 border-b border-dark-600"><h2 class="text-xl font-bold">Plano de correção</h2><p class="text-sm text-neutral-400 mt-2">Primeiro os bloqueadores e ajustes de maior impacto.</p><ol id="recommendation-list" class="mt-4"></ol></section>
+	          <section class="p-6 sm:p-8 border-b border-dark-600"><h2 class="text-xl font-bold">Evidências por dimensão</h2><div id="finding-list" class="mt-3"></div></section>
+	          <section class="p-6 sm:p-8 border-b border-dark-600"><h2 class="text-xl font-bold">Ferramentas WebMCP observadas</h2><div id="tool-list" class="mt-3"></div></section>
+	          <section class="p-6 sm:p-8 border-b border-dark-600"><h2 class="text-xl font-bold">Cursos indicados para este diagnóstico</h2><p class="text-sm text-neutral-400 mt-2">O relatório conecta cada lacuna ao próximo aprendizado no ecossistema ARCKHÉ.</p><div id="education-list" class="mt-4"></div></section>
+	          <section class="p-6 sm:p-8 border-b border-dark-600"><div class="flex flex-wrap items-baseline justify-between gap-2"><h2 class="text-xl font-bold">Próximos scanners avançados</h2><span class="text-xs text-amber-400">planejados na formação</span></div><p class="text-sm text-neutral-400 mt-2">O scan rápido indica a direção; cada fase aprofundará um tipo de validação.</p><div id="advanced-scanner-list" class="mt-4"></div></section>
+	          <div class="p-6 sm:p-8 flex flex-col sm:flex-row justify-start gap-3"><button id="download-report" type="button" class="px-5 py-3 rounded-xl bg-primary text-gray-950 font-bold hover:bg-yellow-300">Baixar relatório JSON</button><button id="new-analysis" type="button" class="px-5 py-3 rounded-xl border border-dark-600 bg-dark-700 font-semibold hover:bg-dark-600">Nova análise</button></div>
+        </div>
+      </div>
+
+      <div id="scanner-traits" class="lg:col-start-1 lg:row-start-2 grid sm:grid-cols-3 gap-5 text-sm">
+        <div><svg class="w-5 h-5 text-sky-400 mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3 4 7v5c0 5 3.4 8 8 9 4.6-1 8-4 8-9V7z"/><path d="m9 12 2 2 4-5"/></svg><strong class="block">Passivo</strong><span class="text-neutral-300">Não chama executeTool().</span></div>
+        <div><svg class="w-5 h-5 text-sky-400 mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg><strong class="block">Descartável</strong><span class="text-neutral-300">Contexto isolado por análise.</span></div>
+        <div><svg class="w-5 h-5 text-sky-400 mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 3h10l4 4v14H5z"/><path d="M15 3v5h5M8 13h8M8 17h5"/></svg><strong class="block">Exportável</strong><span class="text-neutral-300">Relatório JSON com evidências.</span></div>
+      </div>
+    </section>
+
+    <p id="readiness-status" class="sr-only" role="status" aria-live="polite"></p>
+
+    <section class="mt-16 grid lg:grid-cols-3 gap-8 border-t border-dark-600 pt-12">
+	      <div><h2 class="text-2xl font-bold">O que o scanner consegue provar</h2><p class="text-neutral-400 mt-3">Evidências de uma página e dos arquivos públicos essenciais do domínio.</p></div>
+	      <div class="lg:col-span-2 grid sm:grid-cols-2 gap-6 text-sm"><div><h3 class="font-semibold text-emerald-400">Observa diretamente</h3><ul class="mt-3 space-y-2 text-neutral-300"><li>WebMCP, schemas e sinais de risco</li><li>Title, canonical, headings e JSON-LD</li><li>robots.txt, sitemap.xml e llms.txt</li><li>Respostas diretas, autoria e evidências</li><li>Bloqueadores e sugestões priorizadas</li></ul></div><div><h3 class="font-semibold text-amber-400">Exige análise avançada</h3><ul class="mt-3 space-y-2 text-neutral-300"><li>Rastreamento de todas as páginas</li><li>Indexação, ranking e citações reais</li><li>Autorização e idempotência do backend</li><li>Execução controlada por agentes</li><li>Evals, segurança e observabilidade</li></ul></div></div>
+    </section>
+  </main>
+
+  <footer class="border-t border-dark-600 py-8 mt-16"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between gap-3 text-sm text-neutral-400"><p>WebMCP Readiness · diagnóstico passivo, não certificação de segurança. Publicado por <a href="https://linnoff88-dev.github.io/arckhe-ai" class="text-sky-400 hover:text-sky-300" rel="author">ARCKHÉ.AI</a> · atualizado em <time datetime="2026-09-02">2 de setembro de 2026</time>.</p><a href="https://linnoff88-dev.github.io/arckhe-ai" target="_blank" rel="noreferrer" class="text-sky-400 hover:text-sky-300">ARCKHÉ.AI</a></div></footer>
+
+  <script>
+    function toggleTopic(button) { var panel = document.getElementById(button.getAttribute('aria-controls')); var expanded = button.getAttribute('aria-expanded') === 'true'; button.setAttribute('aria-expanded', String(!expanded)); if (panel) panel.classList.toggle('active', !expanded); }
+    function openModal(id) { var modal = document.getElementById(id); if (modal) modal.classList.remove('hidden'); }
+    function closeModal() { document.querySelectorAll('.modal').forEach(function (modal) { modal.classList.add('hidden'); }); }
+    var themeToggle = document.getElementById('theme-toggle'); var darkIcon = document.getElementById('theme-toggle-dark-icon'); var lightIcon = document.getElementById('theme-toggle-light-icon');
+    function syncThemeIcons() { var dark = document.documentElement.classList.contains('dark'); darkIcon.classList.toggle('hidden', dark); lightIcon.classList.toggle('hidden', !dark); }
+    syncThemeIcons(); themeToggle.addEventListener('click', function () { var dark = !document.documentElement.classList.contains('dark'); document.documentElement.classList.toggle('dark', dark); localStorage.setItem('theme', dark ? 'dark' : 'light'); syncThemeIcons(); });
+  </script>
+  <script src="./assets/learn.js"></script>
+  <script src="./readiness.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', function () { if (window.Arckhé) ARCKHÉ.init(); });</script>
+</body>
+</html>

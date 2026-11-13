@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "id": "arckhe.webmcp-readiness",
+  "name": "WebMCP Readiness",
+  "url": "https://linnoff88-dev.github.io/arckhe-ai/ferramentas/webmcp-readiness/",
+  "languages": [
+    "pt-BR"
+  ],
+  "access": "public",
+  "description": "Scanner passivo de sites públicos com evidências de WebMCP, SEO, GEO e AEO.",
+  "discovery": {
+    "llms": "https://linnoff88-dev.github.io/arckhe-ai/ferramentas/webmcp-readiness/llms.txt",
+    "robots": "https://linnoff88-dev.github.io/arckhe-ai/ferramentas/webmcp-readiness/robots.txt",
+    "sitemaps": [
+      "https://linnoff88-dev.github.io/arckhe-ai/ferramentas/webmcp-readiness/sitemap.xml"
+    ]
+  },
+  "related_systems": [
+    {
+      "id": "arckhe.portal",
+      "url": "https://www.linnoff88-dev.github.io/arckhe-ai/",
+      "languages": [
+        "pt-BR",
+        "en",
+        "es"
+      ]
+    },
+    {
+      "id": "arckhe.news",
+      "url": "https://linnoff88-dev.github.io/arckhe-ai/#noticias/",
+      "languages": [
+        "pt-BR",
+        "en",
+        "es"
+      ]
+    },
+    {
+      "id": "arckhe.eventos",
+      "url": "https://linnoff88-dev.github.io/arckhe-ai/#eventos/",
+      "languages": [
+        "pt-BR",
+        "en",
+        "es"
+      ]
+    },
+    {
+      "id": "arckhe.cerebro-vip",
+      "url": "https://cvip.linnoff88-dev.github.io/arckhe-ai/",
+      "access": "subscription"
+    }
+  ],
+  "webmcp": {
+    "status": "not_declared",
+    "runtime_verified": false
+  },
+  "manifest_note": "Manifesto de descoberta próprio do Arckhé; não é um registro de ferramentas WebMCP.",
+  "repository": "https://github.com/arckhetds/webmcp-readiness"
+}

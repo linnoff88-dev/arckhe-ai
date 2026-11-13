@@ -1,0 +1,5 @@
+.saida-teste/
+node_modules/
+*.local.json
+dados/
+__pycache__/

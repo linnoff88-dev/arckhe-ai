@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://linnoff88-dev.github.io/arckhe-ai/ferramentas/webmcp-readiness/sitemap.xml

@@ -1,0 +1,23 @@
+name: semana-arkhe
+
+on:
+  schedule:
+    - cron: "0 13 * * 1"
+  workflow_dispatch: {}
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Publicar próximo post
+        run: node scripts/semana.mjs || true
+      - name: Commit e push (se mudou)
+        run: |
+          git config user.name "arckhe-bot"
+          git config user.email "arckhe-bot@users.noreply.github.com"
+          git add comunidade/semana-arkhe
+          git diff --cached --quiet || git commit -m "semana-arkhe: publicar próximo post" && git push

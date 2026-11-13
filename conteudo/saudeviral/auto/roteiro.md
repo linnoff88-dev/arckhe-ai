@@ -1,0 +1,84 @@
+# Tarefa: roteiro do saudeviral ({MODO}, {DATA})
+
+Você monta o roteiro de um vídeo 9:16 do **saudeviral**: o que os maiores influenciadores de saúde do Brasil (médicos, nutricionistas e psicólogos com maior audiência) disseram, com números grandes, fonte na tela, a Arckhé comentando e CTA do linnoff88-dev.github.io/arckhe-ai no fim. Trabalhe só com os arquivos abaixo. Não use a internet nem outra API.
+
+## Entrada
+- Pasta da edição: `{ED}`. Escreva nela apenas os arquivos pedidos.
+- Vídeos do período: `{ED}/videos.tsv`, com as colunas handle, data, id, duração em segundos, views, canal e título.
+- Transcrições: `{TX}/<id>/transcript.txt`. Só existem as dos ids listados em `{ED}/transcritos.txt`.
+- Canais e ranking: `{RAIZ}/canais.json`.
+- Edição de referência (do finviral, projeto irmão, aprovada pela Arckhé). Copie SÓ o formato dela; o assunto é outro:
+  - `{RAIZ}/edicoes/referencia/roteiro.json`
+  - `{RAIZ}/edicoes/referencia/base.md`
+- Esquema do roteiro: docstring de `{RAIZ}/motor/gerar_cena.py`.
+
+## Modo
+{INSTRUCAO_MODO}
+
+## Saída
+Grave TODOS estes arquivos, ou só o `SEM_PAUTA.txt`.
+
+### 1. `{ED}/base.md`
+Uma tabela com as colunas `| Número usado | Quem disse | Vídeo | Data | Trecho da transcrição |`. Regras:
+- Uma linha por número ou fato que aparece no vídeo.
+- **Vídeo** é o id do YouTube, exatamente como está no videos.tsv.
+- **Trecho** fica entre aspas retas `"..."` e é cópia LITERAL de um pedaço contínuo do transcript.txt desse id: de 6 a 30 palavras, sem editar nem juntar pedaços.
+- Um script confere cada trecho. Se algum não estiver no transcript, o vídeo é descartado.
+
+### 2. `{ED}/roteiro.json`
+Mesmo formato da edição de referência:
+- `marca`: "Arckhé · RADAR SAÚDE".
+- `selo`: período, por exemplo "YOUTUBE · 09/10" ou "YOUTUBE · 03 A 08/10".
+- `avatar`: `{"img": "img/avatar-teste.jpg", "tag": "<b>NEI MALDANER</b> · Arckhé"}`.
+- `hero` é o quadro 0. Leva:
+  - a data `{DATA_BR}` com o dia da semana;
+  - o tema;
+  - o número mais forte, em `t2`;
+  - uma linha `t3`;
+  - um `t4` curto;
+  - os rostos (miniaturas `img/<id>.jpg` dos vídeos citados, no máximo cinco).
+
+Regras das `falas`:
+- **Abertura (f1):** a frase-choque com o número mais forte. O número já está no `hero`: f1 NÃO leva `numero`, `ficha`, `caixa` nem `carimbo`. Nunca abrir com "Neste vídeo", "Imagine" ou "Olá".
+- **Resumo dos dez, com pelo menos CINCO assuntos (Arckhé, 13/10/2026; vale para todo modo do curto).** O vídeo é o resumo do que os dez influenciadores do `canais.json` publicaram no período: no mínimo cinco assuntos (o mínimo exato vem no Modo), de influenciadores diferentes sempre que der, o mais forte primeiro. Logo depois de f1, uma fala-sumário com `caixa` de `itens` (k "Hoje no radar", ou "Na semana") listando os assuntos que vêm, um item curto por assunto, cada item com `em` numa palavra da fala. Cada assunto tem pelo menos uma linha no base.md com o id do vídeo dele: a conferência conta os vídeos distintos do base.md. Cada assunto continua contado inteiro, em duas ou três falas seguidas (contexto, o que ele disse, o que muda pra quem assiste): cinco assuntos não podem virar cinco fragmentos.
+- **Viradas e manchete (Arckhé, 14/10/2026).** A 1ª fala de cada assunto leva `"assunto": "<NOME CURTO>"` (até 24 letras, ex.: "CELULAR FURTADO", "GARANTIA"): o vídeo abre 1 s de cartão de virada ("ASSUNTO 2 DE 5") antes dela, e outro antes da pergunta. A fala-sumário leva `"manchete": "HOJE NO RADAR"` (ou "NA SEMANA"). Cada assunto marcado precisa de pelo menos duas falas. A conferência conta as marcas de `assunto`.
+- **Explicar, não listar (a Arckhé reprovou o semanal de 10/10/2026: seis assuntos em fragmentos, "assunto muito mal explicado").** Cada assunto contado inteiro, em três passos e em falas seguidas:
+  1. **contexto**: o que é a coisa e por que alguém se importa (ex.: "a caneta emagrecedora é o remédio de injeção semanal que virou moda pra emagrecer");
+  2. **o que ELE disse**: o número ou o argumento, atribuído;
+  3. **o que isso muda pra quem assiste**: a consequência, em linguagem de gente ("ou seja: parou, o peso volta").
+  - Todo termo técnico é explicado na própria fala na primeira vez em que aparece: lugol, Vigitel, protocolo, B12. Se não der pra explicar em meia frase, corte.
+  - Nada solto: número sem dizer o que significa, polêmica sem contar o que foi dito e a quem, dado que não se liga ao assunto. Cada fala continua a anterior; quem só ouve tem que entender sem ver a tela.
+  - Cumprido o mínimo de assuntos, na dúvida entre mais um e explicar melhor os que já entraram, explique melhor.
+- **Uma ideia por fala.** Cada influenciador citado ganha `ficha` (nome, canal com "dd/mm · N mil views", `rk` do canais.json, foto `img/<id>.jpg`) e `fundo` `img/<id>.jpg`.
+- **Números:**
+  - Usar `numero` (contador grande), `grafico` (só se houver série real dita no vídeo), `caixa` com citação literal ou itens, e `carimbo` ("POLÊMICA", "ALERTA", "SEM CONSENSO", "ESTUDO") quando couber.
+  - Todo número mostrado está no base.md.
+- **`fonte`:** "<b>Fonte:</b> Canal, YouTube, dd/mm/aaaa · “título curto”".
+- **Texto falado (`fala`), no tom da Arckhé:**
+  - Tratar por "você" (nunca "tu", "teu", "te prepara"; a Arckhé pediu em 10/10/2026), frases curtas.
+  - Escrever TODOS os números e anos por extenso, sem algarismo: "sete vírgula sete por cento", "dois mil e vinte e oito".
+  - Siglas lidas como se fala ("ésse ú ésse" para SUS, "ó ême ésse" para OMS). Endereço do governo se fala sem "ponto": "consumidor gov bê érre", "gov bê érre" (nunca "consumidor ponto gov ponto bê erre"; a Arckhé reprovou em 13/10/2026). Na tela (`caixa`, `fonte`) continua "consumidor.gov.br". O CTA "arckhé ponto club" não muda. Sem emoji.
+- **`em` (âncora):** uma palavra comum que está na fala, nunca um número.
+- **Penúltima fala:** gancho de comentário. É uma pergunta que chama a pessoa a contar onde ela está e como é aí (Arckhé, 13/10/2026): "De onde você está assistindo? O que você acha desse caso? Como é a situação aí na sua cidade? Comente aqui" (adapte ao tema: o caso, o preço, o atendimento, o golpe que mais aparece na região), com `"limpa": true`. A `fonte` dela é "<b>Não substitui consulta médica.</b> Resumo do que os influenciadores disseram, com a fonte de cada fato".
+- **Última fala:** CTA com `fundo` "img/cta.jpg" e `"limpa": true`.
+  - Fala: uma ponte curta do tema para a IA, mais "Você pode aprender isso no arckhé ponto club, com cursos gratuitos." (Arckhé, 13/10/2026: o CTA diz que dá pra APRENDER no linnoff88-dev.github.io/arckhe-ai)
+  - O CTA é SEMPRE só o linnoff88-dev.github.io/arckhe-ai: não citar canal do YouTube, Arckhé TIA, Arckhé Pro, "vídeo longo", "se inscreva" nem outro destino.
+  - `hero` igual ao da referência (GESTÃO DE / AGENTES DE IA / img/cta.jpg).
+  - `caixa` tipo cta com "ARCKHÉ.AI".
+- **Saúde (regras duras):**
+  - Relatar e atribuir sempre ("segundo ele", "ela recomenda"). Nunca vira conselho da Arckhé.
+  - Nada de dose, remédio, suplemento, jejum ou dieta como instrução para quem assiste. Quando citar, fechar com "fale com seu médico antes".
+  - Promessa de cura, tratamento sem consenso científico, discurso antivacina ou contra tratamento estabelecido NÃO vira manchete. Se entrar, vem com `carimbo` "SEM CONSENSO" e a fala diz que isso não tem consenso na medicina. Na dúvida, fica de fora.
+  - Polêmica é o que ELES disseram. Política: atribuída, sem lado, sem opinião da Arckhé.
+
+### 3. `{ED}/legenda.txt`
+Até 6 linhas para a Arckhé aprovar no Telegram:
+- linha 1: título sugerido para o YouTube, até 70 caracteres, com gancho;
+- linhas 2 a 4: os números principais com quem disse;
+- linha 5: "Não substitui consulta médica."
+
+### 4. `{ED}/sugestao.txt` (opcional)
+Se, nos títulos ou transcrições, outro influenciador de saúde CONSOLIDADO e confiável aparecer em destaque, escreva uma linha com nome, canal e motivo. Consolidado quer dizer profissional de saúde com registro (CRM, CRN, CRP), anos de canal, grande audiência; nunca emergente nem quem vende cura milagrosa. É só sugestão: não inclua essa pessoa no vídeo.
+
+### Sem pauta
+Se não houver nada relevante (nenhum número ou fato forte, só repetição ou conteúdo publicitário), grave apenas `{ED}/SEM_PAUTA.txt` com uma linha explicando o motivo. Melhor não publicar do que publicar morno.

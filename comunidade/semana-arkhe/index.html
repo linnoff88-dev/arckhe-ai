@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Semana Arckhé — A semana sem sobrecarga</title>
+<meta name="description" content="O post semanal da comunidade Arckhé: a única coisa, as vitórias e o que você pode ignorar.">
+<style>
+:root{color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:#070b16;color:#e8ecf7;line-height:1.7}
+.wrap{max-width:720px;margin:0 auto;padding:44px 20px}
+a{color:#7dd3fc}
+.top{font-size:14px;text-decoration:none;color:#64748b}
+h1{font-size:32px;margin:14px 0 4px;background:linear-gradient(90deg,#38bdf8,#a78bfa);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:#94a3b8;margin:0 0 26px}
+.post{background:#0f1526;border:1px solid #1e293b;border-radius:14px;padding:22px;margin-bottom:16px}
+.post h2{margin:0 0 8px;font-size:18px}
+.post p{margin:0;color:#cbd5e1;font-size:15px}
+.tag{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#64748b}
+</style>
+</head>
+<body>
+<div class="wrap">
+<a class="top" href="../">&larr; Arckhé AI</a>
+<h1>Semana Arckhé</h1>
+<p class="sub">A semana sem sobrecarga: a única coisa, as vitórias e o que você pode ignorar. Um post por semana — nada mais.</p>
+<div id="posts"></div>
+<script src="posts-data.js"></script>
+<script>
+const box = document.getElementById("posts");
+((window.WEEKS || []).slice().reverse()).forEach(p => {
+  const d = document.createElement("div");
+  d.className = "post";
+  d.innerHTML = `<div class="tag">${p.date}</div><h2>${p.title}</h2><p>${p.body}</p>`;
+  box.appendChild(d);
+});
+if (!window.WEEKS || !window.WEEKS.length) box.innerHTML = "<p class='sub'>O primeiro post sai nesta semana.</p>";
+</script>
+</div>
+</body>
+</html>

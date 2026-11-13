@@ -1,0 +1,21 @@
+{
+  "name": "webmcp-readiness",
+  "version": "2.2.2",
+  "private": true,
+  "type": "module",
+  "description": "Scanner passivo de prontidão WebMCP para sites públicos.",
+  "scripts": {
+    "dev": "npx vercel dev",
+    "check": "node scripts/check.mjs",
+    "probe:webmcp": "node scripts/validar-webmcp-browser.mjs",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.1.0",
+    "@sparticuz/chromium": "149.0.0",
+    "playwright-core": "1.62.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

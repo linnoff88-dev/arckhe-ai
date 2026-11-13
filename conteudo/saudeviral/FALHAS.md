@@ -1,0 +1,14 @@
+# FALHAS — saudeviral
+
+| data | o que quebrou | menor correção | prompt \| infra |
+|---|---|---|---|
+| 2026-10-24 | Roteiro do semanal: script auxiliar em /tmp com nome já usado (saudeviral-encurta.py); o Write falhou, o Bash rodou o script velho e regravou o roteiro.json de 17/10 (f6 e f11 voltaram à versão anterior; restaurado pelo avatar/fala.txt) | script auxiliar com nome único por edição + assert do caminho alvo dentro do script | prompt |
+| 2026-10-16 | Virada entre assuntos cortava a voz (corte no tempo do Whisper, voz ainda soando; palavra escrita diferente ia pra fala anterior) | gerar_cena.py corta no trecho mais quieto do áudio; retempo.py dá a palavra sem par à fala seguinte quando a anterior já fechou | infra |
+| 2026-10-11 | curto de domingo com legenda sobre as miniaturas, carimbo sobre o texto, "Segundo assunto"/"o assunto" na fala e na legenda; Arckhé mandou tirar do ar (2Wcm60z2Yvg removido) | portão VISUAL antes do YouTube + legenda com texto do roteiro — pendente | infra + prompt |
+| 2026-10-11 | domingo LONGO não saiu: estúdio HeyGen "o menu do card não tem Editar como Novo" (menu ⋮ não abriu em 1,2 s; mesmo template ok antes e depois) | heygen-studio.mjs: 3 tentativas de abrir o menu; + retempo.py com interpolação (vindo do finviral) | infra |
+| 2026-10-11 | (vindo do finviral) topo vazio até a âncora, legenda "15 %", "teu"/"te prepara" na fala e CTA para o vídeo longo do Arckhé Pro | mesmo patch do gerar_cena.py + checar.py reprova tu/CTA fora do linnoff88-dev.github.io/arckhe-ai + AVISO_LONGO vazio | prompt + infra |
+| 2026-10-10 | Longo foi ao bot mas não ao YouTube: o codex de /usr/bin (0.116) não lê o config.toml gravado pelo codex novo (service_tier="default") | publicar.sh põe ~/.npm-global/bin no PATH | infra |
+| 2026-10-10 | Semanal com 6 assuntos em fragmentos, termos sem explicação (lugol, Vigitel, protocolo do SUS): a Arckhé achou "muito mal explicado" | roteiro.md: explicar em 3 passos (contexto, o que ele disse, o que muda) e termo técnico explicado na fala; rodar.sh: no máximo 3 assuntos no curto | prompt |
+| 2026-10-10 | Fundo = miniatura 16:9 cheia de letreiro ampliada em 9:16: letras gigantes cortadas ("RISCO", "ÓIDE") | palco.html: fundo com blur 38 px | prompt |
+| 2026-10-10 | Título do hero estourou a largura ("EMAGRECEDO…"): fonte Google só baixa quando usada | palco.html: caber() reduz a fonte + document.fonts.load antes do 1º quadro | infra |
+| 2026-10-10 | Avatar e longo sem HeyGen: "ProcessSingleton", lote de tradução de outra sessão abriu o perfil sem pegar a trava | avatar_heygen.sh: tenta de novo a cada 2 min, até 1 h | infra |
