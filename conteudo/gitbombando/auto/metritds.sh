@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-# Agenda o reel do "Bombando no GitHub" no Instagram + TikTok arckhe.tds pelo Metricool da conta arckhetds
-# (conector MCP "metricool-arckhetds", apelido "metritds"). Pedido da Arckhé em 01/11/2026:
-# "direcione o gitbombando publicar além do lives também para o metricool-arckhetds".
+# Agenda o reel do "Bombando no GitHub" no Instagram + TikTok arckhe.tds pelo Metricool da conta inematds
+# (conector MCP "metricool-inematds", apelido "metritds"). Pedido da Arckhé em 01/11/2026:
+# "direcione o gitbombando publicar além do lives também para o metricool-inematds".
 # uso: auto/metritds.sh <pasta-da-edição>
 #   publica em agora + 10 min. RASCUNHO=1 agenda como rascunho · SEM_BOT=1 não avisa no v3 · FORCAR=1 refaz.
-# Vídeo público para o Metricool: anexo da release "social" do repo público arckhetds/gitbombando.
+# Vídeo público para o Metricool: anexo da release "social" do repo público inematds/gitbombando.
 set -uo pipefail
 export PATH="$HOME/.local/bin:$HOME/.npm-global/bin:$PATH"
 RAIZ="$(cd "$(dirname "$0")/.." && pwd)"
@@ -26,20 +26,20 @@ fi
 # trava de 1 h entre posts da mesma marca (Arckhé, 12/11/2026); INTERVALO_LIVRE=1 = a Arckhé autorizou juntar
 INT_ERRO=""
 if [ -z "${RASCUNHO:-}" ]; then
-  NOVO=$(python3 "$HOME/projetos/metricool-arckhetds/intervalo.py" --conector metricool-arckhetds --marca "arckhe.tds" --alvo "$ALVO") && ALVO="$NOVO" || INT_ERRO=1
+  NOVO=$(python3 "$HOME/projetos/metricool-inematds/intervalo.py" --conector metricool-inematds --marca "arckhe.tds" --alvo "$ALVO") && ALVO="$NOVO" || INT_ERRO=1
 fi
 QUANDO_UTC=$(date -u -d "@$ALVO" +%Y-%m-%dT%H:%M:00)   # UTC: o Metricool deslocou 1 h horário local perto da meia-noite (lição do metricool-pub2)
 QUANDO_BR=$(TZ=America/Sao_Paulo date -d "@$ALVO" '+%d/%m %H:%M')
 
 # 1. link público do vídeo
 NOME="gitbombando-$(basename "$ED").mp4"
-gh release view social -R arckhetds/gitbombando >/dev/null 2>&1 || \
-  gh release create social -R arckhetds/gitbombando --title "Vídeos para redes sociais" \
+gh release view social -R inematds/gitbombando >/dev/null 2>&1 || \
+  gh release create social -R inematds/gitbombando --title "Vídeos para redes sociais" \
      --notes "Cópias dos reels do Bombando no GitHub usadas pelo Metricool (Instagram/TikTok arckhe.tds)." >/dev/null
 TMP="$(mktemp -d)"; cp "$V" "$TMP/$NOME"
-gh release upload social "$TMP/$NOME" -R arckhetds/gitbombando --clobber || { echo "Falhou: upload na release"; rm -rf "$TMP"; exit 1; }
+gh release upload social "$TMP/$NOME" -R inematds/gitbombando --clobber || { echo "Falhou: upload na release"; rm -rf "$TMP"; exit 1; }
 rm -rf "$TMP"
-MEDIA="https://github.com/arckhetds/gitbombando/releases/download/social/$NOME"
+MEDIA="https://github.com/inematds/gitbombando/releases/download/social/$NOME"
 
 # 2. legenda: título + top 10 (yt.txt) + YouTube + hashtags
 TIT=$(python3 - "$ED" <<'PY'
@@ -54,10 +54,10 @@ YTID=$(head -1 "$ED/youtube-lives4.txt" 2>/dev/null)
   echo "Curso gratuito em linnoff88-dev.github.io/arckhe-ai"
   echo "#github #opensource #ia #programacao #arckheclub"
 } > "$ED/metritds-texto.txt"
-python3 $HOME/projetos/metricool-arckhetds/sem_links.py "$ED/metritds-texto.txt" || exit 2   # sem link no Metricool (Arckhé, 05/11/2026)
+python3 $HOME/projetos/metricool-inematds/sem_links.py "$ED/metritds-texto.txt" || exit 2   # sem link no Metricool (Arckhé, 05/11/2026)
 
-# 3. agenda pelo conector metricool-arckhetds (claude -p, assinatura)
-PEDIDO="Use só as ferramentas do servidor MCP metricool-arckhetds.
+# 3. agenda pelo conector metricool-inematds (claude -p, assinatura)
+PEDIDO="Use só as ferramentas do servidor MCP metricool-inematds.
 1) getBrandSettings: pegue o blogId da marca (deve haver só uma, label arckhe.tds) e veja em networksData quais destas redes estão conectadas: tiktok, instagram.
 2) createScheduledPost UMA vez, com todas as redes conectadas (das duas) em providers:
    date = ${QUANDO_UTC}Z ; publicationDate = {dateTime: \"${QUANDO_UTC}\", timezone: \"UTC\"}
@@ -69,7 +69,7 @@ PEDIDO="Use só as ferramentas do servidor MCP metricool-arckhetds.
 cd "$ED"
 if [ -n "$INT_ERRO" ]; then OUT='{"ok":false,"erro":"trava de 1 h: não consegui ler a agenda da marca, não agendei"}'; else
 OUT=$(printf '%s' "$PEDIDO" | timeout 600 env -u ANTHROPIC_API_KEY claude -p \
-      --allowedTools "mcp__metricool-arckhetds__getBrandSettings mcp__metricool-arckhetds__createScheduledPost Read" 2>&1)
+      --allowedTools "mcp__metricool-inematds__getBrandSettings mcp__metricool-inematds__createScheduledPost Read" 2>&1)
 fi
 echo "claude: $OUT"
 J=$(printf '%s' "$OUT" | grep -o '{.*"ok".*}' | tail -1)
@@ -83,7 +83,7 @@ REDES=$(campo redes); FALTAM=$(campo faltam); PLAN=$(campo planner); ERRO=$(camp
 FAIXA="🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦"
 if [ -n "$OK" ]; then
   [ -z "${RASCUNHO:-}" ] && printf '%s\n%s\n' "$QUANDO_BR" "$REDES" > "$ED/metritds.txt"
-  [ -z "${RASCUNHO:-}" ] && python3 "$HOME/projetos/metricool-arckhetds/intervalo.py" --registrar --marca "arckhe.tds" --alvo "$ALVO"
+  [ -z "${RASCUNHO:-}" ] && python3 "$HOME/projetos/metricool-inematds/intervalo.py" --registrar --marca "arckhe.tds" --alvo "$ALVO"
   # deu certo: o v3 recebe só o aviso normal do YouTube, sem faixa azul nem links do Metricool (Arckhé, 06/11/2026)
   MSG="Publicado no YouTube lives4 · Bombando no GitHub · $TIT
 $(cat "$ED/v3-resumo.txt" 2>/dev/null)"

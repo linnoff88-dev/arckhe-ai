@@ -167,7 +167,7 @@
     <a class="sec" href="#limites">Limites</a>
     <span class="lang"><a class="on" href="./">PT</a><a href="en/">EN</a><a href="es/">ES</a></span>
     <button class="tgl" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
-    <a class="btn" href="https://github.com/arckhetds/site-que-vende" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="https://github.com/inematds/site-que-vende" target="_blank" rel="noopener">GitHub</a>
   </div>
 </div></nav>
 
@@ -180,7 +180,7 @@
       <p class="lead">São sempre os mesmos 5 motivos. Este kit mede os 5 na sua página e diz o que consertar.</p>
       <div class="cta">
         <a class="btn" href="#guia">Começar o guia</a>
-        <a class="btn ghost" href="https://github.com/arckhetds/site-que-vende" target="_blank" rel="noopener">Ver no GitHub</a>
+        <a class="btn ghost" href="https://github.com/inematds/site-que-vende" target="_blank" rel="noopener">Ver no GitHub</a>
       </div>
     </div>
     <figure><img src="assets/banner.jpg" alt="Banner do site-que-vende: os 5 padrões, medidos na sua página" width="1400" height="788"></figure>
@@ -432,7 +432,7 @@
   <div class="step"><div class="b">1</div><div>
     <h3>Baixe o kit e instale o navegador de teste</h3>
     <p>O auditor usa o Playwright, que controla um Chromium próprio. A instalação é feita uma vez.</p>
-<pre>git clone https://github.com/arckhetds/site-que-vende && cd site-que-vende
+<pre>git clone https://github.com/inematds/site-que-vende && cd site-que-vende
 cd skill/site-que-vende/scripts && npm install && npx playwright install chromium && cd -</pre>
   </div></div>
 
@@ -583,7 +583,7 @@ ln -s "$PWD/skill/site-que-vende" ~/.claude/skills/site-que-vende</pre>
     <tr><td><code>&lt;amostra-calculadora&gt;</code></td><td><code>titulo</code>, <code>subtitulo</code>, <code>base</code>, <code>campos</code>, <code>margem</code>, <code>arredondar</code>, <code>prefixo</code>, <code>sufixo</code>, <code>botao</code>, <code>nota</code>, <code>moeda</code>, <code>idioma</code>, <code>ate</code></td><td>resultado = (base + soma dos campos) × multiplicadores, mostrado como faixa (mais ou menos a margem). Campo <code>"tipo": "faixa"</code> usa <code>porUnidade</code>; com <code>"multiplica": true</code> entra como multiplicador. Campo <code>"tipo": "opcoes"</code> usa <code>soma</code> ou <code>vezes</code>.</td></tr>
     <tr><td><code>&lt;amostra-quiz&gt;</code></td><td><code>titulo</code>, <code>perguntas</code>, <code>resultados</code>, <code>prefixo</code>, <code>refazer</code>, <code>textoPergunta</code>, <code>idioma</code></td><td>cada opção soma <code>pontos</code> em um ou mais resultados; ganha o que tiver mais pontos. Cada resultado tem <code>titulo</code>, <code>texto</code> e <code>botao</code>.</td></tr>
   </table></div>
-  <p class="note">As chaves do JSON ficam em português (<code>titulo</code>, <code>campos</code>, <code>rotulo</code>); os valores são seus, em qualquer idioma. Os textos fixos (o contador do quiz, o separador entre os dois valores da faixa, "Estimativa", "Responder de novo") saem em português, inglês ou espanhol conforme o <code>idioma</code> do JSON ou o <code>lang</code> da página, e cada um pode ser trocado no JSON. As duas tags disparam o evento <code>amostra-resultado</code> quando o resultado muda: serve para medir uso sem coletar dado pessoal. JSON inválido ou incompleto aparece escrito no lugar da amostra (por exemplo, <code>amostra-quiz: falta a lista "perguntas"</code>). Todas as chaves, inclusive <code>multiplica</code>, <code>margem</code>, <code>moeda</code> e <code>idioma</code>, as variáveis CSS e o evento estão em <a href="https://github.com/arckhetds/site-que-vende/blob/main/skill/site-que-vende/referencias/amostras.md" target="_blank" rel="noopener"><code>referencias/amostras.md</code></a>.</p>
+  <p class="note">As chaves do JSON ficam em português (<code>titulo</code>, <code>campos</code>, <code>rotulo</code>); os valores são seus, em qualquer idioma. Os textos fixos (o contador do quiz, o separador entre os dois valores da faixa, "Estimativa", "Responder de novo") saem em português, inglês ou espanhol conforme o <code>idioma</code> do JSON ou o <code>lang</code> da página, e cada um pode ser trocado no JSON. As duas tags disparam o evento <code>amostra-resultado</code> quando o resultado muda: serve para medir uso sem coletar dado pessoal. JSON inválido ou incompleto aparece escrito no lugar da amostra (por exemplo, <code>amostra-quiz: falta a lista "perguntas"</code>). Todas as chaves, inclusive <code>multiplica</code>, <code>margem</code>, <code>moeda</code> e <code>idioma</code>, as variáveis CSS e o evento estão em <a href="https://github.com/inematds/site-que-vende/blob/main/skill/site-que-vende/referencias/amostras.md" target="_blank" rel="noopener"><code>referencias/amostras.md</code></a>.</p>
 </div></section>
 
 <section id="brief"><div class="wrap">
@@ -675,7 +675,7 @@ Depois rode o auditor do kit: node &lt;pasta-do-kit&gt;/skill/site-que-vende/scr
   <div class="wrap">
     <div class="pill">Node.js</div><div class="pill">Playwright</div><div class="pill">Skill para Claude Code</div><div class="pill">Licença MIT</div>
     <p style="margin-top:18px">site-que-vende · kit aberto e gratuito ·
-      <a href="https://github.com/arckhetds/site-que-vende">arckhetds/site-que-vende</a> ·
+      <a href="https://github.com/inematds/site-que-vende">inematds/site-que-vende</a> ·
       <a href="https://linnoff88-dev.github.io/arckhe-ai">ARCKHÉ.AI</a></p>
   </div>
 </footer>

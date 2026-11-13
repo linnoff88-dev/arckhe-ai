@@ -22,7 +22,7 @@ import zipfile
 import xml.etree.ElementTree as ET
 
 PACOTE = "https://dados.turismo.gov.br/api/3/action/package_show?id=meios-de-hospedagem"
-USER_AGENT = "raio-x-margem/0.2 (+https://github.com/arckhetds/raio-x-margem)"
+USER_AGENT = "raio-x-margem/0.2 (+https://github.com/inematds/raio-x-margem)"
 NS = {"m": "http://schemas.openxmlformats.org/spreadsheetml/2006/main"}
 DESCARTAR = ("CPF", "Nome do Responsável", "E-mail")  # prefixos de coluna que nunca saem do leitor
 

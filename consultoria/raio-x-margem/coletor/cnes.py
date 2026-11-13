@@ -24,7 +24,7 @@ import urllib.request
 import zipfile
 
 URL = "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/CNES/cnes_estabelecimentos_csv.zip"
-USER_AGENT = "raio-x-margem/0.3 (+https://github.com/arckhetds/raio-x-margem)"
+USER_AGENT = "raio-x-margem/0.3 (+https://github.com/inematds/raio-x-margem)"
 # Natureza jurídica (1º dígito): 1 poder público, 2 empresa, 3 sem fins lucrativos, 4 pessoa física.
 # A "esfera administrativa" do CNES é de GESTÃO (quem gere o cadastro), não de propriedade.
 EMPRESA = "2"

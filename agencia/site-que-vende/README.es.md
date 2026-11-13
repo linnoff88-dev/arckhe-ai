@@ -28,7 +28,7 @@ Detalles y cifras de las pruebas: [`cinco-padroes.md`](skill/site-que-vende/refe
 ## Úsalo en 2 minutos
 
 ```bash
-git clone https://github.com/arckhetds/site-que-vende && cd site-que-vende
+git clone https://github.com/inematds/site-que-vende && cd site-que-vende
 cd skill/site-que-vende/scripts && npm install && npx playwright install chromium && cd -
 
 node skill/site-que-vende/scripts/auditar.js https://seusite.com.br --saida auditoria

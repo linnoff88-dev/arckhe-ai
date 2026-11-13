@@ -1,11 +1,11 @@
 # site-que-vende
 ## Proveniência (Provenance)
 
-Adaptado do projeto original [~~ARCKHÉTDS~~/site-que-vende](https://github.com/~~ARCKHÉTDS~~/site-que-vende) (licença MIT preservada). Rebranding Arckhé AI.
+Adaptado do projeto original [inematds/site-que-vende](https://github.com/inematds/site-que-vende) (licença MIT preservada). Rebranding Arckhé AI.
 
 
 
-[![site-que-vende](guia/assets/banner.jpg)](https://~~ARCKHÉTDS~~.github.io/site-que-vende/guia/)
+[![site-que-vende](guia/assets/banner.jpg)](https://inematds.github.io/site-que-vende/guia/)
 
 **🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
 
@@ -17,10 +17,10 @@ texto, cor, camadas, movimento e amostra grátis, e devolve um relatório com a 
 no seu agente de código. Vem com uma skill para o Claude Code, dois componentes de amostra grátis (quiz e
 calculadora) e um par de páginas de exemplo, uma ruim e uma boa.
 
-[Guia completo](https://~~ARCKHÉTDS~~.github.io/site-que-vende/guia/) ·
-[Exemplo ruim](https://~~ARCKHÉTDS~~.github.io/site-que-vende/exemplos/ruim/) (0 de 5) ·
-[Exemplo bom](https://~~ARCKHÉTDS~~.github.io/site-que-vende/exemplos/bom/) (5 de 5) ·
-[Amostras](https://~~ARCKHÉTDS~~.github.io/site-que-vende/skill/site-que-vende/amostras/exemplo.html)
+[Guia completo](https://inematds.github.io/site-que-vende/guia/) ·
+[Exemplo ruim](https://inematds.github.io/site-que-vende/exemplos/ruim/) (0 de 5) ·
+[Exemplo bom](https://inematds.github.io/site-que-vende/exemplos/bom/) (5 de 5) ·
+[Amostras](https://inematds.github.io/site-que-vende/skill/site-que-vende/amostras/exemplo.html)
 
 ## Os 5 padrões
 
@@ -37,7 +37,7 @@ Detalhes e números dos testes: [`cinco-padroes.md`](skill/site-que-vende/refere
 ## Usar em 2 minutos
 
 ```bash
-git clone https://github.com/~~ARCKHÉTDS~~/site-que-vende && cd site-que-vende
+git clone https://github.com/inematds/site-que-vende && cd site-que-vende
 cd skill/site-que-vende/scripts && npm install && npx playwright install chromium && cd -
 
 node skill/site-que-vende/scripts/auditar.js https://seusite.com.br --saida auditoria

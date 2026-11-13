@@ -1,21 +1,21 @@
 # futviral
 ## Proveniência (Provenance)
 
-Adaptado do projeto original [~~ARCKHÉTDS~~/futviral](https://github.com/~~ARCKHÉTDS~~/futviral) (licença MIT preservada). Rebranding Arckhé AI.
+Adaptado do projeto original [inematds/futviral](https://github.com/inematds/futviral) (licença MIT preservada). Rebranding Arckhé AI.
 
 
 
-[![futviral — radar de futebol](guia/assets/banner.jpg)](https://~~ARCKHÉTDS~~.github.io/futviral/guia/)
+[![futviral — radar de futebol](guia/assets/banner.jpg)](https://inematds.github.io/futviral/guia/)
 
 **🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
 
 ## O que é
 
-O futviral faz, sozinho, vídeos curtos (9:16) com o resumo do que os 10 maiores canais de futebol do YouTube disseram: Brasileirão, futebol europeu, mercado da bola, polêmicas e negócios do futebol. Ele assiste aos vídeos por transcrição, separa os números e os fatos com a fonte de cada um e monta um vídeo com números grandes, carimbos (RUMOR, NEGOCIANDO, FECHADO, POLÊMICA) e o Nei comentando (avatar). Rumor é tratado como rumor, nenhum clube tem lado e aposta não entra. Roda num computador com GPU, com a assinatura do Claude Code e do HeyGen. É irmão do [advviral](https://github.com/~~ARCKHÉTDS~~/advviral), do [saudeviral](https://github.com/~~ARCKHÉTDS~~/saudeviral) e do [finviral](https://github.com/~~ARCKHÉTDS~~/finviral) (mesmo motor, outro tema).
+O futviral faz, sozinho, vídeos curtos (9:16) com o resumo do que os 10 maiores canais de futebol do YouTube disseram: Brasileirão, futebol europeu, mercado da bola, polêmicas e negócios do futebol. Ele assiste aos vídeos por transcrição, separa os números e os fatos com a fonte de cada um e monta um vídeo com números grandes, carimbos (RUMOR, NEGOCIANDO, FECHADO, POLÊMICA) e o Nei comentando (avatar). Rumor é tratado como rumor, nenhum clube tem lado e aposta não entra. Roda num computador com GPU, com a assinatura do Claude Code e do HeyGen. É irmão do [advviral](https://github.com/inematds/advviral), do [saudeviral](https://github.com/inematds/saudeviral) e do [finviral](https://github.com/inematds/finviral) (mesmo motor, outro tema).
 
 ## 📖 Guia de uso
 
-Guia completo (landing + passo a passo): **https://~~ARCKHÉTDS~~.github.io/futviral/guia/**
+Guia completo (landing + passo a passo): **https://inematds.github.io/futviral/guia/**
 
 ## Os 10 canais
 

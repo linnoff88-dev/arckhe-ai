@@ -219,6 +219,6 @@ Além da existência e descoberta de ferramentas, o modo futuro de execução co
 - Separar ensaio determinístico de callbacks, automação de controles e avaliação por modelo de IA. Só registrar tokens/custo quando medidos no provedor.
 - Comparar a mesma tarefa e o mesmo estado inicial; não declarar ganho de desempenho apenas por contar ferramentas.
 
-O laboratório da formação em `https://https://github.com/arckhetds/webmcp-2-builder/labs/jornada-estudos.html` oferece uma jornada fictícia e reversível. Seu roteiro local não é um agente nem prova suporte nativo.
+O laboratório da formação em `https://https://github.com/inematds/webmcp-2-builder/labs/jornada-estudos.html` oferece uma jornada fictícia e reversível. Seu roteiro local não é um agente nem prova suporte nativo.
 
 O scanner passivo permanece sem executar ferramentas. O extrator estático preserva os quatro hints do draft de 17/09/2026 (`readOnlyHint`, `untrustedContentHint`, `consequentialHint`, `debugging`), como indícios heurísticos, não como garantia de comportamento ou autorização. A execução futura não pode confiar somente em `readOnlyHint` para autorizar chamadas.

@@ -46,7 +46,7 @@ Con presupuesto 0 y sin sello (la ficha de ejemplo), el plan hoy queda: **A = 22
 
 | # | Paso | Comando | Quién |
 |---|---|---|---|
-| 1 | Descargar el kit | `git clone https://github.com/arckhetds/lance-sua-startup && cd lance-sua-startup` | 🧠 tú |
+| 1 | Descargar el kit | `git clone https://github.com/inematds/lance-sua-startup && cd lance-sua-startup` | 🧠 tú |
 | 2 | Ver los sitios y filtros | `python3 lancar.py lista --agente --gratis` | ⚙️ script |
 | 3 | Probar con el ejemplo | `python3 lancar.py plano --marca exemplo/marca.json --saida exemplo/trabalho` | ⚙️ script |
 | 4 | Preparar correo de registro, logo y capturas en `marca/` (ej.: `marca/logo-512.png`, `marca/captura-1.png`) | — | 🧠 tú |

@@ -1,17 +1,17 @@
 # Raio-X de Margem
 ## Proveniência (Provenance)
 
-Adaptado do projeto original [~~ARCKHÉTDS~~/raio-x-margem](https://github.com/~~ARCKHÉTDS~~/raio-x-margem) (licença MIT preservada). Rebranding Arckhé AI.
+Adaptado do projeto original [inematds/raio-x-margem](https://github.com/inematds/raio-x-margem) (licença MIT preservada). Rebranding Arckhé AI.
 
 
 
 **🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
 
-[![Raio-X de Margem](guia/assets/banner.jpg)](https://~~ARCKHÉTDS~~.github.io/raio-x-margem/guia/)
+[![Raio-X de Margem](guia/assets/banner.jpg)](https://inematds.github.io/raio-x-margem/guia/)
 
 ## 📖 Guia de uso
 
-Guia completo (landing + passo a passo): **https://~~ARCKHÉTDS~~.github.io/raio-x-margem/guia/** · App online: **https://~~ARCKHÉTDS~~.github.io/raio-x-margem/app/**
+Guia completo (landing + passo a passo): **https://inematds.github.io/raio-x-margem/guia/** · App online: **https://inematds.github.io/raio-x-margem/app/**
 
 **Kit aberto para encontrar onde um negócio perde dinheiro, mostrar em reais, corrigir e provar o que voltou.**
 Setores: **restaurante, hotel/pousada, clínica, salão** (e o modelo genérico "serviços com agenda"), em três mercados: **Brasil (PT), América Latina (ES) e global (EN)**.
@@ -31,7 +31,7 @@ python3 coletor/servidor.py          # tela em http://127.0.0.1:8790/app/coletar
 bash coletor/rodar.sh --setor restaurante --uf PR --cidade Curitiba --bairro Batel --limite 30 --ia claude
 ```
 
-**Daria para raspar Google Maps, Instagram, apps de delivery e sites de reserva — o kit não raspa**, porque os termos proíbem e o risco cai em você e no cliente. Para cada fonte há um caminho alternativo (dado do dono, cadastro oficial, sinal indireto, API oficial, conferência assistida): **[docs/FONTES-E-LIMITES.md](docs/FONTES-E-LIMITES.md)** · no guia: [Fontes e limites](https://~~ARCKHÉTDS~~.github.io/raio-x-margem/guia/#fontes).
+**Daria para raspar Google Maps, Instagram, apps de delivery e sites de reserva — o kit não raspa**, porque os termos proíbem e o risco cai em você e no cliente. Para cada fonte há um caminho alternativo (dado do dono, cadastro oficial, sinal indireto, API oficial, conferência assistida): **[docs/FONTES-E-LIMITES.md](docs/FONTES-E-LIMITES.md)** · no guia: [Fontes e limites](https://inematds.github.io/raio-x-margem/guia/#fontes).
 
 ## Como usar num cliente (6 passos)
 

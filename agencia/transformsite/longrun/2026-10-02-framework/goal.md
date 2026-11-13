@@ -4,7 +4,7 @@
 - **Tetos:** tempo ~8 h · memória de processo 8G · saídas de ferramenta curtas
 
 ## Resultado
-Repo público `arckhetds/transformsite`: framework Python que qualquer pessoa baixa e aplica
+Repo público `inematds/transformsite`: framework Python que qualquer pessoa baixa e aplica
 para transformar site + base de conhecimento em um agente de chat (Telegram, WhatsApp/Evolution,
 e-mail, widget web) que responde com citação, executa serviços declarativos (agendar, fale conosco…),
 converte formulários legados em serviços e tem painel admin; piloto = linnoff88-dev.github.io/arckhe-ai; deploy VPS pronto;
@@ -37,7 +37,7 @@ ROADMAP com v2 (imagem Docker "assada" com KB + serviços); publicado no portal.
 
 ## Restrições
 - só local/assinatura (Ollama, claude -p, codex exec); sem API sem autorização
-- autor git: arckhetds <arckhetds@gmail.com>
+- autor git: inematds <inematds@gmail.com>
 
 ## Portões humanos
 - token do bot Telegram + OK para Telegram Bot API (teste ao vivo)

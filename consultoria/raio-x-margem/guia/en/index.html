@@ -121,7 +121,7 @@
     <a class="sec" href="#roadmap">Roadmap</a>
     <span class="lang"><a href="../">PT</a><a class="on" href="./">EN</a><a href="../es/">ES</a></span>
     <button class="tgl" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">🌙</button>
-    <a class="btn" href="https://github.com/arckhetds/raio-x-margem" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="https://github.com/inematds/raio-x-margem" target="_blank" rel="noopener">GitHub</a>
   </div>
 </div></nav>
 
@@ -135,7 +135,7 @@
       <div class="cta">
         <a class="btn" href="#guia">Start the guide</a>
         <a class="btn ghost" href="../../app/?lang=en">Open the X-Ray</a>
-        <a class="btn ghost" href="https://github.com/arckhetds/raio-x-margem" target="_blank" rel="noopener">View on GitHub</a>
+        <a class="btn ghost" href="https://github.com/inematds/raio-x-margem" target="_blank" rel="noopener">View on GitHub</a>
       </div>
     </div>
     <figure><img src="../assets/banner-en.jpg" alt="Margin X-Ray: find where the business is losing money and win it back"></figure>
@@ -194,7 +194,7 @@
     <div class="card"><h3>Use the app</h3><p>Just a browser. Online through GitHub Pages, or download the repository and open the file.</p><pre><span class="c"># online</span>
 <span class="s">https://linnoff88-dev.github.io/arckhe-ai/consultoria/raio-x-margem/app/?lang=en</span>
 <span class="c"># or locally</span>
-<span class="k">git clone</span> https://github.com/arckhetds/raio-x-margem
+<span class="k">git clone</span> https://github.com/inematds/raio-x-margem
 <span class="k">open</span> raio-x-margem/app/index.html</pre></div>
     <div class="card"><h3>Collect leads</h3><p>Python 3 and Node, no extra libraries. The OpenStreetMap collector queries the public Overpass API, one request at a time — nothing big to download.</p><pre><span class="k">python3</span> --version   <span class="c"># 3.10+</span>
 <span class="k">node</span> --version      <span class="c"># 18+</span></pre></div>
@@ -260,7 +260,7 @@
 <pre><span class="s">app/painel.html?lang=en</span>  →  <span class="k">Open diagnosis</span> (the .json from step 5)  →  <span class="k">Add month</span>  <span class="c"># before × after, % of target, cumulative and bonus</span></pre>
   </div></div>
 
-  <div class="card" style="margin-top:22px;border-color:var(--amb)"><h3>⚖️ Within the rules</h3><p>The kit does not scrape Google Maps, Instagram or delivery apps (their terms forbid it), never uses customer contacts passed on by a marketplace and only keeps business data. B2B prospecting rules vary: in the EU, GDPR legitimate interest plus national ePrivacy rules; in the UK, PECR lets you email corporate subscribers but treats sole traders as individuals; in the US, CAN-SPAM covers B2B email (clear opt-out); Canada's CASL is stricter. Messaging the business's own customers needs consent (TCPA in the US, PECR soft opt-in in the UK, GDPR in the EU). Health data is a special category (HIPAA, GDPR): a reminder should not reveal the procedure. Details in <a href="https://github.com/arckhetds/raio-x-margem/blob/main/docs/TERMOS.md" target="_blank" rel="noopener">docs/TERMOS.md</a> (in Portuguese) and <a href="https://github.com/arckhetds/raio-x-margem/blob/main/docs/mercados/global-pesquisa-2026-10.md" target="_blank" rel="noopener">docs/mercados/global-pesquisa-2026-10.md</a> (research notes, in Portuguese).</p></div>
+  <div class="card" style="margin-top:22px;border-color:var(--amb)"><h3>⚖️ Within the rules</h3><p>The kit does not scrape Google Maps, Instagram or delivery apps (their terms forbid it), never uses customer contacts passed on by a marketplace and only keeps business data. B2B prospecting rules vary: in the EU, GDPR legitimate interest plus national ePrivacy rules; in the UK, PECR lets you email corporate subscribers but treats sole traders as individuals; in the US, CAN-SPAM covers B2B email (clear opt-out); Canada's CASL is stricter. Messaging the business's own customers needs consent (TCPA in the US, PECR soft opt-in in the UK, GDPR in the EU). Health data is a special category (HIPAA, GDPR): a reminder should not reveal the procedure. Details in <a href="https://github.com/inematds/raio-x-margem/blob/main/docs/TERMOS.md" target="_blank" rel="noopener">docs/TERMOS.md</a> (in Portuguese) and <a href="https://github.com/inematds/raio-x-margem/blob/main/docs/mercados/global-pesquisa-2026-10.md" target="_blank" rel="noopener">docs/mercados/global-pesquisa-2026-10.md</a> (research notes, in Portuguese).</p></div>
 </div></section>
 
 <section id="fontes"><div class="wrap">
@@ -272,7 +272,7 @@
     <thead><tr><th>Source</th><th>Would give</th><th>What forbids it</th><th>Instead</th></tr></thead>
     <tbody><tr><td><b>Google Maps</b></td><td>rating, reviews, phone, hours</td><td>Maps Platform Terms 3.2.3 (no scraping)</td><td>check in the Hunter · Places API (place_id only) · owner’s Business Profile</td></tr><tr><td><b>Instagram</b></td><td>activity, posts, followers</td><td>Instagram and Meta terms (automated collection)</td><td>@ from the website · manual check · Business Discovery API · owner’s Insights</td></tr><tr><td><b>Delivery apps</b></td><td>presence, rating, prices</td><td>each app’s terms</td><td>link on the restaurant’s site · web search · partner-portal reports</td></tr><tr><td><b>Booking sites</b></td><td>presence, rating, prices</td><td>Booking A15.2, Airbnb 11.1, Tripadvisor</td><td>tourism registries · hotel website · OTA extranet with the owner</td></tr></tbody>
   </table></div>
-  <div class="card" style="margin-top:18px;border-color:var(--amb)"><p><b>Automatic collection, all from open sources:</b> the <a href="../../app/coletar.html?lang=en">Collect</a> screen (run <code>python3 coletor/servidor.py</code>) or one command: <code>bash coletor/rodar.sh --setor restaurante --uf PR --cidade Curitiba</code>. Registry collectors currently cover Brazil; elsewhere use OpenStreetMap plus a CSV from your local registry.</p><p><a href="https://github.com/arckhetds/raio-x-margem/blob/main/docs/en/FONTES-E-LIMITES.md" target="_blank" rel="noopener">Full report: Sources and limits</a></p></div>
+  <div class="card" style="margin-top:18px;border-color:var(--amb)"><p><b>Automatic collection, all from open sources:</b> the <a href="../../app/coletar.html?lang=en">Collect</a> screen (run <code>python3 coletor/servidor.py</code>) or one command: <code>bash coletor/rodar.sh --setor restaurante --uf PR --cidade Curitiba</code>. Registry collectors currently cover Brazil; elsewhere use OpenStreetMap plus a CSV from your local registry.</p><p><a href="https://github.com/inematds/raio-x-margem/blob/main/docs/en/FONTES-E-LIMITES.md" target="_blank" rel="noopener">Full report: Sources and limits</a></p></div>
 </div></section>
 
 <section id="exemplos"><div class="wrap">
@@ -306,7 +306,7 @@
   <div class="wrap">
     <div class="pill">Plain HTML + JS</div><div class="pill">Python 3 + Node</div><div class="pill">Open data</div><div class="pill">MIT</div>
     <p style="margin-top:18px">Margin X-Ray · free and open kit ·
-      <a href="https://github.com/arckhetds/raio-x-margem">arckhetds/raio-x-margem</a> ·
+      <a href="https://github.com/inematds/raio-x-margem">inematds/raio-x-margem</a> ·
       <a href="https://linnoff88-dev.github.io/arckhe-ai">ARCKHÉ.AI</a></p>
   </div>
 </footer>

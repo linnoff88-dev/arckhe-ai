@@ -1,11 +1,11 @@
 # curiosidade-viral
 ## Proveniência (Provenance)
 
-Adaptado do projeto original [~~ARCKHÉTDS~~/curiosidade-viral](https://github.com/~~ARCKHÉTDS~~/curiosidade-viral) (licença MIT preservada). Rebranding Arckhé AI.
+Adaptado do projeto original [inematds/curiosidade-viral](https://github.com/inematds/curiosidade-viral) (licença MIT preservada). Rebranding Arckhé AI.
 
 
 
-[![Curiosidade viral](guia/assets/banner.jpg)](https://~~ARCKHÉTDS~~.github.io/curiosidade-viral/guia/)
+[![Curiosidade viral](guia/assets/banner.jpg)](https://inematds.github.io/curiosidade-viral/guia/)
 
 **🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
 
@@ -13,7 +13,7 @@ Adaptado do projeto original [~~ARCKHÉTDS~~/curiosidade-viral](https://github.c
 
 O curiosidade-viral é um kit (uma "skill" para o Claude Code ou o Codex) que faz reels verticais de curiosidade sem aparecer ninguém: uma voz explica e a tela mostra, de perto, um objeto do dia a dia. Serve para quem quer criar uma conta de conteúdo curto sem gravar e sem editar. O kit confere o gancho antes de gastar, pede a sua aprovação num storyboard, grava a voz no seu computador e monta o vídeo em código. Traz também dois agentes que leem mensagens e números de anúncios e só propõem. Precisa de Node.js, ffmpeg, Python e o Claude Code ou o Codex.
 
-📖 Guia completo: **https://~~ARCKHÉTDS~~.github.io/curiosidade-viral/guia/**
+📖 Guia completo: **https://inematds.github.io/curiosidade-viral/guia/**
 
 🎬 Vídeo: **https://www.youtube.com/watch?v=TvcCIu0Rysk** · Short: https://youtube.com/shorts/bozJZre8N6U
 
@@ -36,7 +36,7 @@ Clic cuida dos anúncios com 4 regras escritas em código) e o **link etiquetado
 | `ferramentas/` | `novo.py`, `gancho_check.py` (verificador), `storyboard.py`, `voz.py` (voz local presa à palavra), `montar.py`, `mezcla.py`, `preparar.py` |
 | `motor/` | base do render (HyperFrames + Three.js), fontes locais |
 | `agentes/` | `curio.md` + `curio_triagem.py`, `clic.md` + `clic_regras.py`, `link.py`, exemplos |
-| `exemplos/geladeira/` | o reel de demonstração, do roteiro à página do reel (MP4 em [Releases](https://github.com/~~ARCKHÉTDS~~/curiosidade-viral/releases/tag/video-v1.0.0)) |
+| `exemplos/geladeira/` | o reel de demonstração, do roteiro à página do reel (MP4 em [Releases](https://github.com/inematds/curiosidade-viral/releases/tag/video-v1.0.0)) |
 | `docs/caso-e-metodo.md` | o caso real (uma semana, conta do zero) e o que ele ensina |
 | `testes/` | `python3 -m unittest discover -s testes` |
 
@@ -67,7 +67,7 @@ Clic cuida dos anúncios com 4 regras escritas em código) e o **link etiquetado
 ## Instalar
 
 ```bash
-git clone https://github.com/~~ARCKHÉTDS~~/curiosidade-viral.git
+git clone https://github.com/inematds/curiosidade-viral.git
 cd curiosidade-viral
 bash instalar.sh
 ```

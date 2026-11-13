@@ -119,7 +119,7 @@
     <a class="sec" href="#regras">Reglas</a>
     <span class="lang"><a href="../">PT</a><a href="../en/">EN</a><a class="on" href="./">ES</a></span>
     <button class="tgl" id="themeToggle" aria-label="Cambiar tema" title="Cambiar tema">🌙</button>
-    <a class="btn" href="https://github.com/arckhetds/contaviral" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="https://github.com/inematds/contaviral" target="_blank" rel="noopener">GitHub</a>
   </div>
 </div></nav>
 
@@ -132,7 +132,7 @@
       <p class="lead">Los 10 mayores canales brasileños de contabilidad e impuestos de YouTube (Reforma Tributaria, MEI, Simples, nuevas reglas y obligaciones fiscales), transcritos, verificados y resumidos en un video con la fuente en pantalla y Arckhé comentando.</p>
       <div class="cta">
         <a class="btn" href="#guia">Empezar la guía</a>
-        <a class="btn ghost" href="https://github.com/arckhetds/contaviral" target="_blank" rel="noopener">Ver en GitHub</a>
+        <a class="btn ghost" href="https://github.com/inematds/contaviral" target="_blank" rel="noopener">Ver en GitHub</a>
       </div>
     </div>
     <figure><img src="../assets/banner-es.jpg" alt="Banner RADAR CONTABLE: lo que dijeron los 10 mayores canales de contabilidad de YouTube, en 9:16"></figure>
@@ -191,7 +191,7 @@
 <section id="canais"><div class="wrap">
   <span class="chip">Los 10 canales</span>
   <h2>A quién sigue contaviral</h2>
-  <p class="sub">Elegidos el 27/10/2026 a partir de la lista de Arckhé, con medición propia (yt-dlp, mediana de vistas de los últimos 15 videos, canal activo y hablado). Quedaron fuera los canales inactivos, de oposiciones, de política o que venden "paga menos impuestos". Detalles en <a href="https://github.com/arckhetds/contaviral/blob/main/pesquisa/canais.md" target="_blank" rel="noopener"><code>pesquisa/canais.md</code></a> (en portugués).</p>
+  <p class="sub">Elegidos el 27/10/2026 a partir de la lista de Arckhé, con medición propia (yt-dlp, mediana de vistas de los últimos 15 videos, canal activo y hablado). Quedaron fuera los canales inactivos, de oposiciones, de política o que venden "paga menos impuestos". Detalles en <a href="https://github.com/inematds/contaviral/blob/main/pesquisa/canais.md" target="_blank" rel="noopener"><code>pesquisa/canais.md</code></a> (en portugués).</p>
   <div class="grid g3">
     <div class="card"><h3>🏪 MEI y Simples</h3><p>Central do Microempreendedor, Sua Contadora, Gerando Empreendedores y Tenha Renda: límite del MEI, plazos, Simples Nacional y lo que la Receita Federal (la agencia tributaria de Brasil) está cambiando.</p></div>
     <div class="card"><h3>🏛️ Reforma Tributaria</h3><p>Flávia Holanda Gaeta (tesis e IBS/CBS), el profesor Fellipe Guerra (Reforma y Simples) y Paulo Henrique Pêgas (serie "3MIN com Pêgas", en el canal IPECRJ TV).</p></div>
@@ -221,12 +221,12 @@
     <h3>Descargar el proyecto y sus hermanos</h3>
     <p>contaviral queda en <code>~/projetos/contaviral</code> y usa proyectos públicos de Arckhé a su lado. También necesita <code>yt-dlp</code>, <code>ffmpeg</code>, <code>node</code> y <code>claude</code> con sesión iniciada en la suscripción.</p>
     <pre><span class="k">cd</span> ~/projetos
-<span class="k">git clone</span> <span class="s">https://github.com/arckhetds/contaviral</span>
+<span class="k">git clone</span> <span class="s">https://github.com/inematds/contaviral</span>
 <span class="k">for</span> r <span class="k">in</span> arckhevoz yt-pubx cardshorts explicavideos refazvideo eventosextremospub; <span class="k">do</span>
-  <span class="k">git clone</span> <span class="s">https://github.com/arckhetds/$r</span>
+  <span class="k">git clone</span> <span class="s">https://github.com/inematds/$r</span>
 <span class="k">done</span>
 <span class="k">cd</span> ~/projetos/contaviral/motor &amp;&amp; <span class="k">npm install</span> playwright &amp;&amp; <span class="k">npx playwright install</span> chromium   <span class="c"># render: Playwright + Chromium (el enlace motor/node_modules no viene en el clon)</span></pre>
-    <p>Cada hermano tiene su propio README con la configuración: las credenciales del canal en <a href="https://github.com/arckhetds/yt-pubx" target="_blank" rel="noopener">yt-pubx</a>, el bot de Telegram en <a href="https://github.com/arckhetds/refazvideo" target="_blank" rel="noopener">refazvideo</a>, el perfil del estudio HeyGen y la pantalla virtual en <a href="https://github.com/arckhetds/explicavideos" target="_blank" rel="noopener">explicavideos</a>, la transcripción en <a href="https://github.com/arckhetds/arckhevoz" target="_blank" rel="noopener">arckhevoz</a> y la voz en <a href="https://github.com/arckhetds/cardshorts" target="_blank" rel="noopener">cardshorts</a>. La prueba del paso 3 ya necesita arckhevoz, cardshorts y refazvideo; la publicación necesita todos. Para la prueba con foto, cardshorts debe estar instalado con la voz <code>nei</code> (Chatterbox, en la GPU), como en su README.</p>
+    <p>Cada hermano tiene su propio README con la configuración: las credenciales del canal en <a href="https://github.com/inematds/yt-pubx" target="_blank" rel="noopener">yt-pubx</a>, el bot de Telegram en <a href="https://github.com/inematds/refazvideo" target="_blank" rel="noopener">refazvideo</a>, el perfil del estudio HeyGen y la pantalla virtual en <a href="https://github.com/inematds/explicavideos" target="_blank" rel="noopener">explicavideos</a>, la transcripción en <a href="https://github.com/inematds/arckhevoz" target="_blank" rel="noopener">arckhevoz</a> y la voz en <a href="https://github.com/inematds/cardshorts" target="_blank" rel="noopener">cardshorts</a>. La prueba del paso 3 ya necesita arckhevoz, cardshorts y refazvideo; la publicación necesita todos. Para la prueba con foto, cardshorts debe estar instalado con la voz <code>nei</code> (Chatterbox, en la GPU), como en su README.</p>
   </div></div>
   <div class="step"><div class="b">2</div><div>
     <h3>Elegir los canales</h3>
@@ -289,7 +289,7 @@
   <div class="wrap">
     <div class="pill">yt-dlp + Whisper</div><div class="pill">Claude Code</div><div class="pill">Playwright + ffmpeg</div><div class="pill">HeyGen (estudio)</div>
     <p style="margin-top:18px">contaviral · no sustituye la orientación de un contador · el contenido citado pertenece a los canales de origen · licencia MIT ·
-      <a href="https://github.com/arckhetds/contaviral">arckhetds/contaviral</a> ·
+      <a href="https://github.com/inematds/contaviral">inematds/contaviral</a> ·
       <a href="https://linnoff88-dev.github.io/arckhe-ai">ARCKHÉ.AI</a></p>
   </div>
 </footer>

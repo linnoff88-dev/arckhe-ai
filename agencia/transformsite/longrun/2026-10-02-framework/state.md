@@ -2,7 +2,7 @@
 
 - F0–F6 implementadas e verificadas (ver progress.md). Suíte: 99 testes verdes.
 - Piloto linnoff88-dev.github.io/arckhe-ai: 386 páginas/1.512 trechos; golden 73 perguntas → citação válida 92,6%, não-sei 100%, injeção 100%, p95 2,6 s; cenários 13/13 com LLM real.
-- Publicado: github.com/arckhetds/transformsite (público), CI verde, Pages /guia/ /guia/en/ /guia/es/ = 200.
+- Publicado: github.com/inematds/transformsite (público), CI verde, Pages /guia/ /guia/en/ /guia/es/ = 200.
 - Portal: projeto 11df1a1 (portal), 86910c4 (arckhebuscas), f652293 (arckhepro); EN/ES 0878293 (só as 2 linhas; alteração pendente de outra sessão em translated-courses.ts preservada).
 - Aberto: claude_cli/codex_cli experimentais (ver canal.md).
 - Portões humanos abertos: token Telegram + autorização da Bot API; Evolution/SMTP reais.

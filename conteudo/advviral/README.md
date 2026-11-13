@@ -1,21 +1,21 @@
 # advviral
 ## Proveniência (Provenance)
 
-Adaptado do projeto original [~~ARCKHÉTDS~~/advviral](https://github.com/~~ARCKHÉTDS~~/advviral) (licença MIT preservada). Rebranding Arckhé AI.
+Adaptado do projeto original [inematds/advviral](https://github.com/inematds/advviral) (licença MIT preservada). Rebranding Arckhé AI.
 
 
 
-[![advviral — Radar Direito](guia/assets/banner.jpg)](https://~~ARCKHÉTDS~~.github.io/advviral/guia/)
+[![advviral — Radar Direito](guia/assets/banner.jpg)](https://inematds.github.io/advviral/guia/)
 
 **🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
 
 ## O que é
 
-O advviral é um sistema que faz, sozinho, vídeos curtos (9:16) sobre o que os maiores advogados do YouTube no Brasil disseram nos vídeos deles sobre os direitos das pessoas: consumidor, previdência, trabalho, dívidas e bancos, imóvel, família e golpes. Ele assiste aos vídeos do YouTube por transcrição, separa os fatos, os números e as polêmicas, e monta um vídeo com números grandes animados, a fonte de cada dado na tela e o Nei comentando (avatar). Tudo é relatado e atribuído, nada vira conselho para o seu caso e proposta de lei é chamada de proposta. Não substitui orientação de um advogado. Roda num computador com GPU, com a assinatura do Claude Code e do HeyGen. É o irmão do [saudeviral](https://github.com/~~ARCKHÉTDS~~/saudeviral) e do [finviral](https://github.com/~~ARCKHÉTDS~~/finviral) (mesmo motor, outro tema).
+O advviral é um sistema que faz, sozinho, vídeos curtos (9:16) sobre o que os maiores advogados do YouTube no Brasil disseram nos vídeos deles sobre os direitos das pessoas: consumidor, previdência, trabalho, dívidas e bancos, imóvel, família e golpes. Ele assiste aos vídeos do YouTube por transcrição, separa os fatos, os números e as polêmicas, e monta um vídeo com números grandes animados, a fonte de cada dado na tela e o Nei comentando (avatar). Tudo é relatado e atribuído, nada vira conselho para o seu caso e proposta de lei é chamada de proposta. Não substitui orientação de um advogado. Roda num computador com GPU, com a assinatura do Claude Code e do HeyGen. É o irmão do [saudeviral](https://github.com/inematds/saudeviral) e do [finviral](https://github.com/inematds/finviral) (mesmo motor, outro tema).
 
 ## 📖 Guia de uso
 
-Guia completo (landing + passo a passo): **https://~~ARCKHÉTDS~~.github.io/advviral/guia/**
+Guia completo (landing + passo a passo): **https://inematds.github.io/advviral/guia/**
 
 ## Como funciona
 

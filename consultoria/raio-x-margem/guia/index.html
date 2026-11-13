@@ -121,7 +121,7 @@
     <a class="sec" href="#roadmap">Roadmap</a>
     <span class="lang"><a class="on" href="./">PT</a><a href="en/">EN</a><a href="es/">ES</a></span>
     <button class="tgl" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
-    <a class="btn" href="https://github.com/arckhetds/raio-x-margem" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="https://github.com/inematds/raio-x-margem" target="_blank" rel="noopener">GitHub</a>
   </div>
 </div></nav>
 
@@ -135,7 +135,7 @@
       <div class="cta">
         <a class="btn" href="#guia">Começar o guia</a>
         <a class="btn ghost" href="../app/?lang=pt">Abrir o Raio-X</a>
-        <a class="btn ghost" href="https://github.com/arckhetds/raio-x-margem" target="_blank" rel="noopener">Ver no GitHub</a>
+        <a class="btn ghost" href="https://github.com/inematds/raio-x-margem" target="_blank" rel="noopener">Ver no GitHub</a>
       </div>
     </div>
     <figure><img src="assets/banner.jpg" alt="Raio-X de Margem: encontre onde o negócio perde dinheiro e recupere"></figure>
@@ -194,7 +194,7 @@
     <div class="card"><h3>Usar o app</h3><p>Só um navegador. Online pelo GitHub Pages ou baixando o repositório e abrindo o arquivo.</p><pre><span class="c"># online</span>
 <span class="s">https://linnoff88-dev.github.io/arckhe-ai/consultoria/raio-x-margem/app/</span>
 <span class="c"># ou local</span>
-<span class="k">git clone</span> https://github.com/arckhetds/raio-x-margem
+<span class="k">git clone</span> https://github.com/inematds/raio-x-margem
 <span class="k">xdg-open</span> raio-x-margem/app/index.html</pre></div>
     <div class="card"><h3>Coletar leads</h3><p>Python 3 e Node, sem bibliotecas extras. O CNPJ baixa ~7 GB filtrando no caminho (só o cache do setor fica no disco).</p><pre><span class="k">python3</span> --version   <span class="c"># 3.10+</span>
 <span class="k">node</span> --version      <span class="c"># 18+</span></pre></div>
@@ -259,7 +259,7 @@
 <pre><span class="s">app/painel.html</span>  →  <span class="k">Abrir diagnóstico</span> (o .json do passo 5)  →  <span class="k">Lançar mês</span>  <span class="c"># antes × depois, % da meta, acumulado e bônus</span></pre>
   </div></div>
 
-  <div class="card" style="margin-top:22px;border-color:var(--amb)"><h3>⚖️ Dentro das regras</h3><p>O kit não raspa Google Maps, Instagram nem iFood (os termos proíbem), não usa contato de cliente vindo de marketplace e só guarda dados de empresa (LGPD). Clínica segue o conselho profissional: dentista não anuncia preço nem faz "indique e ganhe". Tudo com trecho e link em <a href="https://github.com/arckhetds/raio-x-margem/blob/main/docs/TERMOS.md" target="_blank" rel="noopener">docs/TERMOS.md</a>.</p></div>
+  <div class="card" style="margin-top:22px;border-color:var(--amb)"><h3>⚖️ Dentro das regras</h3><p>O kit não raspa Google Maps, Instagram nem iFood (os termos proíbem), não usa contato de cliente vindo de marketplace e só guarda dados de empresa (LGPD). Clínica segue o conselho profissional: dentista não anuncia preço nem faz "indique e ganhe". Tudo com trecho e link em <a href="https://github.com/inematds/raio-x-margem/blob/main/docs/TERMOS.md" target="_blank" rel="noopener">docs/TERMOS.md</a>.</p></div>
 </div></section>
 
 <section id="fontes"><div class="wrap">
@@ -271,13 +271,13 @@
     <thead><tr><th>Fonte</th><th>Traria</th><th>O que impede</th><th>No lugar</th></tr></thead>
     <tbody><tr><td><b>Google Maps</b></td><td>nota, avaliações, telefone, horário</td><td>Termos do Maps Platform 3.2.3 (sem raspagem)</td><td>conferência no Caçador · Places API (só place_id) · Perfil da Empresa do dono</td></tr><tr><td><b>Instagram</b></td><td>atividade, posts, seguidores</td><td>Termos do Instagram e da Meta (coleta automatizada)</td><td>@ do site do negócio · conferência · API Business Discovery · Insights do dono</td></tr><tr><td><b>Apps de delivery</b></td><td>presença, nota, preço</td><td>Termos do iFood §8 e de cada app</td><td>link no site do restaurante · busca web · relatório do portal do parceiro</td></tr><tr><td><b>Sites de reserva</b></td><td>presença, nota, preço</td><td>Booking A15.2, Airbnb 11.1, Tripadvisor</td><td>Cadastur · site do hotel · extranet da OTA com o dono</td></tr></tbody>
   </table></div>
-  <div class="card" style="margin-top:18px;border-color:var(--amb)"><p><b>Coleta automática, toda com fonte aberta:</b> tela <a href="../app/coletar.html">Coletar</a> (com <code>python3 coletor/servidor.py</code>) ou um comando: <code>bash coletor/rodar.sh --setor restaurante --uf PR --cidade Curitiba --bairro Batel</code>.</p><p><a href="https://github.com/arckhetds/raio-x-margem/blob/main/docs/FONTES-E-LIMITES.md" target="_blank" rel="noopener">Relatório completo: Fontes e limites</a></p></div>
+  <div class="card" style="margin-top:18px;border-color:var(--amb)"><p><b>Coleta automática, toda com fonte aberta:</b> tela <a href="../app/coletar.html">Coletar</a> (com <code>python3 coletor/servidor.py</code>) ou um comando: <code>bash coletor/rodar.sh --setor restaurante --uf PR --cidade Curitiba --bairro Batel</code>.</p><p><a href="https://github.com/inematds/raio-x-margem/blob/main/docs/FONTES-E-LIMITES.md" target="_blank" rel="noopener">Relatório completo: Fontes e limites</a></p></div>
 </div></section>
 
 <section id="exemplos"><div class="wrap">
   <span class="chip">Exemplos</span>
   <h2>O que saiu do piloto</h2>
-  <p class="sub">Rodado em 01–02/10/2026 no Batel (Curitiba) e em Gramado e Canela (RS). Relatório completo em <a href="https://github.com/arckhetds/raio-x-margem/blob/main/docs/PILOTO-2026-10.md" target="_blank" rel="noopener">docs/PILOTO-2026-10.md</a>.</p>
+  <p class="sub">Rodado em 01–02/10/2026 no Batel (Curitiba) e em Gramado e Canela (RS). Relatório completo em <a href="https://github.com/inematds/raio-x-margem/blob/main/docs/PILOTO-2026-10.md" target="_blank" rel="noopener">docs/PILOTO-2026-10.md</a>.</p>
   <div class="ex">
     <figure><img src="assets/raiox-pt.jpg" alt="Raio-X preenchido com o exemplo de restaurante" loading="lazy"><figcaption>Raio-X do exemplo de restaurante: R$ 19.238/mês de vazamento em 9 pontos, ordenados por prioridade.</figcaption></figure>
     <figure><img src="assets/cacador-pt.jpg" alt="Caçador de leads com uma pousada pontuada" loading="lazy"><figcaption>Caçador no setor hotel: pontuação, sinais conferidos, potencial por número de quartos e abordagem pronta.</figcaption></figure>
@@ -304,7 +304,7 @@
   <div class="wrap">
     <div class="pill">HTML + JS puro</div><div class="pill">Python 3 + Node</div><div class="pill">Dados abertos</div><div class="pill">MIT</div>
     <p style="margin-top:18px">Raio-X de Margem · kit aberto e gratuito ·
-      <a href="https://github.com/arckhetds/raio-x-margem">arckhetds/raio-x-margem</a> ·
+      <a href="https://github.com/inematds/raio-x-margem">inematds/raio-x-margem</a> ·
       <a href="https://linnoff88-dev.github.io/arckhe-ai">ARCKHÉ.AI</a></p>
   </div>
 </footer>

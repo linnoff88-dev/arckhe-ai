@@ -6,7 +6,7 @@
 
 ## Qué es
 
-saudeviral es un sistema que hace, solo, videos cortos (9:16) sobre lo que dijeron en sus videos los mayores influencers de salud de Brasil: los médicos, nutricionistas y psicólogos con mayor audiencia. Mira los videos de YouTube mediante transcripción, separa los hechos, los números y las polémicas, y arma un video con números grandes animados, la fuente de cada dato en pantalla y Arckhé comentando (avatar). Todo se relata y se atribuye, y lo que no tiene consenso en la medicina sale con el sello "SIN CONSENSO". No sustituye una consulta médica. Corre en una computadora con GPU, con las suscripciones de Claude Code y HeyGen. Es el hermano de [finviral](https://github.com/arckhetds/finviral) (el mismo motor, otro tema).
+saudeviral es un sistema que hace, solo, videos cortos (9:16) sobre lo que dijeron en sus videos los mayores influencers de salud de Brasil: los médicos, nutricionistas y psicólogos con mayor audiencia. Mira los videos de YouTube mediante transcripción, separa los hechos, los números y las polémicas, y arma un video con números grandes animados, la fuente de cada dato en pantalla y Arckhé comentando (avatar). Todo se relata y se atribuye, y lo que no tiene consenso en la medicina sale con el sello "SIN CONSENSO". No sustituye una consulta médica. Corre en una computadora con GPU, con las suscripciones de Claude Code y HeyGen. Es el hermano de [finviral](https://github.com/inematds/finviral) (el mismo motor, otro tema).
 
 ## 📖 Guía de uso
 

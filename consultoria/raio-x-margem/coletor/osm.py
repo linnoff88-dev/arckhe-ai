@@ -26,7 +26,7 @@ SETORES = {  # setor → lista de (chave OSM, valores)
     "saude": [("amenity", "dentist|clinic|doctors"), ("healthcare", "dentist|clinic|doctor|physiotherapist|psychotherapist|podiatrist|alternative|nutrition_counselling|speech_therapist")],
     "beleza": [("shop", "hairdresser|beauty|massage|cosmetics")],
 }
-USER_AGENT = "raio-x-margem/0.2 (+https://github.com/arckhetds/raio-x-margem)"
+USER_AGENT = "raio-x-margem/0.2 (+https://github.com/inematds/raio-x-margem)"
 
 
 def montar_consulta(cidade, bairro, nivel_cidade, nivel_bairro, setor, uf=None):

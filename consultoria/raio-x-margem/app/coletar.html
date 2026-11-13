@@ -106,7 +106,7 @@
   var PACOTE = { pt: { restaurante: 'restaurante', hotel: 'hotel', clinica: 'clinica', salao: 'salao' },
                  en: { restaurante: 'restaurante-global', hotel: 'hotel-global', clinica: 'clinica-global', salao: 'salao-global' },
                  es: { restaurante: 'restaurante-latam', hotel: 'hotel-latam', clinica: 'clinica-latam', salao: 'salao-latam' } }[I.lang];
-  var DOC = 'https://github.com/arckhetds/raio-x-margem/blob/main/docs/' + (I.lang === 'pt' ? '' : I.lang + '/') + 'FONTES-E-LIMITES.md';
+  var DOC = 'https://github.com/inematds/raio-x-margem/blob/main/docs/' + (I.lang === 'pt' ? '' : I.lang + '/') + 'FONTES-E-LIMITES.md';
   porId('l-fontes').href = DOC;
   ['l-cacador', 'l-raiox', 'l-painel'].forEach(function (id) { porId(id).href += '?lang=' + I.lang; });
   porId('setor').innerHTML = SETORES.map(function (s) { return '<option value="' + s + '">' + esc(t('s.' + s)) + '</option>'; }).join('');

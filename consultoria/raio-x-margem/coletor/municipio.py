@@ -23,7 +23,7 @@ import zipfile
 
 BASE = "https://arquivos.receitafederal.gov.br/public.php/dav/files/YggdBLfdninEJX9/"
 OVERPASS = "https://overpass-api.de/api/interpreter"
-USER_AGENT = "raio-x-margem/0.6 (+https://github.com/arckhetds/raio-x-margem)"
+USER_AGENT = "raio-x-margem/0.6 (+https://github.com/inematds/raio-x-margem)"
 CACHE = "dados/receita-municipios.csv"
 
 

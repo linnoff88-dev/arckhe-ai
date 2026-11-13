@@ -45,7 +45,7 @@ With a budget of 0 and no badges (the example sheet), the plan today comes out a
 
 | # | Step | Command | Who |
 |---|---|---|---|
-| 1 | Download the kit | `git clone https://github.com/arckhetds/lance-sua-startup && cd lance-sua-startup` | 🧠 you |
+| 1 | Download the kit | `git clone https://github.com/inematds/lance-sua-startup && cd lance-sua-startup` | 🧠 you |
 | 2 | See the sites and filters | `python3 lancar.py lista --agente --gratis` | ⚙️ script |
 | 3 | Test with the example | `python3 lancar.py plano --marca exemplo/marca.json --saida exemplo/trabalho` | ⚙️ script |
 | 4 | Prepare the sign-up email, logo and screenshots in `marca/` (e.g. `marca/logo-512.png`, `marca/captura-1.png`) | — | 🧠 you |

@@ -37,7 +37,7 @@ legacy forms ──convert──► services/*.yaml ──► slot machine ─�
 ## Quick install (5 minutes)
 
 ```bash
-pipx install git+https://github.com/arckhetds/transformsite      # or: pip install .
+pipx install git+https://github.com/inematds/transformsite      # or: pip install .
 ollama pull qwen3.6:35b-a3b && ollama pull bge-m3                # any instruct model works (e.g. qwen2.5:7b)
 
 transformsite init meubot --org "Minha Empresa" --url https://www.minhaempresa.com.br --contact atendimento@minhaempresa.com.br
@@ -111,7 +111,7 @@ Human handoff: `handoff.targets` (`panel`, `email:...`, `telegram:<chat_id>`). I
 ## Deploy on a VPS
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/arckhetds/transformsite/main/deploy/vps/install.sh | sudo bash -s -- \
+curl -fsSL https://raw.githubusercontent.com/inematds/transformsite/main/deploy/vps/install.sh | sudo bash -s -- \
   --domain bot.suaempresa.com.br --site https://www.suaempresa.com.br --org "Sua Empresa" --contact atendimento@suaempresa.com.br --whatsapp
 ```
 

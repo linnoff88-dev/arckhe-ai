@@ -6,7 +6,7 @@ welcome: >-
   Olá! Sou o assistente do ARCKHÉ.AI 🤖 Respondo dúvidas sobre cursos, guias, eventos e a comunidade
   com base no site linnoff88-dev.github.io/arckhe-ai (sempre com o link da fonte), e posso agendar uma conversa com a equipe.
   Guardamos as conversas por 90 dias para melhorar o atendimento.
-fallback_contact: "arckhetds@gmail.com"
+fallback_contact: "inematds@gmail.com"
 
 llm:
   # ollama (local, padrão) | openai_compat (vLLM/LM Studio) | claude_cli | codex_cli | fake
@@ -31,7 +31,7 @@ agenda:
 
 handoff:
   # para onde vão os pedidos de atendimento humano: panel | email:<endereço> | telegram:<chat_id>
-  targets: [panel, "email:arckhetds@gmail.com"]
+  targets: [panel, "email:inematds@gmail.com"]
   hours: "seg–sex, 9h–18h"
 
 retention:
@@ -40,7 +40,7 @@ retention:
 
 privacy:
   controller: "ARCKHÉ.AI"
-  dpo_contact: "arckhetds@gmail.com"
+  dpo_contact: "inematds@gmail.com"
 
 email:
   smtp_host: ""         # vazio = e-mails vão para data/outbox/*.eml (modo seguro)

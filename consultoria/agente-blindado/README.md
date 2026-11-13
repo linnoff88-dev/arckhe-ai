@@ -1,11 +1,11 @@
 # Agente Blindado — 5 travas contra injeção de prompt
 ## Proveniência (Provenance)
 
-Adaptado do projeto original [~~ARCKHÉTDS~~/agente-blindado](https://github.com/~~ARCKHÉTDS~~/agente-blindado) (licença MIT preservada). Rebranding Arckhé AI.
+Adaptado do projeto original [inematds/agente-blindado](https://github.com/inematds/agente-blindado) (licença MIT preservada). Rebranding Arckhé AI.
 
 
 
-[![Agente Blindado](guia/assets/banner.jpg)](https://~~ARCKHÉTDS~~.github.io/agente-blindado/guia/)
+[![Agente Blindado](guia/assets/banner.jpg)](https://inematds.github.io/agente-blindado/guia/)
 
 **🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
 
@@ -19,7 +19,7 @@ Claude Code.
 
 ## 📖 Guia de uso
 
-Guia completo (landing + passo a passo): **https://~~ARCKHÉTDS~~.github.io/agente-blindado/guia/**
+Guia completo (landing + passo a passo): **https://inematds.github.io/agente-blindado/guia/**
 
 ## Por quê
 
@@ -63,7 +63,7 @@ modelos menores ou abertos, e para quando o agente tiver acesso a coisa séria.
 
 | # | Passo | Comando | Quem |
 |---|---|---|---|
-| 1 | Baixar o kit | `git clone https://github.com/~~ARCKHÉTDS~~/agente-blindado` | 🧠 você |
+| 1 | Baixar o kit | `git clone https://github.com/inematds/agente-blindado` | 🧠 você |
 | 2 | Escolher o perfil do agente (leitor, escritor, publicador) | ler a tabela da trava 3 | 🧠 você |
 | 3 | Ligar as travas 2, 3 e 4 no projeto | `./instalar.sh <pasta-do-projeto> escritor` (agente sozinho: `--negar`) | ⚙️ script |
 | 4 | Ajustar as regras do dono | editar o topo do `CLAUDE.md` do projeto (o que está entre `< >`) | 🧠 você |

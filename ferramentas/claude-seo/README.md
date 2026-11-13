@@ -1,6 +1,6 @@
 ## Proveniência (Provenance)
 
-Adaptado do projeto original [~~ARCKHÉTDS~~/claude-seo](https://github.com/~~ARCKHÉTDS~~/claude-seo) (licença MIT preservada). Rebranding Arckhé AI.
+Adaptado do projeto original [inematds/claude-seo](https://github.com/inematds/claude-seo) (licença MIT preservada). Rebranding Arckhé AI.
 
 <!-- Updated: 2026-03-06 -->
 

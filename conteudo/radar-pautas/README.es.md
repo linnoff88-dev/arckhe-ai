@@ -15,7 +15,7 @@ Guía completa (landing + paso a paso): **https://linnoff88-dev.github.io/arckhe
 ## Usar
 
 ```bash
-git clone https://github.com/arckhetds/radar-pautas ~/projetos/radar-pautas
+git clone https://github.com/inematds/radar-pautas ~/projetos/radar-pautas
 cd ~/projetos/radar-pautas
 python3 radar.py --dry          # ver los 6 temas sin guardar
 python3 radar.py --angulos      # guardar + titular/gancho/formato en PT (Claude Code)

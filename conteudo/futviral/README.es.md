@@ -6,7 +6,7 @@
 
 ## Qué es
 
-futviral hace, solo, videos cortos (9:16) con el resumen de lo que dijeron los 10 mayores canales de fútbol de YouTube: Brasileirão, fútbol europeo, mercado de fichajes, polémicas y negocios del fútbol. Mira los videos a través de la transcripción, separa los números y los hechos con la fuente de cada uno y arma un video con números grandes, sellos (RUMOR, NEGOCIANDO, FECHADO (cerrado), POLÊMICA (polémica)) y Arckhé comentando (avatar). El rumor se trata como rumor, ningún club tiene preferencia y las apuestas no entran. Funciona en una computadora con GPU, con la suscripción de Claude Code y de HeyGen. Es hermano de [advviral](https://github.com/arckhetds/advviral), de [saudeviral](https://github.com/arckhetds/saudeviral) y de [finviral](https://github.com/arckhetds/finviral) (mismo motor, otro tema).
+futviral hace, solo, videos cortos (9:16) con el resumen de lo que dijeron los 10 mayores canales de fútbol de YouTube: Brasileirão, fútbol europeo, mercado de fichajes, polémicas y negocios del fútbol. Mira los videos a través de la transcripción, separa los números y los hechos con la fuente de cada uno y arma un video con números grandes, sellos (RUMOR, NEGOCIANDO, FECHADO (cerrado), POLÊMICA (polémica)) y Arckhé comentando (avatar). El rumor se trata como rumor, ningún club tiene preferencia y las apuestas no entran. Funciona en una computadora con GPU, con la suscripción de Claude Code y de HeyGen. Es hermano de [advviral](https://github.com/inematds/advviral), de [saudeviral](https://github.com/inematds/saudeviral) y de [finviral](https://github.com/inematds/finviral) (mismo motor, otro tema).
 
 ## 📖 Guía de uso
 

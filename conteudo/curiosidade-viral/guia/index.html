@@ -116,7 +116,7 @@
 <a class="sec" href="#licoes">Lições</a>
 <span class="lang"><a class="on" href="./">PT</a><a href="en/">EN</a><a href="es/">ES</a></span>
 <button aria-label="Alternar tema" class="tgl" id="themeToggle" title="Alternar tema">🌙</button>
-<a class="btn" href="https://github.com/arckhetds/curiosidade-viral" rel="noopener" target="_blank">GitHub</a>
+<a class="btn" href="https://github.com/inematds/curiosidade-viral" rel="noopener" target="_blank">GitHub</a>
 </div>
 </div></nav>
 <header class="hero" id="top">
@@ -128,7 +128,7 @@
 <p class="lead">Você dá a pergunta ("por que a geladeira esquenta a cozinha?"). A IA pesquisa com fonte, escreve 4 ganchos, mostra o storyboard e só depois grava a voz e monta o vídeo. Dois agentes cuidam da conta e dos anúncios, sem gastar nada sem o seu OK. Não precisa de placa de vídeo: sem ela, o reel sai com legenda e música.</p>
 <div class="cta">
 <a class="btn" href="#guia">Começar o guia</a>
-<a class="btn ghost" href="https://github.com/arckhetds/curiosidade-viral" rel="noopener" target="_blank">Ver no GitHub</a>
+<a class="btn ghost" href="https://github.com/inematds/curiosidade-viral" rel="noopener" target="_blank">Ver no GitHub</a>
 <a class="btn ghost" href="https://linnoff88-dev.github.io/arckhe-ai/conteudo/curiosidade-viral/videos/">Assistir ao vídeo</a>
 </div>
 </div>
@@ -181,8 +181,8 @@
 <div class="card"><h3>Python 3 com numpy</h3><p>Para o verificador, o storyboard, os agentes e a música em código. No Ubuntu/Debian novos o <code>pip</code> do sistema é bloqueado: use o pacote do sistema.</p><pre><span class="k">sudo apt install</span> python3-numpy
 <span class="c"># no Mac: python3 -m pip install numpy</span></pre></div>
 <div class="card"><h3>Claude Code ou Codex</h3><p>Escreve fatos, ganchos, roteiro e cenas. É quem "usa" a skill: as instruções que o kit dá à IA.</p><pre><span class="k">claude</span>   <span class="c"># ou: codex</span></pre></div>
-<div class="card"><h3>Voz local (opcional, precisa de GPU)</h3><p>O <code>voz.py</code> usa o Chatterbox (clona a sua voz a partir de 10–20 s de áudio) e o Whisper (marca o tempo de cada palavra), rodando numa placa de vídeo NVIDIA. Diga onde estão com as variáveis abaixo. O worker de voz vem do <a href="https://github.com/arckhetds/arckhevoz" target="_blank" rel="noopener">arckhevoz</a> (grátis): clone e siga o README dele. Sem GPU? Pule a voz: o reel sai com legenda e música (<code>montar.py --sem-voz</code>).</p><pre><span class="k">export</span> CHATTERBOX_PYTHON=<span class="s">~/miniconda3/envs/chatterbox/bin/python3</span>
-<span class="k">export</span> ArckhéVOX_DIR=<span class="s">~/arckhevoz</span>   <span class="c"># pasta com venv e Whisper: git clone https://github.com/arckhetds/arckhevoz</span>
+<div class="card"><h3>Voz local (opcional, precisa de GPU)</h3><p>O <code>voz.py</code> usa o Chatterbox (clona a sua voz a partir de 10–20 s de áudio) e o Whisper (marca o tempo de cada palavra), rodando numa placa de vídeo NVIDIA. Diga onde estão com as variáveis abaixo. O worker de voz vem do <a href="https://github.com/inematds/arckhevoz" target="_blank" rel="noopener">arckhevoz</a> (grátis): clone e siga o README dele. Sem GPU? Pule a voz: o reel sai com legenda e música (<code>montar.py --sem-voz</code>).</p><pre><span class="k">export</span> CHATTERBOX_PYTHON=<span class="s">~/miniconda3/envs/chatterbox/bin/python3</span>
+<span class="k">export</span> ArckhéVOX_DIR=<span class="s">~/arckhevoz</span>   <span class="c"># pasta com venv e Whisper: git clone https://github.com/inematds/arckhevoz</span>
 <span class="k">export</span> VC_VOZ=<span class="s">~/minha-voz.wav</span>   <span class="c"># obrigatório: a SUA voz (senão ele procura a voz padrão do autor)</span></pre></div>
 </div>
 </div></section>
@@ -193,7 +193,7 @@
 <div class="step"><div class="b">1</div><div>
 <h3>Instale</h3>
 <p>Liga a skill no Claude Code e no Codex, roda os testes e cria o seu <code>preferencias.md</code> (público e fecho).</p>
-<pre><span class="k">git clone</span> <span class="s">https://github.com/arckhetds/curiosidade-viral.git</span>
+<pre><span class="k">git clone</span> <span class="s">https://github.com/inematds/curiosidade-viral.git</span>
 <span class="k">cd</span> curiosidade-viral
 <span class="k">bash</span> instalar.sh</pre>
 </div></div>
@@ -334,7 +334,7 @@ Total proposto: 85/dia (teto 150).</pre>
 <div class="wrap">
 <div class="pill">Claude Code / Codex</div><div class="pill">HyperFrames</div><div class="pill">voz local</div><div class="pill">Python</div>
 <p style="margin-top:18px">curiosidade-viral · kit grátis do Arckhé, licença MIT ·
-      <a href="https://github.com/arckhetds/curiosidade-viral">arckhetds/curiosidade-viral</a> ·
+      <a href="https://github.com/inematds/curiosidade-viral">inematds/curiosidade-viral</a> ·
       <a href="https://linnoff88-dev.github.io/arckhe-ai">ARCKHÉ.AI</a></p>
 </div>
 </footer>

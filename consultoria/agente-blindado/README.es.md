@@ -58,7 +58,7 @@ modelos más pequeños o abiertos y para cuando el agente tenga acceso a informa
 
 | # | Paso | Comando | Quién |
 |---|---|---|---|
-| 1 | Descargar el kit | `git clone https://github.com/arckhetds/agente-blindado` | 🧠 tú |
+| 1 | Descargar el kit | `git clone https://github.com/inematds/agente-blindado` | 🧠 tú |
 | 2 | Elegir el perfil del agente (lector, escritor, publicador) | leer la tabla de la barrera 3 | 🧠 tú |
 | 3 | Activar las barreras 2, 3 y 4 en el proyecto | `./instalar.sh <pasta-do-projeto> escritor` (agente por su cuenta: `--negar`) | ⚙️ script |
 | 4 | Ajustar las reglas del dueño | editar la parte superior de `CLAUDE.md` del proyecto (lo que está entre `< >`) | 🧠 tú |

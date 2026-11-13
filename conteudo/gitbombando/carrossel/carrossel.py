@@ -38,7 +38,7 @@ AGENDA = "Todo dia no <b>@arckhe.tech</b>: <b>14h</b> Top 10 do GitHub · <b>18h
 ICONES = {"zap", "video", "image", "mic", "code", "terminal", "bot", "brain", "shield", "lock", "search", "globe", "layers",
           "clock", "cpu", "database", "wand", "chart", "folder", "link", "chat", "download"}
 PROIBIDO = re.compile(r"revolucion|incrível|inacreditável|insano|mude sua vida|!!|\bmort[eoa]s?\b|\btu\b|\bteu\b", re.I)
-TRAVA = Path.home() / "projetos/metricool-arckhetds/intervalo.py"
+TRAVA = Path.home() / "projetos/metricool-inematds/intervalo.py"
 SEM_CHAVE = {k: v for k, v in os.environ.items() if k != "ANTHROPIC_API_KEY"}   # claude -p sempre pela assinatura
 
 
@@ -338,13 +338,13 @@ def telegram(cd, d, S, t, titulo):
 
 
 def metritds(cd, d, S, leg, titulo):
-    """carrossel no Instagram + TikTok (modo foto) arckhe.tech (marca FTD) pelo Metricool da conta arckhetds (claude -p, assinatura)"""
+    """carrossel no Instagram + TikTok (modo foto) arckhe.tech (marca FTD) pelo Metricool da conta inematds (claude -p, assinatura)"""
     marca = cd / "metritds.txt"
     if marca.exists() and not os.environ.get("RASCUNHO") and not os.environ.get("FORCAR"):
         log("metritds: já agendado"); return {"ok": True, "redes": marca.read_text().splitlines()[1:2]}
     rel = "social"
-    if subprocess.run(["gh", "release", "view", rel, "-R", "arckhetds/gitbombando"], capture_output=True).returncode:
-        subprocess.run(["gh", "release", "create", rel, "-R", "arckhetds/gitbombando", "--title", "Vídeos para redes sociais",
+    if subprocess.run(["gh", "release", "view", rel, "-R", "inematds/gitbombando"], capture_output=True).returncode:
+        subprocess.run(["gh", "release", "create", rel, "-R", "inematds/gitbombando", "--title", "Vídeos para redes sociais",
                         "--notes", "Cópias das peças do Bombando no GitHub usadas pelo Metricool (Instagram/TikTok arckhe.tds)."],
                        capture_output=True)
     urls = []
@@ -354,15 +354,15 @@ def metritds(cd, d, S, leg, titulo):
             j = Path(tmp) / f"gitbombando-{cd.name}-{k:02d}.jpg"
             Image.open(p).convert("RGB").save(j, quality=92)
             arqs.append(j)
-            urls.append(f"https://github.com/arckhetds/gitbombando/releases/download/{rel}/{j.name}")
-        r = subprocess.run(["gh", "release", "upload", rel, *map(str, arqs), "-R", "arckhetds/gitbombando", "--clobber"],
+            urls.append(f"https://github.com/inematds/gitbombando/releases/download/{rel}/{j.name}")
+        r = subprocess.run(["gh", "release", "upload", rel, *map(str, arqs), "-R", "inematds/gitbombando", "--clobber"],
                            capture_output=True, text=True, timeout=900)
         if r.returncode:
             return {"ok": False, "erro": "upload na release: " + r.stderr[:200]}
     (cd / "metritds-texto.txt").write_text(leg)
     alvo = time.time() + 600
     if not os.environ.get("RASCUNHO"):   # trava de 1 h entre posts da marca (Arckhé, 12/11/2026); INTERVALO_LIVRE=1 libera
-        t = subprocess.run(["python3", str(TRAVA), "--conector", "metricool-arckhetds", "--marca", "FTD", "--alvo", str(int(alvo))],
+        t = subprocess.run(["python3", str(TRAVA), "--conector", "metricool-inematds", "--marca", "FTD", "--alvo", str(int(alvo))],
                            capture_output=True, text=True)
         log("metritds:", t.stderr.strip()[-200:])
         if t.returncode:
@@ -370,7 +370,7 @@ def metritds(cd, d, S, leg, titulo):
         alvo = int(t.stdout.split()[-1])
     quando = time.strftime("%Y-%m-%dT%H:%M:00", time.gmtime(alvo))   # UTC (lição do metricool-pub2)
     rascunho = "true" if os.environ.get("RASCUNHO") else "false"
-    pedido = f"""Use só as ferramentas do servidor MCP metricool-arckhetds.
+    pedido = f"""Use só as ferramentas do servidor MCP metricool-inematds.
 1) getBrandSettings: use a marca FTD (blogId 7908265, Instagram + TikTok arckhe.tech) e veja em networksData se instagram e tiktok estão conectados.
 2) createScheduledPost UMA vez com as redes conectadas (das duas) em providers. É um CARROSSEL DE IMAGENS (não vídeo):
    date = {quando}Z ; publicationDate = {{dateTime: "{quando}", timezone: "UTC"}}
@@ -382,7 +382,7 @@ def metritds(cd, d, S, leg, titulo):
    Se der erro por causa do TikTok (fotos), tente de novo SÓ com instagram e diga isso no campo erro.
 3) Responda APENAS uma linha JSON, sem crase: {{"ok":true|false,"redes":[...],"faltam":[...],"planner":[...],"erro":"texto ou vazio"}}"""
     r = subprocess.run(["claude", "-p", "--allowedTools",
-                        "mcp__metricool-arckhetds__getBrandSettings mcp__metricool-arckhetds__createScheduledPost Read"],
+                        "mcp__metricool-inematds__getBrandSettings mcp__metricool-inematds__createScheduledPost Read"],
                        input=pedido, cwd=cd, capture_output=True, text=True, timeout=900, env=SEM_CHAVE)
     (cd / "metritds.log").write_text(r.stdout + r.stderr)
     m = re.findall(r'\{[^{}]*"ok"[^{}]*\}', r.stdout)

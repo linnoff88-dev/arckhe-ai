@@ -19,7 +19,7 @@ from pathlib import Path
 R = Path(__file__).resolve().parent.parent
 SINCE = {"dia": "daily", "semana": "weekly", "mes": "monthly"}
 PERIODO = {"dia": "today", "semana": "this week", "mes": "this month"}
-UA = "Mozilla/5.0 (X11; Linux x86_64) gitbombando/1.0 (+https://github.com/arckhetds/gitbombando)"
+UA = "Mozilla/5.0 (X11; Linux x86_64) gitbombando/1.0 (+https://github.com/inematds/gitbombando)"
 
 
 def log(*a):

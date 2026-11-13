@@ -1,21 +1,21 @@
 # saudeviral
 ## Proveniência (Provenance)
 
-Adaptado do projeto original [~~ARCKHÉTDS~~/saudeviral](https://github.com/~~ARCKHÉTDS~~/saudeviral) (licença MIT preservada). Rebranding Arckhé AI.
+Adaptado do projeto original [inematds/saudeviral](https://github.com/inematds/saudeviral) (licença MIT preservada). Rebranding Arckhé AI.
 
 
 
-[![saudeviral — Radar Saúde](guia/assets/banner.jpg)](https://~~ARCKHÉTDS~~.github.io/saudeviral/guia/)
+[![saudeviral — Radar Saúde](guia/assets/banner.jpg)](https://inematds.github.io/saudeviral/guia/)
 
 **🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
 
 ## O que é
 
-O saudeviral é um sistema que faz, sozinho, vídeos curtos (9:16) sobre o que os maiores influenciadores de saúde do Brasil disseram nos vídeos deles: médicos, nutricionistas e psicólogos com maior audiência. Ele assiste aos vídeos do YouTube por transcrição, separa os fatos, os números e as polêmicas, e monta um vídeo com números grandes animados, a fonte de cada dado na tela e o Nei comentando (avatar). Tudo é relatado e atribuído, e o que não tem consenso na medicina sai com o carimbo "SEM CONSENSO". Não substitui consulta médica. Roda num computador com GPU, com a assinatura do Claude Code e do HeyGen. É o irmão do [finviral](https://github.com/~~ARCKHÉTDS~~/finviral) (mesmo motor, outro tema).
+O saudeviral é um sistema que faz, sozinho, vídeos curtos (9:16) sobre o que os maiores influenciadores de saúde do Brasil disseram nos vídeos deles: médicos, nutricionistas e psicólogos com maior audiência. Ele assiste aos vídeos do YouTube por transcrição, separa os fatos, os números e as polêmicas, e monta um vídeo com números grandes animados, a fonte de cada dado na tela e o Nei comentando (avatar). Tudo é relatado e atribuído, e o que não tem consenso na medicina sai com o carimbo "SEM CONSENSO". Não substitui consulta médica. Roda num computador com GPU, com a assinatura do Claude Code e do HeyGen. É o irmão do [finviral](https://github.com/inematds/finviral) (mesmo motor, outro tema).
 
 ## 📖 Guia de uso
 
-Guia completo (landing + passo a passo): **https://~~ARCKHÉTDS~~.github.io/saudeviral/guia/**
+Guia completo (landing + passo a passo): **https://inematds.github.io/saudeviral/guia/**
 
 ## Como funciona
 

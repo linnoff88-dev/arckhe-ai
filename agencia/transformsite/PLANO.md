@@ -445,7 +445,7 @@ Tudo sai de `transformsite report --since 7d` (CSV) e do painel (F5).
 - **Retenção e base legal:** 90 dias de transcrição e 12 meses de auditoria estão ok? Quem é o encarregado (LGPD) a citar no aviso?
 - **Autenticação nível 2/3:** OTP por e-mail basta, ou há sistema legado com login que precisa ser integrado já na Fase 2?
 - **Sistema legado:** há algum endpoint/API real para `legado.*`, ou o conversor deve começar só com `http.post_form` (POST no formulário antigo)?
-- **Repositório:** criar `arckhetds/transformsite` (default) ou outra conta? Licença aberta (MIT/Apache-2)?
+- **Repositório:** criar `inematds/transformsite` (default) ou outra conta? Licença aberta (MIT/Apache-2)?
 
 ---
 

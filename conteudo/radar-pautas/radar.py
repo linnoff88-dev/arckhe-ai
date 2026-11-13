@@ -26,7 +26,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent
-UA = {"User-Agent": "Mozilla/5.0 (radar-pautas; +https://github.com/arckhetds/radar-pautas)"}
+UA = {"User-Agent": "Mozilla/5.0 (radar-pautas; +https://github.com/inematds/radar-pautas)"}
 PRODUCOES = Path.home() / "projetos/wifi/PRODUCOES-VIDEO.md"
 SAIDA = Path(os.environ.get("RADAR_SAIDA", Path.home() / "projetos/output/radar-pautas"))
 PARADAS = set("""a o as os de da do das dos e em no na nos nas um uma uns umas para por com sem que se ao à é the a an of to in on for and or with by from at is are was be as it its this that new how why what you your

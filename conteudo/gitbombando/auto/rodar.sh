@@ -95,16 +95,16 @@ fi
 python3 "$RAIZ/gb.py" publicar "$ED" > "$ED/publicar-gb.log" 2>&1 || echo "publicar saiu com erro (ver publicar-gb.log)"
 tail -3 "$ED/publicar-gb.log"
 
-# 4b. metritds: Instagram + TikTok arckhe.tds pelo Metricool da conta arckhetds (Arckhé, 01/11/2026)
+# 4b. metritds: Instagram + TikTok arckhe.tds pelo Metricool da conta inematds (Arckhé, 01/11/2026)
 [ "${SEM_METRI:-}" = 1 ] || bash "$RAIZ/auto/metritds.sh" "$ED" > /dev/null 2>&1 || echo "metritds falhou (ver $ED/metritds.log)"
 
-# 5. git (autor arckhetds); mídia fica fora pelo .gitignore
+# 5. git (autor inematds); mídia fica fora pelo .gitignore
 if [ "${SEM_GIT:-}" != 1 ]; then
   cd "$RAIZ"
   for f in "edicoes/$DIA-$SUF"/{ficha.yaml,falas.json,revisao.json,yt.txt,telegram.md,youtube-lives4.txt,pesquisa/top10.json} historico auto/telegram-topico.txt; do
     [ -e "$f" ] && git add -- "$f"
   done
-  git -c user.name=arckhetds -c user.email=arckhetds@gmail.com commit -qm "Bombando no GitHub · $MODO $DATA_BR (rodada automática)" \
+  git -c user.name=inematds -c user.email=inematds@gmail.com commit -qm "Bombando no GitHub · $MODO $DATA_BR (rodada automática)" \
     && { git pull -q --rebase --autostash && git push -q && echo "push ok"; } || echo "git: nada a commitar ou falhou"
 fi
 echo "=== fim $(date '+%F %T')"

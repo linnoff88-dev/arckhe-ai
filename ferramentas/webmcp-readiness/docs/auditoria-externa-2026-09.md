@@ -22,7 +22,7 @@ Três conclusões mandam em tudo o que segue.
    schema", e um site sem WebMCP fica preso perto de 83 na nota geral mesmo com
    SEO, GEO e AEO perfeitos.
 3. **A autoridade do Arckhé está dividida e a substância mora fora do portal.**
-   A busca "curso WebMCP em português" devolve `https://github.com/arckhetds`, não
+   A busca "curso WebMCP em português" devolve `https://github.com/inematds`, não
    `linnoff88-dev.github.io/arckhe-ai`. As páginas de curso do portal têm 165 a 245 palavras, FAQ
    gerada por template e o texto "Nível catalogado: Não informado na fonte".
 
@@ -251,7 +251,7 @@ proibição de inventar token de origin trial e a regra "a meta não é a nota".
 | Sem ordem por lacuna medida | As 12 etapas são executadas sempre, na mesma ordem | Sites com SEO pronto gastam o mesmo esforço que sites sem nada |
 | Sem critério de verificação por achado | "Compare as pontuações antes e depois" | O agente não sabe qual evidência precisa aparecer para cada correção |
 | Conflito com regra do usuário | "Aguarde o deploy aparecer no domínio" e "Confirme que a versão publicada contém as alterações" | Contradiz a regra global de nunca consultar ou esperar o Vercel |
-| Autor fixo | `arckhetds <arckhetds@gmail.com>` | A regra correta é: autor segue a conta de destino, com `arckhetds` como padrão |
+| Autor fixo | `inematds <inematds@gmail.com>` | A regra correta é: autor segue a conta de destino, com `inematds` como padrão |
 | Sem versão | Os dois arquivos não têm número nem changelog | PT e EN já divergem (o EN tem 13 etapas e "Local scanner") |
 | Falta o ponto cego de JS | Nenhuma etapa manda comparar HTML bruto com renderizado | O agente pode "corrigir" algo invisível para crawlers de IA |
 
@@ -327,12 +327,12 @@ O que está limitando:
 
 | Achado | Evidência (observado) | Por que pesa |
 |---|---|---|
-| A substância mora no github.io | "curso WebMCP em português" devolveu `https://github.com/arckhetds/webmcp-1-formacao/`, não `linnoff88-dev.github.io/arckhe-ai` | O domínio que acumula autoridade e citações não é o do portal |
+| A substância mora no github.io | "curso WebMCP em português" devolveu `https://github.com/inematds/webmcp-1-formacao/`, não `linnoff88-dev.github.io/arckhe-ai` | O domínio que acumula autoridade e citações não é o do portal |
 | Páginas de curso rasas | Curso 246: 165 palavras no scan, "Nível catalogado: Não informado na fonte", "carga horária, pré-requisitos e módulos devem ser confirmados na aplicação oficial" | Padrão observado em uma página e inferido para as outras 251 do sitemap de cursos, por ser template |
 | FAQ por template | "O que é o curso X?" respondido com a própria meta description, na página observada | Google restringiu rich results de FAQ em 2023 (conhecimento geral, não verificado aqui); repetir a descrição sinaliza conteúdo automatizado |
 | Home com H1 fraco | `ARCKHÉ.AI Portal Arckhé`, três H2 | A página mais forte do domínio não declara o que é |
 | Sitemap principal sem `lastmod` | 64 URLs, zero `lastmod`; o de cursos tem 211 | Crawlers de IA priorizam frescor declarado |
-| Marca dividida | `linnoff88-dev.github.io/arckhe-ai`, `linnoff88-dev.github.io/arckhe-ai`, `linnoff88-dev.github.io/arckhe-ai/#comunidade`, `linnoff88-dev.github.io/arckhe-ai/#eventos`, `linnoff88-dev.github.io/arckhe-ai/ferramentas/webmcp-readiness`, `https://github.com/arckhetds` | Cada superfície dilui entidade e links |
+| Marca dividida | `linnoff88-dev.github.io/arckhe-ai`, `linnoff88-dev.github.io/arckhe-ai`, `linnoff88-dev.github.io/arckhe-ai/#comunidade`, `linnoff88-dev.github.io/arckhe-ai/#eventos`, `linnoff88-dev.github.io/arckhe-ai/ferramentas/webmcp-readiness`, `https://github.com/inematds` | Cada superfície dilui entidade e links |
 | Colisão de entidade | "Arckhé" é também o órgão ambiental da Bahia | A IA precisa de co-ocorrência forte com "ARCKHÉ.club" e "Arckhé Maldaner" |
 
 ## 3.2 Plano por ordem de impacto
@@ -367,7 +367,7 @@ O que está limitando:
   Bing (conhecimento geral, não verificado nesta auditoria). Sem isso, a
   otimização para OAI-SearchBot fica pela metade.
 - Google Search Console com o relatório de recursos generativos.
-- Descrições de vídeos no YouTube e READMEs dos repositórios `arckhetds/*`
+- Descrições de vídeos no YouTube e READMEs dos repositórios `inematds/*`
   apontando para a URL canônica do portal, com uma frase descritiva, não só
   o link.
 - Transcrições dos vídeos publicadas como texto no portal.
@@ -394,7 +394,7 @@ como linha de base informal:
 | Prompt | Resultado observado em 2026-09-02 |
 |---|---|
 | Marca: "ARCKHÉ.club cursos inteligência artificial Arckhé Maldaner" | Portal presente, com LinkedIn, Sisnema e YouTube |
-| Categoria: "curso WebMCP em português formação" | Presente via `https://github.com/arckhetds` e `linnoff88-dev.github.io/arckhe-ai/#eventos`; `linnoff88-dev.github.io/arckhe-ai` ausente |
+| Categoria: "curso WebMCP em português formação" | Presente via `https://github.com/inematds` e `linnoff88-dev.github.io/arckhe-ai/#eventos`; `linnoff88-dev.github.io/arckhe-ai` ausente |
 | Produto: "WebMCP Readiness scanner" | `linnoff88-dev.github.io/arckhe-ai/ferramentas/webmcp-readiness` presente, entre seis concorrentes |
 | Tecnologia: "WebMCP Chrome origin trial" | Nenhuma superfície Arckhé; só Chrome, ppc.land, blogs internacionais |
 

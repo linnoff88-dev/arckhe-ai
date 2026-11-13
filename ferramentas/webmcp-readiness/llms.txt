@@ -9,7 +9,7 @@ O scanner analisa a URL informada, inventaria arquivos públicos e procura decla
 - [Diagnóstico](https://linnoff88-dev.github.io/arckhe-ai/ferramentas/webmcp-readiness/): formulário de análise, relatório e exportação JSON.
 - [Manifesto Arckhé](https://linnoff88-dev.github.io/arckhe-ai/ferramentas/webmcp-readiness/arckhe.json): identidade, idioma, acesso e relações entre sistemas.
 - [Sitemap](https://linnoff88-dev.github.io/arckhe-ai/ferramentas/webmcp-readiness/sitemap.xml): páginas públicas do produto.
-- [Documentação](https://github.com/arckhetds/webmcp-readiness/blob/main/README.md): funcionamento e limites.
+- [Documentação](https://github.com/inematds/webmcp-readiness/blob/main/README.md): funcionamento e limites.
 
 ## Ecossistema
 

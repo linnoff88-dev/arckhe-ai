@@ -1,11 +1,11 @@
 # gitbombando — Bombando no GitHub
 ## Proveniência (Provenance)
 
-Adaptado do projeto original [~~ARCKHÉTDS~~/gitbombando](https://github.com/~~ARCKHÉTDS~~/gitbombando) (licença MIT preservada). Rebranding Arckhé AI.
+Adaptado do projeto original [inematds/gitbombando](https://github.com/inematds/gitbombando) (licença MIT preservada). Rebranding Arckhé AI.
 
 
 
-[![Bombando no GitHub](guia/assets/banner.jpg)](https://~~ARCKHÉTDS~~.github.io/gitbombando/guia/)
+[![Bombando no GitHub](guia/assets/banner.jpg)](https://inematds.github.io/gitbombando/guia/)
 
 **🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
 
@@ -23,7 +23,7 @@ ARCKHÉ.DEV no Telegram. É para quem quer saber o que está bombando em tecnolo
 
 ## 📖 Guia de uso
 
-Guia completo (landing + passo a passo): **https://~~ARCKHÉTDS~~.github.io/gitbombando/guia/**
+Guia completo (landing + passo a passo): **https://inematds.github.io/gitbombando/guia/**
 
 ---
 
@@ -42,7 +42,7 @@ Guia completo (landing + passo a passo): **https://~~ARCKHÉTDS~~.github.io/gitb
 | 6 | Montagem | tempo de cada palavra (Whisper), ritmo (~182 palavras/min, pausa antes do #1), cena com contador e gráfico em cada projeto, render no motor de telejornal | ⚙️ |
 | 7 | Revisão | `claude -p` com `auto/revisor.md` lê a folha de 18 quadros: aprovado segue; reprovado para e avisa no v3 | 🤖 |
 | 8 | Publicar | `gb.py publicar`: YouTube **lives4** (yt-pubx, título com #Shorts, links dos 10 na descrição) → bot **v3** → tópico fixo **BOMBANDO NO GITHUB** no ARCKHÉ.TOOLS | ⚙️ |
-| 8b | Metritds | `auto/metritds.sh <pasta>`: sobe o vídeo na release `social` do repo e agenda (agora + 10 min) no **Instagram + TikTok arckhe.tds** (marca do lives4) pelo Metricool da conta ~~ARCKHÉTDS~~ (conector `metricool-~~ARCKHÉTDS~~`, via `claude -p`); dia ~11:10, semana 13:00, mês 15:00; aviso azul no v3 | 🤖 |
+| 8b | Metritds | `auto/metritds.sh <pasta>`: sobe o vídeo na release `social` do repo e agenda (agora + 10 min) no **Instagram + TikTok arckhe.tds** (marca do lives4) pelo Metricool da conta inematds (conector `metricool-inematds`, via `claude -p`); dia ~11:10, semana 13:00, mês 15:00; aviso azul no v3 | 🤖 |
 | 9 | Guardar | git commit + push (roteiro, dados e histórico; mídia fica fora) | ⚙️ |
 | 10 | Carrossel Top 10 | timer `gitbombando-carrossel-top10` às 12:45 → `auto/carrossel.sh <dia> top10` (publica às **14:00**): reusa a coleta do vídeo; `claude -p` com `carrossel/textos.md` escreve gancho, "o que é", 2 benefícios e o fluxo de cada um; print de cada projeto tirado do README (`carrossel/prints.py`); 12 slides 1080×1350 (`carrossel/render.mjs`); portão do texto e do desenho; revisor `claude -p` (`carrossel/revisor.md`) | ⚙️🤖 |
 | 11 | Carrossel da área | timer `gitbombando-carrossel-area` às 16:45 → `auto/carrossel.sh <dia> area` (publica às **18:00**): `carrossel/area.py` busca no GitHub os repositórios da área do dia criados nos últimos 120 dias, ordenados por estrelas por dia, sem repetir as últimas 8 semanas e sem conteúdo adulto; depois o mesmo caminho do passo 10 com 8 projetos | ⚙️🤖 |

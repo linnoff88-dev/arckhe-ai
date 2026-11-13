@@ -1,11 +1,11 @@
 # radar-pautas
 ## Proveniência (Provenance)
 
-Adaptado do projeto original [~~ARCKHÉTDS~~/radar-pautas](https://github.com/~~ARCKHÉTDS~~/radar-pautas) (licença MIT preservada). Rebranding Arckhé AI.
+Adaptado do projeto original [inematds/radar-pautas](https://github.com/inematds/radar-pautas) (licença MIT preservada). Rebranding Arckhé AI.
 
 
 
-[![radar-pautas — as 6 pautas de IA do dia](guia/assets/banner.jpg)](https://~~ARCKHÉTDS~~.github.io/radar-pautas/guia/)
+[![radar-pautas — as 6 pautas de IA do dia](guia/assets/banner.jpg)](https://inematds.github.io/radar-pautas/guia/)
 
 **🇧🇷 Português · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
 
@@ -15,12 +15,12 @@ O radar-pautas é um script que lê, de uma vez, cerca de 20 sites de notícias 
 
 ## 📖 Guia de uso
 
-Guia completo (landing + passo a passo): **https://~~ARCKHÉTDS~~.github.io/radar-pautas/guia/**
+Guia completo (landing + passo a passo): **https://inematds.github.io/radar-pautas/guia/**
 
 ## Usar
 
 ```bash
-git clone https://github.com/~~ARCKHÉTDS~~/radar-pautas ~/projetos/radar-pautas
+git clone https://github.com/inematds/radar-pautas ~/projetos/radar-pautas
 cd ~/projetos/radar-pautas
 python3 radar.py --dry          # olhar as 6 pautas sem gravar
 python3 radar.py --angulos      # gravar + manchete/gancho/formato em PT (Claude Code)

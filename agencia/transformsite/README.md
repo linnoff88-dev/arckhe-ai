@@ -1,11 +1,11 @@
 # transformsite
 ## Proveniência (Provenance)
 
-Adaptado do projeto original [~~ARCKHÉTDS~~/transformsite](https://github.com/~~ARCKHÉTDS~~/transformsite) (licença MIT preservada). Rebranding Arckhé AI.
+Adaptado do projeto original [inematds/transformsite](https://github.com/inematds/transformsite) (licença MIT preservada). Rebranding Arckhé AI.
 
 
 
-[![transformsite — seu site vira chat](guia/assets/banner.jpg)](https://~~ARCKHÉTDS~~.github.io/transformsite/guia/)
+[![transformsite — seu site vira chat](guia/assets/banner.jpg)](https://inematds.github.io/transformsite/guia/)
 
 **🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
 
@@ -16,7 +16,7 @@ O agente **responde citando a fonte** (ou diz "não sei" e passa para a equipe) 
 
 ## 📖 Guia de uso
 
-Guia completo (landing + passo a passo): **https://~~ARCKHÉTDS~~.github.io/transformsite/guia/** · 🗺️ [Roadmap](ROADMAP.md)
+Guia completo (landing + passo a passo): **https://inematds.github.io/transformsite/guia/** · 🗺️ [Roadmap](ROADMAP.md)
 
 > Inspiração: o **America.gov** (2026) juntou o conteúdo de ~29 mil sites do governo americano num único
 > ponto de entrada conversacional — primeiro perguntas com fonte, depois transações. O transformsite é a
@@ -42,7 +42,7 @@ formulários legados ──convert──► services/*.yaml ──► máquina d
 ## Instalação rápida (5 minutos)
 
 ```bash
-pipx install git+https://github.com/~~ARCKHÉTDS~~/transformsite      # ou: pip install .
+pipx install git+https://github.com/inematds/transformsite      # ou: pip install .
 ollama pull qwen3.6:35b-a3b && ollama pull bge-m3                # qualquer modelo instruct serve (ex.: qwen2.5:7b)
 
 transformsite init meubot --org "Minha Empresa" --url https://www.minhaempresa.com.br --contact atendimento@minhaempresa.com.br
@@ -116,7 +116,7 @@ Handoff humano: `handoff.targets` (`panel`, `email:...`, `telegram:<chat_id>`). 
 ## Deploy numa VPS
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/~~ARCKHÉTDS~~/transformsite/main/deploy/vps/install.sh | sudo bash -s -- \
+curl -fsSL https://raw.githubusercontent.com/inematds/transformsite/main/deploy/vps/install.sh | sudo bash -s -- \
   --domain bot.suaempresa.com.br --site https://www.suaempresa.com.br --org "Sua Empresa" --contact atendimento@suaempresa.com.br --whatsapp
 ```
 

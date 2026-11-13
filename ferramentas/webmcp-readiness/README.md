@@ -1,7 +1,7 @@
 # WebMCP Readiness
 ## Proveniência (Provenance)
 
-Adaptado do projeto original [~~ARCKHÉTDS~~/webmcp-readiness](https://github.com/~~ARCKHÉTDS~~/webmcp-readiness) (licença MIT preservada). Rebranding Arckhé AI.
+Adaptado do projeto original [inematds/webmcp-readiness](https://github.com/inematds/webmcp-readiness) (licença MIT preservada). Rebranding Arckhé AI.
 
 
 
@@ -110,7 +110,7 @@ npx vercel deploy --prod
 URLs com credenciais, protocolos diferentes de HTTP/HTTPS e endereços privados são bloqueados. Redirecionamentos dos arquivos públicos são revalidados, as respostas têm limite de tamanho e cada análise usa um novo contexto de navegador.
 
 Projeto independente do ecossistema ARCKHÉ, utilizado como laboratório pela
-[Formação WebMCP](https://~~ARCKHÉTDS~~.github.io/webmcp-1-formacao/).
+[Formação WebMCP](https://inematds.github.io/webmcp-1-formacao/).
 
 ## Descoberta entre sistemas
 

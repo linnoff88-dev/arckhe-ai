@@ -121,7 +121,7 @@
     <a class="sec" href="#roadmap">Hoja de ruta</a>
     <span class="lang"><a href="../">PT</a><a href="../en/">EN</a><a class="on" href="./">ES</a></span>
     <button class="tgl" id="themeToggle" aria-label="Cambiar tema" title="Cambiar tema">🌙</button>
-    <a class="btn" href="https://github.com/arckhetds/raio-x-margem" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="https://github.com/inematds/raio-x-margem" target="_blank" rel="noopener">GitHub</a>
   </div>
 </div></nav>
 
@@ -135,7 +135,7 @@
       <div class="cta">
         <a class="btn" href="#guia">Empezar la guía</a>
         <a class="btn ghost" href="../../app/?lang=es">Abrir la Radiografía</a>
-        <a class="btn ghost" href="https://github.com/arckhetds/raio-x-margem" target="_blank" rel="noopener">Ver en GitHub</a>
+        <a class="btn ghost" href="https://github.com/inematds/raio-x-margem" target="_blank" rel="noopener">Ver en GitHub</a>
       </div>
     </div>
     <figure><img src="../assets/banner-es.jpg" alt="Radiografía de Margen: encuentre dónde el negocio pierde dinero y recupérelo"></figure>
@@ -194,7 +194,7 @@
     <div class="card"><h3>Usar la app</h3><p>Solo un navegador. En línea por GitHub Pages o descargando el repositorio y abriendo el archivo.</p><pre><span class="c"># en línea</span>
 <span class="s">https://linnoff88-dev.github.io/arckhe-ai/consultoria/raio-x-margem/app/?lang=es</span>
 <span class="c"># o local</span>
-<span class="k">git clone</span> https://github.com/arckhetds/raio-x-margem
+<span class="k">git clone</span> https://github.com/inematds/raio-x-margem
 <span class="k">xdg-open</span> raio-x-margem/app/index.html</pre></div>
     <div class="card"><h3>Recolectar clientes</h3><p>Python 3 y Node, sin bibliotecas extra. El recolector de OpenStreetMap funciona en cualquier país; el registro local se descarga como CSV desde el sitio oficial.</p><pre><span class="k">python3</span> --version   <span class="c"># 3.10+</span>
 <span class="k">node</span> --version      <span class="c"># 18+</span></pre></div>
@@ -259,7 +259,7 @@
 <pre><span class="s">app/painel.html?lang=es</span>  →  <span class="k">Abrir diagnóstico</span> (el .json del paso 5)  →  <span class="k">Agregar mes</span>  <span class="c"># antes × después, % de la meta, acumulado y bono</span></pre>
   </div></div>
 
-  <div class="card" style="margin-top:22px;border-color:var(--amb)"><h3>⚖️ Dentro de las reglas</h3><p>El kit no raspa Google Maps, Instagram ni las apps de delivery (los términos lo prohíben), nunca usa el contacto de clientes que entrega la plataforma y solo guarda datos de empresa. La prospección B2B sigue la ley de cada país: en Colombia los datos corporativos quedan fuera de la Ley 1581; en Argentina se permiten datos de fuentes de acceso público irrestricto, con derecho de exclusión; en México la nueva LFPDPPP (2025) exige aviso de privacidad y opción de oposición; en Chile la Ley 21.719 entra en vigor el 01/12/2026, posiblemente aplazada; en Perú rige el nuevo reglamento desde 2025. Los datos de salud son datos sensibles en toda la región, y en México la publicidad médica puede requerir aviso o permiso de COFEPRIS (dato de proveedor, verifique la norma). Detalles en <a href="https://github.com/arckhetds/raio-x-margem/blob/main/docs/TERMOS.md" target="_blank" rel="noopener">docs/TERMOS.md</a> (en portugués) y <a href="https://github.com/arckhetds/raio-x-margem/blob/main/docs/mercados/latam-pesquisa-2026-10.md" target="_blank" rel="noopener">docs/mercados/latam-pesquisa-2026-10.md</a> (notas de investigación, en portugués).</p></div>
+  <div class="card" style="margin-top:22px;border-color:var(--amb)"><h3>⚖️ Dentro de las reglas</h3><p>El kit no raspa Google Maps, Instagram ni las apps de delivery (los términos lo prohíben), nunca usa el contacto de clientes que entrega la plataforma y solo guarda datos de empresa. La prospección B2B sigue la ley de cada país: en Colombia los datos corporativos quedan fuera de la Ley 1581; en Argentina se permiten datos de fuentes de acceso público irrestricto, con derecho de exclusión; en México la nueva LFPDPPP (2025) exige aviso de privacidad y opción de oposición; en Chile la Ley 21.719 entra en vigor el 01/12/2026, posiblemente aplazada; en Perú rige el nuevo reglamento desde 2025. Los datos de salud son datos sensibles en toda la región, y en México la publicidad médica puede requerir aviso o permiso de COFEPRIS (dato de proveedor, verifique la norma). Detalles en <a href="https://github.com/inematds/raio-x-margem/blob/main/docs/TERMOS.md" target="_blank" rel="noopener">docs/TERMOS.md</a> (en portugués) y <a href="https://github.com/inematds/raio-x-margem/blob/main/docs/mercados/latam-pesquisa-2026-10.md" target="_blank" rel="noopener">docs/mercados/latam-pesquisa-2026-10.md</a> (notas de investigación, en portugués).</p></div>
 </div></section>
 
 <section id="fontes"><div class="wrap">
@@ -271,7 +271,7 @@
     <thead><tr><th>Fuente</th><th>Daría</th><th>Qué lo impide</th><th>En su lugar</th></tr></thead>
     <tbody><tr><td><b>Google Maps</b></td><td>calificación, reseñas, teléfono, horario</td><td>Términos de Maps Platform 3.2.3 (sin raspado)</td><td>verificación en el Cazador · Places API (solo place_id) · Perfil de Empresa del dueño</td></tr><tr><td><b>Instagram</b></td><td>actividad, publicaciones, seguidores</td><td>Términos de Instagram y Meta (recolección automatizada)</td><td>@ del sitio · verificación · API Business Discovery · Estadísticas del dueño</td></tr><tr><td><b>Apps de delivery</b></td><td>presencia, calificación, precios</td><td>términos de cada app</td><td>enlace en el sitio del restaurante · búsqueda web · reportes del portal de socios</td></tr><tr><td><b>Sitios de reserva</b></td><td>presencia, calificación, precios</td><td>Booking A15.2, Airbnb 11.1, Tripadvisor</td><td>registros de turismo · sitio del hotel · extranet de la OTA con el dueño</td></tr></tbody>
   </table></div>
-  <div class="card" style="margin-top:18px;border-color:var(--amb)"><p><b>Recolección automática, toda con fuentes abiertas:</b> la pantalla <a href="../../app/coletar.html?lang=es">Recolectar</a> (con <code>python3 coletor/servidor.py</code>) o un comando: <code>bash coletor/rodar.sh --setor restaurante --uf PR --cidade Curitiba</code>. Los recolectores de registros hoy cubren Brasil; en otros países use OpenStreetMap más un CSV del registro local.</p><p><a href="https://github.com/arckhetds/raio-x-margem/blob/main/docs/es/FONTES-E-LIMITES.md" target="_blank" rel="noopener">Informe completo: Fuentes y límites</a></p></div>
+  <div class="card" style="margin-top:18px;border-color:var(--amb)"><p><b>Recolección automática, toda con fuentes abiertas:</b> la pantalla <a href="../../app/coletar.html?lang=es">Recolectar</a> (con <code>python3 coletor/servidor.py</code>) o un comando: <code>bash coletor/rodar.sh --setor restaurante --uf PR --cidade Curitiba</code>. Los recolectores de registros hoy cubren Brasil; en otros países use OpenStreetMap más un CSV del registro local.</p><p><a href="https://github.com/inematds/raio-x-margem/blob/main/docs/es/FONTES-E-LIMITES.md" target="_blank" rel="noopener">Informe completo: Fuentes y límites</a></p></div>
 </div></section>
 
 <section id="exemplos"><div class="wrap">
@@ -305,7 +305,7 @@
   <div class="wrap">
     <div class="pill">HTML + JS puro</div><div class="pill">Python 3 + Node</div><div class="pill">Datos abiertos</div><div class="pill">MIT</div>
     <p style="margin-top:18px">Radiografía de Margen · kit abierto y gratuito ·
-      <a href="https://github.com/arckhetds/raio-x-margem">arckhetds/raio-x-margem</a> ·
+      <a href="https://github.com/inematds/raio-x-margem">inematds/raio-x-margem</a> ·
       <a href="https://linnoff88-dev.github.io/arckhe-ai">ARCKHÉ.AI</a></p>
   </div>
 </footer>

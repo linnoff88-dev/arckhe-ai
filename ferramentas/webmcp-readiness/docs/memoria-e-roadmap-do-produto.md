@@ -36,7 +36,7 @@ Local de trabalho:
 Repositório:
 
 ```text
-git@github.com:arckhetds/webmcp-readiness.git
+git@github.com:inematds/webmcp-readiness.git
 ```
 
 Produção:

@@ -49,7 +49,7 @@ if [ "${SEM_GIT:-}" != 1 ]; then
            historico auto/telegram-topico-carrossel.txt; do
     [ -e "$f" ] && git add -- "$f"
   done
-  git -c user.name=arckhetds -c user.email=arckhetds@gmail.com commit -qm "Bombando no GitHub · $NOME · $(date -d "$DIA" +%d/%m/%Y) (rodada automática)" \
+  git -c user.name=inematds -c user.email=inematds@gmail.com commit -qm "Bombando no GitHub · $NOME · $(date -d "$DIA" +%d/%m/%Y) (rodada automática)" \
     && { git pull -q --rebase --autostash && git push -q && echo "push ok"; } || echo "git: nada a commitar ou falhou"
 fi
 echo "=== fim $(date '+%F %T')"

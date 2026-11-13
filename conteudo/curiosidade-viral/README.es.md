@@ -28,7 +28,7 @@ Y como viralizar es la parte fácil, el kit incluye el resto del modelo: **dos a
 | `ferramentas/` | `novo.py`, `gancho_check.py` (verificador), `storyboard.py`, `voz.py` (voz local sincronizada con la palabra), `montar.py`, `mezcla.py`, `preparar.py` |
 | `motor/` | base del renderizado (HyperFrames + Three.js), fuentes locales |
 | `agentes/` | `curio.md` + `curio_triagem.py`, `clic.md` + `clic_regras.py`, `link.py`, ejemplos |
-| `exemplos/geladeira/` | el reel de demostración, del guion a la página del reel (MP4 en [Releases](https://github.com/arckhetds/curiosidade-viral/releases/tag/video-v1.0.0)) |
+| `exemplos/geladeira/` | el reel de demostración, del guion a la página del reel (MP4 en [Releases](https://github.com/inematds/curiosidade-viral/releases/tag/video-v1.0.0)) |
 | `docs/caso-e-metodo.md` | el caso real (una semana, cuenta desde cero) y lo que enseña |
 | `testes/` | `python3 -m unittest discover -s testes` |
 
@@ -59,7 +59,7 @@ Y como viralizar es la parte fácil, el kit incluye el resto del modelo: **dos a
 ## Instalar
 
 ```bash
-git clone https://github.com/arckhetds/curiosidade-viral.git
+git clone https://github.com/inematds/curiosidade-viral.git
 cd curiosidade-viral
 bash instalar.sh
 ```

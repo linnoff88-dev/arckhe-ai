@@ -6,7 +6,7 @@
 
 ## What it is
 
-futviral makes, on its own, short videos (9:16) summing up what the 10 biggest football channels on YouTube said: Brasileirão, European football, the transfer market, controversies and the business of football. It watches the videos through their transcripts, pulls out the numbers and facts with the source of each one, and builds a video with big numbers, stamps (RUMOR, NEGOCIANDO, FECHADO, POLÊMICA — rumor, negotiating, done deal, controversy) and Arckhé commenting (avatar). A rumor is treated as a rumor, no club gets a side and betting is left out. It runs on a computer with a GPU, using the Claude Code and HeyGen subscriptions. It is a sibling of [advviral](https://github.com/arckhetds/advviral), [saudeviral](https://github.com/arckhetds/saudeviral) and [finviral](https://github.com/arckhetds/finviral) (same engine, different topic).
+futviral makes, on its own, short videos (9:16) summing up what the 10 biggest football channels on YouTube said: Brasileirão, European football, the transfer market, controversies and the business of football. It watches the videos through their transcripts, pulls out the numbers and facts with the source of each one, and builds a video with big numbers, stamps (RUMOR, NEGOCIANDO, FECHADO, POLÊMICA — rumor, negotiating, done deal, controversy) and Arckhé commenting (avatar). A rumor is treated as a rumor, no club gets a side and betting is left out. It runs on a computer with a GPU, using the Claude Code and HeyGen subscriptions. It is a sibling of [advviral](https://github.com/inematds/advviral), [saudeviral](https://github.com/inematds/saudeviral) and [finviral](https://github.com/inematds/finviral) (same engine, different topic).
 
 ## 📖 User guide
 

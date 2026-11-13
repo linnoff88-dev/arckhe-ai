@@ -32,7 +32,7 @@ import urllib.parse
 import urllib.request
 import urllib.robotparser
 
-USER_AGENT = "raio-x-margem/0.2 (+https://github.com/arckhetds/raio-x-margem)"
+USER_AGENT = "raio-x-margem/0.2 (+https://github.com/inematds/raio-x-margem)"
 CREDITOS_POR_BUSCA = 2  # Firecrawl: ~2 créditos por busca de até 10 resultados (conferir na página de preços)
 
 MARKETPLACES = {"ifood.com.br": "iFood", "99app.com": "99Food", "99food": "99Food", "keeta": "Keeta",

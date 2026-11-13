@@ -1,11 +1,11 @@
 # Lance sua Startup — seu produto em 59 sites de lançamento
 ## Proveniência (Provenance)
 
-Adaptado do projeto original [~~ARCKHÉTDS~~/lance-sua-startup](https://github.com/~~ARCKHÉTDS~~/lance-sua-startup) (licença MIT preservada). Rebranding Arckhé AI.
+Adaptado do projeto original [inematds/lance-sua-startup](https://github.com/inematds/lance-sua-startup) (licença MIT preservada). Rebranding Arckhé AI.
 
 
 
-[![Lance sua Startup](guia/assets/banner.jpg)](https://~~ARCKHÉTDS~~.github.io/lance-sua-startup/guia/)
+[![Lance sua Startup](guia/assets/banner.jpg)](https://inematds.github.io/lance-sua-startup/guia/)
 
 **🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
 
@@ -19,7 +19,7 @@ Code com a extensão do Chrome e um e-mail só para os cadastros.
 
 ## 📖 Guia de uso
 
-Guia completo (landing + passo a passo + tabela com filtros): **https://~~ARCKHÉTDS~~.github.io/lance-sua-startup/guia/**
+Guia completo (landing + passo a passo + tabela com filtros): **https://inematds.github.io/lance-sua-startup/guia/**
 
 ## O que tem no kit
 
@@ -50,7 +50,7 @@ Com orçamento 0 e sem selo (a ficha de exemplo), o plano hoje fica: **A = 22 ·
 
 | # | Passo | Comando | Quem |
 |---|---|---|---|
-| 1 | Baixar o kit | `git clone https://github.com/~~ARCKHÉTDS~~/lance-sua-startup && cd lance-sua-startup` | 🧠 você |
+| 1 | Baixar o kit | `git clone https://github.com/inematds/lance-sua-startup && cd lance-sua-startup` | 🧠 você |
 | 2 | Ver os sites e filtros | `python3 lancar.py lista --agente --gratis` | ⚙️ script |
 | 3 | Testar com o exemplo | `python3 lancar.py plano --marca exemplo/marca.json --saida exemplo/trabalho` | ⚙️ script |
 | 4 | Preparar e-mail de cadastro, logo e capturas em `marca/` (ex.: `marca/logo-512.png`, `marca/captura-1.png`) | — | 🧠 você |

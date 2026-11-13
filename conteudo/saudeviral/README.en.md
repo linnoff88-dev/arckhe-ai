@@ -6,7 +6,7 @@
 
 ## What it is
 
-saudeviral is a system that, on its own, makes short videos (9:16) about what Brazil's biggest health influencers said in their videos: the doctors, nutritionists and psychologists with the largest audiences. It watches the YouTube videos through transcription, picks out the facts, numbers and controversies, and builds a video with big animated numbers, the source of every data point on screen and Arckhé commenting (avatar). Everything is reported and attributed, and anything without medical consensus gets a "NO CONSENSUS" stamp. It does not replace a medical consultation. It runs on a computer with a GPU, using the Claude Code and HeyGen subscriptions. It is the sibling of [finviral](https://github.com/arckhetds/finviral) (same engine, different topic).
+saudeviral is a system that, on its own, makes short videos (9:16) about what Brazil's biggest health influencers said in their videos: the doctors, nutritionists and psychologists with the largest audiences. It watches the YouTube videos through transcription, picks out the facts, numbers and controversies, and builds a video with big animated numbers, the source of every data point on screen and Arckhé commenting (avatar). Everything is reported and attributed, and anything without medical consensus gets a "NO CONSENSUS" stamp. It does not replace a medical consultation. It runs on a computer with a GPU, using the Claude Code and HeyGen subscriptions. It is the sibling of [finviral](https://github.com/inematds/finviral) (same engine, different topic).
 
 ## 📖 User guide
 

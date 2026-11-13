@@ -30,7 +30,7 @@ import urllib.request
 import zlib
 
 BASE = "https://arquivos.receitafederal.gov.br/public.php/dav/files/YggdBLfdninEJX9/"
-USER_AGENT = "raio-x-margem/0.2 (+https://github.com/arckhetds/raio-x-margem)"
+USER_AGENT = "raio-x-margem/0.2 (+https://github.com/inematds/raio-x-margem)"
 CNAES_PADRAO = ["5611201", "5611203", "5611204", "5611205", "5620104"]
 SITUACAO = {"01": "NULA", "1": "NULA", "02": "ATIVA", "2": "ATIVA", "03": "SUSPENSA", "3": "SUSPENSA",
             "04": "INAPTA", "4": "INAPTA", "08": "BAIXADA", "8": "BAIXADA"}

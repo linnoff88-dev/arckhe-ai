@@ -37,7 +37,7 @@ Depois: `python3 semana.py gerar` (com o mesmo --ate/--de).
 ## Vitórias (3)
 - Arckhé (exemplo) — publicou o atende-leads rodando de verdade: lead do WhatsApp passado ao colaborador livre pelo Telegram — https://www.youtube.com/watch?v=bMwjDNLEeEA
 - Arckhé (exemplo) — publicou o kit Lance sua Startup: um agente preenche os formulários de 50+ sites de lançamento — https://www.youtube.com/watch?v=Zk3NfXRPrgM
-- Arckhé (exemplo) — publicou a Escada do Negócio com IA: 13 negócios com nota e o teste para achar o seu degrau — https://https://github.com/arckhetds/negocios-com-ia/guia/escada/
+- Arckhé (exemplo) — publicou a Escada do Negócio com IA: 13 negócios com nota e o teste para achar o seu degrau — https://https://github.com/inematds/negocios-com-ia/guia/escada/
 
 ## Ajudantes (0)
 

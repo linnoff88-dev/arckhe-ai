@@ -54,5 +54,5 @@
     "runtime_verified": false
   },
   "manifest_note": "Manifesto de descoberta próprio do Arckhé; não é um registro de ferramentas WebMCP.",
-  "repository": "https://github.com/arckhetds/webmcp-readiness"
+  "repository": "https://github.com/inematds/webmcp-readiness"
 }

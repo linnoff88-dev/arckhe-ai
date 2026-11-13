@@ -55,7 +55,7 @@ attacks, even without locks**: they spotted the hidden instructions and alerted 
 
 | # | Step | Command | Who |
 |---|---|---|---|
-| 1 | Download the toolkit | `git clone https://github.com/arckhetds/agente-blindado` | 🧠 you |
+| 1 | Download the toolkit | `git clone https://github.com/inematds/agente-blindado` | 🧠 you |
 | 2 | Choose the agent profile (reader, writer, publisher) | read the lock 3 table | 🧠 you |
 | 3 | Enable locks 2, 3, and 4 in the project | `./instalar.sh <pasta-do-projeto> escritor` (standalone agent: `--negar`) | ⚙️ script |
 | 4 | Adjust the owner’s rules | edit the top of the project’s `CLAUDE.md` (the part between `< >`) | 🧠 you |

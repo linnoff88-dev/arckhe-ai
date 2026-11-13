@@ -34,7 +34,7 @@ For a week that doesn’t end today, pass the dates in steps 4 and 7: `--ate YYY
 ## Getting started
 
 ```bash
-git clone https://github.com/arckhetds/semana-arckhe.git
+git clone https://github.com/inematds/semana-arckhe.git
 cd semana-arckhe
 python3 -m unittest discover -s tests
 python3 semana.py gerar --config config.exemplo.json --de 2026-11-01 --ate 2026-11-08

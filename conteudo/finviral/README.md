@@ -1,11 +1,11 @@
 # finviral
 ## Proveniência (Provenance)
 
-Adaptado do projeto original [~~ARCKHÉTDS~~/finviral](https://github.com/~~ARCKHÉTDS~~/finviral) (licença MIT preservada). Rebranding Arckhé AI.
+Adaptado do projeto original [inematds/finviral](https://github.com/inematds/finviral) (licença MIT preservada). Rebranding Arckhé AI.
 
 
 
-[![finviral — Radar Financeiro](guia/assets/banner.jpg)](https://~~ARCKHÉTDS~~.github.io/finviral/guia/)
+[![finviral — Radar Financeiro](guia/assets/banner.jpg)](https://inematds.github.io/finviral/guia/)
 
 **🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
 
@@ -15,7 +15,7 @@ O finviral é um sistema que faz, sozinho, vídeos curtos (9:16) sobre o que os 
 
 ## 📖 Guia de uso
 
-Guia completo (landing + passo a passo): **https://~~ARCKHÉTDS~~.github.io/finviral/guia/**
+Guia completo (landing + passo a passo): **https://inematds.github.io/finviral/guia/**
 
 ## Como funciona
 

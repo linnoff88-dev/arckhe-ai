@@ -117,7 +117,7 @@
     <a class="sec" href="#roadmap">Roadmap</a>
     <span class="lang"><a href="../">PT</a><a class="on" href="./">EN</a><a href="../es/">ES</a></span>
     <button class="tgl" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">🌙</button>
-    <a class="btn" href="https://github.com/arckhetds/transformsite" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="https://github.com/inematds/transformsite" target="_blank" rel="noopener">GitHub</a>
   </div>
 </div></nav>
 
@@ -130,7 +130,7 @@
       <p class="lead">transformsite reads your entire site and knowledge base and puts a conversational agent on WhatsApp, Telegram, email or a widget in place of forms. It answers citing the source, says "I don't know" when it doesn't, and runs services such as scheduling, opening a ticket or sending data to the legacy system.</p>
       <div class="cta">
         <a class="btn" href="#guia">Start the guide</a>
-        <a class="btn ghost" href="https://github.com/arckhetds/transformsite" target="_blank" rel="noopener">View on GitHub</a>
+        <a class="btn ghost" href="https://github.com/inematds/transformsite" target="_blank" rel="noopener">View on GitHub</a>
       </div>
     </div>
     <figure><img src="../assets/banner-en.jpg" alt="Banner: your site becomes chat — answers with sources, YAML services, WhatsApp and Telegram"></figure>
@@ -175,7 +175,7 @@
   <p class="sub">Python 3.11+ and an LLM. With a GPU, the default is a local model; without a GPU, use a smaller model or your subscription.</p>
   <div class="grid g3">
     <div class="card"><h3>Python + transformsite</h3><p>Installs the <code>transformsite</code> CLI.</p><pre><span class="c"># pipx (recommended)</span>
-<span class="k">pipx install</span> git+https://github.com/arckhetds/transformsite</pre></div>
+<span class="k">pipx install</span> git+https://github.com/inematds/transformsite</pre></div>
     <div class="card"><h3>Ollama (LLM local)</h3><p>Chat model + <code>bge-m3</code> embeddings. Without a GPU: <code>qwen2.5:7b</code>.</p><pre><span class="k">ollama pull</span> qwen3.6:35b-a3b
 <span class="k">ollama pull</span> bge-m3</pre></div>
     <div class="card"><h3>Or: your subscription (experimental)</h3><p>In <code>transformsite.yaml</code>, use Claude Code or the Codex CLI already logged in, no API key.</p><pre><span class="c"># transformsite.yaml</span>
@@ -245,7 +245,7 @@ action: {tool: agenda.criar_evento, idempotency_key: <span class="s">"{session_i
   <div class="step"><div class="b">7</div><div>
     <h3>Publish on a VPS</h3>
     <p>One command installs Docker and brings up app + Ollama + Evolution API (WhatsApp) + Caddy with automatic HTTPS.</p>
-<pre><span class="k">curl</span> -fsSL <span class="s">https://raw.githubusercontent.com/arckhetds/transformsite/main/deploy/vps/install.sh</span> | <span class="k">sudo bash</span> -s -- \
+<pre><span class="k">curl</span> -fsSL <span class="s">https://raw.githubusercontent.com/inematds/transformsite/main/deploy/vps/install.sh</span> | <span class="k">sudo bash</span> -s -- \
   --domain <span class="s">bot.suaempresa.com.br</span> --site <span class="s">https://www.suaempresa.com.br</span> --whatsapp</pre>
   </div></div>
 </div></section>
@@ -274,7 +274,7 @@ action: {tool: agenda.criar_evento, idempotency_key: <span class="s">"{session_i
   <div class="wrap">
     <div class="pill">Python · FastAPI</div><div class="pill">Ollama · bge-m3</div><div class="pill">SQLite FTS5 + vetores</div><div class="pill">Docker · Caddy</div>
     <p style="margin-top:18px">transformsite · open framework (MIT) ·
-      <a href="https://github.com/arckhetds/transformsite">github.com/arckhetds/transformsite</a> ·
+      <a href="https://github.com/inematds/transformsite">github.com/inematds/transformsite</a> ·
       <a href="https://linnoff88-dev.github.io/arckhe-ai">ARCKHÉ.AI</a></p>
   </div>
 </footer>

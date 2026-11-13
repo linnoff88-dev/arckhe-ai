@@ -139,7 +139,7 @@ Execute o trabalho de ponta a ponta seguindo estas regras:
 - Não faça push antes de eu autorizar explicitamente.
 - Depois da autorização, publique apenas os arquivos relacionados.
 - O autor dos commits segue a conta GitHub de destino do repositório
-  (default: arckhetds <arckhetds@gmail.com>; conferir `git config user.email`).
+  (default: inematds <inematds@gmail.com>; conferir `git config user.email`).
 - O trabalho termina no `git push`. O deploy é automático e é responsabilidade
   do proprietário; não consulte nem aguarde o Vercel.
 - Quando o proprietário confirmar que a versão está no ar, execute o scanner:

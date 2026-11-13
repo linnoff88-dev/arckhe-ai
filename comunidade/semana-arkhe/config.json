@@ -34,7 +34,7 @@
       "ativo": false,
       "repos": ["~/projetos/semana-arckhe"],
       "ignorar_prefixos": ["handoff:", "wip", "merge"],
-      "link_repo": {"semana-arckhe": "https://github.com/arckhetds/semana-arckhe"}
+      "link_repo": {"semana-arckhe": "https://github.com/inematds/semana-arckhe"}
     },
     {
       "tipo": "feed",

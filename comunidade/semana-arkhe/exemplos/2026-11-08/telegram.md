@@ -6,7 +6,7 @@ Saíram 26 publicações no Arckhé nesta semana. Você não precisa de todas. P
 Responda as 6 perguntas da Escada do Negócio com IA e escolha UM negócio para começar
 Por quê: Entre 13 negócios com IA, quem tenta todos não termina nenhum; o teste aponta o degrau que combina com o que você já sabe fazer.
 Pronto quando: Você termina com um negócio escolhido e a oferta pronta dele na tela: a frase para vender, o primeiro cliente para procurar e o próximo degrau.
-Comece aqui: https://https://github.com/arckhetds/negocios-com-ia/guia/escada/
+Comece aqui: https://https://github.com/inematds/negocios-com-ia/guia/escada/
 
 2) SEU CASO → SEU CAMINHO
 • Usa ChatGPT no dia a dia → Todas as ferramentas do ChatGPT https://www.youtube.com/watch?v=jJfbTchWmT4
@@ -18,7 +18,7 @@ Comece aqui: https://https://github.com/arckhetds/negocios-com-ia/guia/escada/
 3) VITÓRIAS DA COMUNIDADE
 • Arckhé (exemplo) — publicou o atende-leads rodando de verdade: lead do WhatsApp passado ao colaborador livre pelo Telegram https://www.youtube.com/watch?v=bMwjDNLEeEA
 • Arckhé (exemplo) — publicou o kit Lance sua Startup: um agente preenche os formulários de 50+ sites de lançamento https://www.youtube.com/watch?v=Zk3NfXRPrgM
-• Arckhé (exemplo) — publicou a Escada do Negócio com IA: 13 negócios com nota e o teste para achar o seu degrau https://https://github.com/arckhetds/negocios-com-ia/guia/escada/
+• Arckhé (exemplo) — publicou a Escada do Negócio com IA: 13 negócios com nota e o teste para achar o seu degrau https://https://github.com/inematds/negocios-com-ia/guia/escada/
 
 4) O QUE CHEGOU (26 na semana)
 • 07/11 Árvore genealógica com IA https://www.youtube.com/watch?v=v5cNF_fnABk

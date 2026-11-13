@@ -1,11 +1,11 @@
 # semana-arckhe — a semana sem sobrecarga
 ## Proveniência (Provenance)
 
-Adaptado do projeto original [~~ARCKHÉTDS~~/semana-arckhe](https://github.com/~~ARCKHÉTDS~~/semana-arckhe) (licença MIT preservada). Rebranding Arckhé AI.
+Adaptado do projeto original [inematds/semana-arckhe](https://github.com/inematds/semana-arckhe) (licença MIT preservada). Rebranding Arckhé AI.
 
 
 
-[![semana-arckhe](guia/assets/banner.jpg)](https://~~ARCKHÉTDS~~.github.io/semana-arckhe/guia/)
+[![semana-arckhe](guia/assets/banner.jpg)](https://inematds.github.io/semana-arckhe/guia/)
 
 **🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
 
@@ -17,7 +17,7 @@ O semana-arckhe é um kit gratuito para quem cuida de uma comunidade (grupo de T
 
 ## 📖 Guia de uso
 
-Guia completo (o método + passo a passo): **https://~~ARCKHÉTDS~~.github.io/semana-arckhe/guia/**
+Guia completo (o método + passo a passo): **https://inematds.github.io/semana-arckhe/guia/**
 
 ## O processo, do início ao fim
 
@@ -39,7 +39,7 @@ Para uma semana que não termina hoje, passe as datas nos passos 4 e 7: `--ate A
 ## Começar
 
 ```bash
-git clone https://github.com/~~ARCKHÉTDS~~/semana-arckhe.git
+git clone https://github.com/inematds/semana-arckhe.git
 cd semana-arckhe
 python3 -m unittest discover -s tests
 python3 semana.py gerar --config config.exemplo.json --de 2026-11-01 --ate 2026-11-08
