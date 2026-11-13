@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="pt-BR" class="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arckhé AI Expert — Mapa de Negócios com IA</title>
+<meta name="description" content="12 modelos de negócio com IA ranqueados, teste de 6 perguntas para achar o seu ponto de entrada e o plano de 90 dias. Arckhé AI Expert.">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { darkMode: 'class', theme: { extend: { colors: {
+  primary: '#38bdf8',
+  dark: { 900: '#0a0e1a', 800: '#0f1526', 700: '#1e293b', 600: '#334155' }
+} } } };
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>body{font-family:'Inter',sans-serif}.dark body{background-color:#0a0e1a;color:#e8ecf7}details summary{cursor:pointer;list-style:none}</style>
+</head>
+<body class="dark bg-dark-900 min-h-screen">
+<header class="sticky top-0 z-30 border-b border-white/10 bg-dark-900/95 backdrop-blur">
+<div class="max-w-5xl mx-auto px-5 py-3 flex items-center justify-between">
+<a href="../index.html" class="text-xs font-bold tracking-widest text-slate-400 hover:text-white">&larr; ARCKHÉ.AI</a>
+<span class="text-xs font-semibold text-primary">ARCKHÉ AI EXPERT — MAPA DE NEGÓCIOS COM IA</span>
+</div>
+</header>
+
+<main class="max-w-5xl mx-auto px-5 py-12">
+<h1 class="text-4xl md:text-5xl font-extrabold text-white mb-3">Mapa de Negócios com IA</h1>
+<p class="text-slate-400 text-lg max-w-2xl mb-10">O pilar <strong class="text-white">Arckhé AI Expert</strong> transforma você em freelancer/solopreneur de IA: 12 modelos ranqueados, um teste para achar o seu ponto de entrada e um plano de 90 dias. Sem equipe, sem fábrica — você + agentes de IA.</p>
+
+<div class="grid md:grid-cols-2 gap-4 mb-12" id="cards"></div>
+
+<section class="mb-14">
+<h2 class="text-2xl font-bold text-white mb-2">Qual é o seu? — Teste de 6 perguntas</h2>
+<p class="text-slate-400 mb-5">Responda com sinceridade; o mapa recomenda o ponto de entrada com melhor aderência.</p>
+<div id="quiz" class="rounded-xl border border-white/10 bg-dark-800 p-6 space-y-5"></div>
+<div id="quiz-result" class="hidden mt-5 rounded-xl border border-primary/40 bg-primary/10 p-6"></div>
+</section>
+
+<section class="mb-14">
+<h2 class="text-2xl font-bold text-white mb-2">Ofertas prontas por setor</h2>
+<p class="text-slate-400 mb-5">Copie a oferta, adapte os números para o seu setor e venda esta semana.</p>
+<div class="grid md:grid-cols-2 gap-4" id="ofertas"></div>
+</section>
+
+<section>
+<h2 class="text-2xl font-bold text-white mb-2">Plano de 90 dias</h2>
+<p class="text-slate-400 mb-5">O ritmo Arckhé: oferta antes da perfeição, sistema antes da escala.</p>
+<a href="plano-90-dias.html" class="inline-block rounded-xl bg-primary/20 text-primary font-semibold px-6 py-3 hover:bg-primary/30">Abrir o plano de 90 dias &rarr;</a>
+</section>
+
+<footer class="mt-14 pt-6 border-t border-white/10 text-sm text-slate-500">
+Arckhé AI Expert — O Ecossistema de IA para o Futuro Inteligente · Conteúdo Arckhé (autoral) · <a href="../index.html" class="text-slate-400">voltar ao hub</a>
+</footer>
+</main>
+
+<script>
+const N = [
+ {t:"Agência de Conteúdo com IA", d:"Fábrica de pautas + virais por nicho: radar diário, reels 9:16, carrossel e e-mail. Você entrega presença digital em escala.", e:"'Calendário de 30 dias de conteúdo + 5 reels prontos para o seu nicho' — pacote de entrada por mês.", f:2,r:5,v:2},
+ {t:"Atendimento com Agentes por Setor", d:"Agente de WhatsApp/Telegram para clínicas, salões, imobiliárias e academias: agenda, confirmação, lista de espera, equipe no Telegram.", e:"'Atendente virtual 24/7 para sua clínica' — setup + assinatura mensal de manutenção.", f:3,r:5,v:3},
+ {t:"SEO/GEO — Visibilidade para IAs", d:"Auditoria de prontidão para agentes de IA + otimização para Google/Bing/IAs: o cliente ser citado pelas respostas.", e:"'Diagnóstico de Visibilidade IA em 48h' — relatório + 10 correções prioritárias.", f:2,r:4,v:3},
+ {t:"Auditoria de Site que Vende", d:"Medir os 5 padrões de conversão do site do cliente e entregar o plano de correção com prioridade.", e:"'Site auditado + top 10 correções' — ticket único, upsell de execução.", f:2,r:3,v:2},
+ {t:"Diagnóstico em Reais (Raio-X de Margem)", d:"Encontrar onde o negócio perde dinheiro por mês, em R$, com painel de recuperação e proposta de correção.", e:"'Raio-X de perdas em 45 min' — diagnóstico pago reduzido que abre contrato de recuperação.", f:3,r:4,v:4},
+ {t:"Automações Sob Medida (n8n/Make)", d:"Fluxos recorrentes: leads, e-mails, faturas, relatórios. Assinatura de manutenção é a receita real.", e:"'5 automações essenciais para o seu setor' — pacote + mensalidade de evolução.", f:3,r:5,v:3},
+ {t:"Cursos e Conteúdo Educacional em IA", d:"Você mesmo virar a academia: cursos práticos curtos, comunidade e certificado. O conteúdo é o lead do resto.", e:"'Curso de 1 semana + comunidade' — assinatura mensal.", f:2,r:4,v:4},
+ {t:"RH com IA", d:"Triagem de currículos, modelos de entrevista e screening automático para vagas recorrentes.", e:"'Vaga fechada 40% mais rápido' — pacote por vaga + recorrente.", f:4,r:4,v:3},
+ {t:"Dados e Relatórios Gerenciais", d:"Dashboard que a IA monta e mantém: vendas, estoque, metas, alertas. O dono para abrir planilha às 23h.", e:"'Relatório gerencial automático semanal' — assinatura.", f:3,r:5,v:4},
+ {t:"Micro-SaaS de Nicho", d:"O produto digital do futuro: uma dor específica, um preço simples, recorrência alta. Comece pelo problema que você atende.", e:"'MVP em 30 dias' — venda para 10 usuários de nicho antes de escalar.", f:4,r:5,v:5},
+ {t:"Canal Viral com Avatar IA", d:"Canal 100% por IA: pauta, roteiro, avatar e voz. Escala de audiência sem aparecer.", e:"'Canal operando + 30 vídeos' — setup + gestão mensal.", f:3,r:4,v:3},
+ {t:"Consultoria IA para Setores Tradicionais", d:"Alto ticket: prefeituras, indústrias, bancos. Lento para entrar, caro para vender — o topo da escada.", e:"'Diagnóstico executivo de 1 semana' — ticket 5-6 dígitos.", f:5,r:5,v:5}
+];
+const F = ["Fácil","Fácil","Médio","Médio","Médio","Médio","Médio","Difícil","Médio","Difícil","Médio","Difícil"];
+const stars = n => "★".repeat(n) + "☆".repeat(5 - n);
+const cardsEl = document.getElementById("cards");
+N.forEach((n,i) => {
+  cardsEl.innerHTML += `<a href="#n${i}" class="block rounded-xl border border-white/10 bg-dark-800 p-5 hover:border-primary/60 transition group">
+  <div class="flex items-start justify-between gap-2"><div class="text-lg font-bold text-white group-hover:text-primary">${n.t}</div><div class="text-xs text-slate-500 shrink-0">#${i+1}</div></div>
+  <p class="text-sm text-slate-400 mt-1">${n.d}</p>
+  <div class="flex gap-4 mt-3 text-xs text-slate-400"><span>Entrada ${stars(n.f)}</span><span>Reccorrente ${stars(n.r)}</span><span>Velocidade 1º R$ ${stars(n.v)}</span></div>
+  <div class="text-xs text-primary mt-3">${n.e}</div>
+  <div id="n${i}"></div></a>`;
+});
+
+const OFERTAS = [
+ {s:"Clínica (odontologia/estética)", o:"'Agenda cheia sem retrabalho': confirmação automática de consulta, lista de espera que encaixa faltas e lembrete de retorno. Entrega em 14 dias + R$/mês de operação."},
+ {s:"Contabilidade", o:"'Sua contadora com atendente': triagem de documentos dos clientes, alertas de prazo por cliente e resumo mensal do que cada cliente perguntou. Pacote por escritório + por cliente."},
+ {s:"Imobiliária", o:"'Imóvel anunciado em escala': cada imóvel vira post, reels com voz IA, anúncio em 8 portais e agente que responde visitantes 24/7 no site. Mensalidade por anunciante."},
+ {s:"Academia", o:"'Aluno que não some': check-in com IA, plano de exercícios adaptado e follow-up automático de 21 dias. Assinatura por unidade."}
+];
+document.getElementById("ofertas").innerHTML = OFERTAS.map(o => `<div class="rounded-xl border border-white/10 bg-dark-800 p-5"><div class="text-sm font-bold text-primary mb-2">${o.s}</div><div class="text-sm text-slate-300">${o.o}</div></div>`).join("");
+
+const QS = [
+ {q:"O que você já sabe fazer hoje que envolve comunicação ou tecnologia?", o:["Escrevo/vendo bem (textos, vendas)","Organizo dados/processos","Crio conteúdo/desenho","Estou começando do zero"]},
+ {q:"Quanto tempo real por semana você tem?", o:["4h+ por dia","2–4h por dia","Fim de semana","Só noites"]},
+ {q:"Qual o seu primeiro cliente natural?", o:["Conhecidos do meu setor","Um cliente atual que me pediu","Nicho público amplo","Amigos/família (rede pessoal)"]},
+ {q:"O que você prefere entregar?", o:["Produto que escala (cursão, SaaS)","Serviço recorrente (mensalidade)","Projeto único e ticket alto","Mistura, conforme a oportunidade"]},
+ {q:"Seu conforto com tecnologia hoje?", o:["Uso IA no dia a dia","Uso às vezes","Ainda tenho medo","Só o básico"]},
+ {q:"Meta em 90 dias?", o:["Primeiros R$","R$ 5.000+","R$ 10.000+","Aprender a fundo primeiro"]}
+];
+const qz = document.getElementById("quiz");
+const ans = [];
+QS.forEach((item,i) => {
+  qz.innerHTML += `<div><div class="text-sm font-semibold text-white mb-2">${i+1}. ${item.q}</div><div class="flex flex-wrap gap-2">${item.o.map((o,j) => `<button data-q="${i}" data-o="${j}" class="qx rounded-lg border border-white/15 bg-dark-700 px-3 py-1.5 text-xs text-slate-300 hover:border-primary">${o}</button>`).join("")}</div></div>`;
+});
+document.querySelectorAll(".qx").forEach(b => b.addEventListener("click", () => {
+  ans[+b.dataset.q] = +b.dataset.o;
+  b.parentElement.querySelectorAll(".qx").forEach(x => x.classList.remove("border-primary","text-white"));
+  b.classList.add("border-primary","text-white");
+  if (ans.every(a => a !== undefined)) showResult();
+}));
+function showResult() {
+  const [a,b,c,d,e,f] = ans;
+  let score = {agc:0,atd:0,geo:0,site:0,raio:0,auto:0,curs:0,rh:0,dados:0,saa:0,can:0,cons:0};
+  if (a===0){score.agc++;score.raio++;score.curs++;} if (a===1){score.auto++;score.dados++;score.site++;} if (a===2){score.can++;score.agc++;score.geo++;} if (a===3){score.geo++;score.site++;}
+  if (b===0){score.saa++;score.cons++;score.can++;} if (b===1){score.atd++;score.auto++;score.raio++;} if (b===2||b===3){score.curs++;score.site++;}
+  if (c===0){score.atd++;score.raio++;score.dados++;} if (c===1){score.cons++;score.saa++;} if (c===2){score.can++;score.geo++;} if (c===3){score.site++;score.geo++;score.agc++;}
+  if (d===0){score.saa++;score.curs++;score.can++;} if (d===1){score.atd++;score.auto++;score.dados++;} if (d===2){score.cons++;score.raio++;} if (d===3){score.agc++;}
+  if (e===0){score.curs++;score.geo++;score.site++;} if (e===1){score.atd++;score.agc++;} if (e===2){score.saa++;score.cons++;} if (e===3){score.site++;score.geo++;}
+  if (f===0){score.site++;score.geo++;score.agc++;} if (f===1){score.atd++;score.auto++;} if (f===2){score.cons++;score.raio++;score.saa++;} if (f===3){score.curs++;score.cons++;}
+  const top = Object.entries(score).sort((x,y)=>y[1]-x[1]).slice(0,3).map(x=>x[0]);
+  const NAMES = {agc:"1 · Agência de Conteúdo com IA", atd:"2 · Atendimento com Agentes por Setor", geo:"3 · SEO/GEO — Visibilidade para IAs", site:"4 · Auditoria de Site que Vende", raio:"5 · Diagnóstico em Reais", auto:"6 · Automações Sob Medida", curs:"7 · Cursos em IA", rh:"8 · RH com IA", dados:"9 · Dados e Relatórios", saa:"10 · Micro-SaaS de Nicho", can:"11 · Canal Viral com Avatar IA", cons:"12 · Consultoria IA"};
+  const r = document.getElementById("quiz-result");
+  r.classList.remove("hidden");
+  r.innerHTML = `<div class="text-sm font-bold text-primary mb-1">Seu ponto de entrada recomendado</div>
+  <div class="text-lg font-extrabold text-white mb-2">${NAMES[top[0]]} <span class="text-slate-500 text-sm">(topo: ${NAMES[top[1]]}, ${NAMES[top[2]]})</span></div>
+  <p class="text-sm text-slate-300">Comece pela <a href="#${Object.keys(NAMES).find(k=>NAMES[k]===NAMES[top[0]])}" class="text-primary">oferta de entrada</a> do topo da sua lista, execute o <a href="plano-90-dias.html" class="text-primary">plano de 90 dias</a> e, ao ter 2 clientes, adicione o segundo modelo. A escada do mapa existe para você subir — não para começar no topo.</p>`;
+}
+</script>
+</body>
+</html>
