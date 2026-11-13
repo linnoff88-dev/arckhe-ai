@@ -21,9 +21,21 @@ O post semanal da comunidade é publicado automaticamente:
 
 - `comunidade/semana-arkhe/posts/` — fila de posts (`week-N.json`)
 - `comunidade/semana-arkhe/posts-published.json` — posts publicados
-- `.github/workflows/semana.yml` — toda segunda-feira (ou manualmente) publica o próximo post da fila e atualiza o site
+- `.github/workflows/semana.yml` — toda segunda-feira (ou manualmente): publica o próximo post da fila e atualiza o site
 
 Para publicar um post fora do agendamento: adicione `week-N.json` em `posts/` e dispare o workflow `semana-arkhe` (ou espere a segunda).
+
+### Canal Telegram (opcional, ainda não configurado)
+
+O mesmo workflow publica o post no canal do Telegram quando 2 secrets existirem no repositório:
+
+1. Crie um bot com o @BotFather (`/newbot`) e copie o token
+2. Crie o canal público **Arckhé AI** e adicione o bot como admin (`@AddBot`)
+3. Em Settings → Secrets → Actions, crie:
+   - `ARCKHE_BOT_TOKEN` = token do BotFather
+   - `ARCKHE_CHAT_ID` = `@canal_publico` ou o chat id numérico
+
+Com os 2 secrets, a cada segunda o post sai no site **e** no canal, sem ação manual.
 
 ## Licença e proveniência
 
